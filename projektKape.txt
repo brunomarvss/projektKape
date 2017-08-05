@@ -1,0 +1,73 @@
+$ everDrugStore
+
+$Requirements/tools:
+VB2010
+Access 2013
+LAPTOP intel i5, 8gbRam
+
+$documentations
+
+
+#######moduleLogin##############
+..Admin != POS, Admin== InventoryReports
+..Cashier == POS
+##############################
+
+
+########modulePOS(CASHIER POV)##############
+*Simple UI/UX
+*big texts
+*full screen UI
+
+$Widgets
+$textInput
+-for search of item, query
+
+$ListView 
+-SRP
+-QTY
+
+$Labels
+-customer number?
+
+$actionButtons
+-add item
+-remove item
+-confirm transaction
+
+$confirmTransactionDialog (newForm)
+-timeAndDate
+-summaryOfItems
+-totalPriceOfItems
+-fieldForCashPayment
+-if paid, listView will refresh, form will close
+
+######################
+
+
+
+#########moduleInventory(adminBackend)#########
+
+$simple onLoad form with menu
+Sales Reports (daily, weekly, monthly, annual)
+- with raw income and gross income
+
+$inventoryList(full stock, low stock, no stock)
+- per supplier which is three
+- add item to inventory per supplier
+- add stock to item
+- listView per supplier (ascending order)
+
+
+$
+$
+$
+$
+
+
+
+
+
+
+
+
