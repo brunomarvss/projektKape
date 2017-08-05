@@ -62,7 +62,7 @@ $inventoryList(full stock, low stock, no stock)
 $
 $
 $
-$
+$f
 
 
 
