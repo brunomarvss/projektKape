@@ -1,16 +1,27 @@
-$ everDrugStore
+projektKape
+-----------------------------------------------------------------------
+LEGENDS: $ = task
+         # = module
+-----------------------------------------------------------------------
+NOTE: Mark '^^^' for finished tasks in line. e.g. "simple ui/ux ^^^"
+      camelCase schema in variables
+-----------------------------------------------------------------------
+
+
+
 
 $Requirements/tools:
 VB2010
 Access 2013
 LAPTOP intel i5, 8gbRam
 
-$documentations
 
 
 #######moduleLogin##############
 ..Admin != POS, Admin== InventoryReports
 ..Cashier == POS
+
+$admin and cashier login form
 ##############################
 
 
@@ -66,7 +77,7 @@ $
 
 
 
-##############SUGGSTIONS###########
+##############SUGGESTIONS###########
 
 
 
