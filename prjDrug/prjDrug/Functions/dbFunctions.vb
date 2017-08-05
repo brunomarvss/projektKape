@@ -3,6 +3,7 @@
     Public global_guess_id = "", global_admin_id As String = ""
     Public global_pass = "", global_user = ""
     Public active As Boolean = False
+    Public act As Boolean = True
 
     Sub listpreview()
         rs = New ADODB.Recordset
