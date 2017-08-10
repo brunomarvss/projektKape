@@ -1,5 +1,5 @@
 ﻿Class MainWindow
-
+    Public isChecked As Boolean = False
     Private Sub FormLogin_Loaded(sender As Object, e As RoutedEventArgs) Handles FormLogin.Loaded
         Call dbConnection.Connect()
     End Sub
@@ -10,9 +10,9 @@
     End Sub
 
     Private Sub ShowPassword()
+        textPassword.Text = passwordBox.Password
         textPassword.Visibility = Visibility.Visible
         passwordBox.Visibility = Visibility.Hidden
-        textPassword.Text = passwordBox.Password
     End Sub
 
     Private Sub HidePassword()
@@ -20,7 +20,8 @@
         passwordBox.Visibility = Visibility.Visible
         passwordBox.Focus()
     End Sub
-    Private Sub checkToggle_Checked(sender As Object, e As RoutedEventArgs) Handles checkToggle.Checked
+
+    Private Sub checkToggle_Checked(ByVal sender As Object, ByVal e As RoutedEventArgs) Handles checkToggle.Click
         If checkToggle.IsChecked = True Then
             ShowPassword()
         Else

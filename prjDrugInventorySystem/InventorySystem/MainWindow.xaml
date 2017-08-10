@@ -26,13 +26,13 @@
         <!--#region LOGIN FORM -->
         <!--More info about xaml editing, please refer for MaterialDesignInXamlToolkit.Wiki-->
         <!--ebantay-->
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="60,247,0,0" VerticalAlignment="Top" Width="267" ToolTip="Password"/>
         
         <TextBox x:Name="textUser" HorizontalAlignment="Left" Height="23" Margin="60,194,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="267" VerticalContentAlignment="Bottom" />
-        <TextBox x:Name="textPassword" HorizontalAlignment="Left" Height="23" Margin="60,249,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="267" VerticalContentAlignment="Bottom" />
-        
+        <TextBox x:Name="textPassword" HorizontalAlignment="Left" Height="23" Margin="60,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="267" VerticalContentAlignment="Bottom" />
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="60,247,0,0" VerticalAlignment="Top" Width="267" ToolTip="Password"/>
+
         <Button x:Name="buttonLogin" Content="LOGIN" Margin="60,0,0,109" HorizontalContentAlignment="Center" VerticalAlignment="Bottom" Height="39" HorizontalAlignment="Left" Width="267"/>
-        <CheckBox x:Name="checkToggle" Content="Toggle Password" HorizontalAlignment="Left" Margin="60,285,0,0" VerticalAlignment="Top" Width="166" />
+        <CheckBox x:Name="checkToggle" Content="Toggle Password" HorizontalAlignment="Left" Margin="43,285,0,0" VerticalAlignment="Top" Width="166" />
         <TextBlock x:Name="linkEmployeeLogin" HorizontalAlignment="Left" Margin="258,455,0,0" TextWrapping="Wrap" Text="Not Admin?" VerticalAlignment="Top" />
         <Label x:Name="labelTitle" Content="Inventory System" HorizontalAlignment="Left" Margin="70,78,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="30"/>
         <Label x:Name="labelCaption" Content="Organize your sales and network" HorizontalAlignment="Left" Margin="91,116,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="13"/>
