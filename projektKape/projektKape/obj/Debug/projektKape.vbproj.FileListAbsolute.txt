@@ -1,0 +1,22 @@
+c:\users\hilsoft\documents\visual studio 2015\Projects\projektKape\projektKape\bin\Debug\projektKape.exe.config
+D:\projektKape\projektKape\bin\Debug\projektKape.exe.config
+D:\projektKape\projektKape\bin\Debug\projektKape.exe
+D:\projektKape\projektKape\bin\Debug\projektKape.pdb
+D:\projektKape\projektKape\bin\Debug\projektKape.xml
+D:\projektKape\projektKape\obj\Debug\projektKape.vbprojResolveAssemblyReference.cache
+D:\projektKape\projektKape\obj\Debug\projektKape.formLogin.resources
+D:\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
+D:\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
+D:\projektKape\projektKape\obj\Debug\projektKape.exe
+D:\projektKape\projektKape\obj\Debug\projektKape.xml
+D:\projektKape\projektKape\obj\Debug\projektKape.pdb
+D:\projektKape\projektKape\bin\Debug\MetroFramework.Design.dll
+D:\projektKape\projektKape\bin\Debug\MetroFramework.dll
+D:\projektKape\projektKape\bin\Debug\MetroFramework.Fonts.dll
+D:\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
+D:\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
+D:\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
+D:\projektKape\projektKape\obj\Debug\projektKape.formMainPos.resources
+D:\projektKape\projektKape\obj\Debug\projektKape.formMainQtyDlg.resources
+D:\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
+D:\projektKape\projektKape\obj\Debug\projektKape.formPwdDc.resources
