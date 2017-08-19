@@ -39,11 +39,11 @@
     End Sub
 
     Private Sub btnVoid_Click(sender As Object, e As EventArgs) Handles btnVoid.Click
-        MsgBox("ARE SURE TO VOID THIS ITEM?", MsgBoxStyle.YesNo)
+        MsgBox("ARE SURE TO VOID THIS ITEM?", MsgBoxStyle.YesNo, "ECT Pharmacy POS")
 
     End Sub
 
     Private Sub btnTender_Click(sender As Object, e As EventArgs) Handles btnTender.Click
-        MsgBox("ARE SURE TO COMPLETE THIS TRANSACTIION?", MsgBoxStyle.YesNo)
+        MsgBox("ARE SURE TO COMPLETE THIS TRANSACTION?", MsgBoxStyle.YesNo, "ECT Pharmacy POS")
     End Sub
 End Class

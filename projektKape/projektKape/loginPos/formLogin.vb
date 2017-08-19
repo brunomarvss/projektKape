@@ -24,7 +24,7 @@
             passassist = .Fields("credentialsUsrPss").Value
 
             If useradmin.Equals(textBoxUser.Text.ToLower()) And passadmin.Equals(textBoxPass.Text.ToLower()) Then
-                MsgBox("WELCOME ADMIN!", MsgBoxStyle.Information)
+                MsgBox("WELCOME ADMIN!", MsgBoxStyle.Information, "ECT Pharmacy POS")
                 Me.Hide()
                 'formUI.Show()
 
@@ -34,7 +34,7 @@
                 formMainPos.Show()
 
             Else
-                MsgBox("INVALID USERNAME OR PASSWORD!", MsgBoxStyle.Critical)
+                MsgBox("INVALID USERNAME OR PASSWORD!", MsgBoxStyle.Critical, "ECT Pharmacy POS")
                 textBoxPass.Clear()
                 textBoxPass.Focus()
 
