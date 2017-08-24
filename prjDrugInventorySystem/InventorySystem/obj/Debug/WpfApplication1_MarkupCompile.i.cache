@@ -4,17 +4,17 @@
 winexe
 VB
 .vb
-C:\Users\Earl\Documents\GitHub\projektKape\prjDrugInventorySystem\InventorySystem\obj\Debug\
+D:\Documents\Github\projektkape\prjDrugInventorySystem\InventorySystem\obj\Debug\
 WpfApplication1
 none
 false
 
-C:\Users\Earl\Documents\GitHub\projektKape\prjDrugInventorySystem\InventorySystem\Application.xaml
-11151548125
+D:\Documents\Github\projektkape\prjDrugInventorySystem\InventorySystem\Application.xaml
+21157601449
 
-81919593937
-16-208740642
-MainWindow.xaml;
+9-831626251
+16-1664636701
+AdminPOS\formMainPOS.xaml;LoginPOS\MainWindow.xaml;
 
-False
+True
 
