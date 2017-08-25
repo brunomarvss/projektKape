@@ -4,6 +4,9 @@
     Public userassist = ""
     Dim passassist = ""
 
+    Public token_user_count As Integer = 1
+    Public token_pass_count As Integer = 1
+
 
     Private Sub formLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call Connect()
@@ -43,39 +46,30 @@
         End With
     End Sub
 
-    Private Sub ShowPassword()
-        If (txtPass.Text = "") Then
-            txtPass.Visible = True
-            passwordBox.Visible = False
-            txtPass.Focus()
-            txtPass.Text = passwordBox.Text
-        End If
-    End Sub
-
-    Private Sub HidePassword()
-        If (txtPass.Text = "") Then
-            txtPass.Visible = False
-            passwordBox.Visible = True
-            passwordBox.Focus()
-        End If
-    End Sub
 
     Private Sub checkToggle_CheckedChanged(sender As Object, e As EventArgs) Handles checkToggle.CheckedChanged
         If checkToggle.Checked = True Then
-            'ShowPassword()
-            passwordBox.PasswordChar = Nothing
+            txtPass.PasswordChar = Nothing
+            txtPass.UseSystemPasswordChar = False
 
         Else
-            'HidePassword()
-            passwordBox.PasswordChar = "●"
+            txtPass.PasswordChar = "●"
+            txtPass.UseSystemPasswordChar = True
         End If
     End Sub
 
+
     Private Sub txtUser_Click(sender As Object, e As EventArgs) Handles txtUser.Click
-        txtUser.Clear()
+        If token_user_count = 1 Then
+            token_user_count -= 1
+            txtUser.Clear()
+        End If
     End Sub
 
-    Private Sub passwordBox_Click(sender As Object, e As EventArgs) Handles passwordBox.Click
-
+    Private Sub passwordBox_Click(sender As Object, e As EventArgs) Handles txtPass.Click
+        If token_pass_count = 1 Then
+            token_pass_count -= 1
+            txtPass.Clear()
+        End If
     End Sub
 End Class
