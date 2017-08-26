@@ -66,3 +66,7 @@ D:\Documents\Github\projektkape\projektKape\projektKape\obj\Debug\projektKape.fo
 D:\Documents\Github\projektkape\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
 D:\Documents\Github\projektkape\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
 D:\Documents\Github\projektkape\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
+E:\Documents\Github\projektKape\projektKape\projektKape\bin\Debug\projektKape.exe.config
+E:\Documents\Github\projektKape\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
+E:\Documents\Github\projektKape\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
+E:\Documents\Github\projektKape\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache

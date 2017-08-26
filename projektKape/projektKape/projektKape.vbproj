@@ -92,7 +92,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="loginPos\connectionModule.vb" />
+    <Compile Include="modules\connectionModule.vb" />
     <Compile Include="loginPos\formLogin.vb">
       <SubType>Form</SubType>
     </Compile>
