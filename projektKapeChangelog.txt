@@ -1,0 +1,9 @@
+CHANGELOG:
+
+Update 08/27/2017 - 11:28PM 
+-Fix login via Admin
+-Added Admin Main Form
+-Added widgets in Admin Main Form
+-Added form in 'Add Item'
+by: brunomarvsss
+##########
