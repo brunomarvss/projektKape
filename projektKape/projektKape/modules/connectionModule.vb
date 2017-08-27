@@ -8,12 +8,12 @@
             cn = New ADODB.Connection
             With cn
                 If .State <> 0 Then .Close()
-                .ConnectionString = "provider=microsoft.jet.oledb.4.0;data source=../../../projektKape.mdb;Jet OLEDB:Database Password=PASSWORD;"
+                .ConnectionString = "provider=microsoft.jet.oledb.4.0;data source=../../../dbInventory.mdb;Jet OLEDB:Database Password=PASSWORD;"
                 .Open()
-                ' MessageBox.Show("Connected to Database")
+                'MessageBox.Show("Connected to Database")
             End With
         Catch ex As Exception
-            '  MessageBox.Show("Not Connected")
+            'MessageBox.Show("Not Connected")
         End Try
 
     End Sub

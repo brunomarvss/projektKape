@@ -1,16 +1,15 @@
 ﻿Public Class formLogin
-    '''''Catches the matching credentials request by the user
+    'Catches the matching credentials request by the user
     Public global_user = vbEmpty
     Public global_pass = vbEmpty
 
-    '''''Enables user to clear txtfields when first time using it
+    'Enables user to clear txtfields when first time using it
     Public token_user_count As Integer = 1
     Public token_pass_count As Integer = 1
 
 
     Private Sub formLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call Connect()
-
+        Call connectionModule.Connect()
     End Sub
 
     Private Sub buttonLogin_Click(sender As Object, e As EventArgs) Handles buttonLogin.Click
@@ -19,37 +18,33 @@
 
         With rs
             If .State <> 0 Then .Close()
-            .Open("select * from tblCredentials", cn, 1, 2)
+            .Open("SELECT * FROM Employees", cn, 1, 2)
 
-            '''''Catches when query finds any matching account
+            'Catches when query finds any matching account
             If .EOF = False Then
-                global_user = .Fields("credentialsUsr").Value
-                global_pass = .Fields("credentialsUsrPss").Value
+                global_user = .Fields("AccessUser").Value
+                global_pass = .Fields("AccessPass").Value
 
-                If global_user.Equals(txtUser.Text.ToLower()) And global_pass.Equals(txtPass.Text.ToLower()) Then
+                If global_user.Equals(txtUser.Text.Trim) And global_pass.Equals(txtPass.Text.Trim) Then
                     MsgBox("WELCOME ADMIN!", MsgBoxStyle.Information, "ECT Pharmacy POS")
                     Me.Hide()
 
                 Else
                     MsgBox("INVALID USERNAME OR PASSWORD!", MsgBoxStyle.Critical, "ECT Pharmacy POS")
-                    txtUser.Clear()
-                    txtPass.Clear()
                     txtUser.Focus()
                     Exit Sub
                 End If
 
-                '''''Notifies the user that login fails
+                'Notifies the user that login fails
             Else
-                MsgBox("The username or password you've entered doesn't match with any account, please check it correctly", vbCritical, "Error")
-            txtUser.Text = ""
-            txtPass.Text = ""
-            txtUser.Focus()
-            Exit Sub
+                MsgBox("The username or password you've entered doesn't match with any account, please check it correctly", MsgBoxStyle.Critical, "ECT Pharmacy POS")
+                txtUser.Focus()
+                Exit Sub
             End If
         End With
     End Sub
 
-    '''''Show the text within password field when request toggle on it
+    'Show the text within password field when request toggle on it
     Private Sub checkToggle_CheckedChanged(sender As Object, e As EventArgs) Handles checkToggle.CheckedChanged
         If checkToggle.Checked = True Then
             txtPass.PasswordChar = Nothing
@@ -61,7 +56,7 @@
         End If
     End Sub
 
-    '''''When tokens is equal to 1 will clearoff the txtUser and txtPass fields
+    'When tokens is equal to 1 will clearoff the txtUser and txtPass fields
     Private Sub txtUser_Click(sender As Object, e As EventArgs) Handles txtUser.Click
         If token_user_count = 1 Then
             token_user_count -= 1
@@ -74,5 +69,11 @@
             token_pass_count -= 1
             txtPass.Clear()
         End If
+    End Sub
+
+    'Employee login access login
+    Private Sub linkEmployeeLogin_Click(sender As Object, e As EventArgs) Handles linkEmployeeLogin.Click
+        formEmployee.Show()
+        Me.Hide()
     End Sub
 End Class

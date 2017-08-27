@@ -92,6 +92,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="loginPos\formEmployee.Designer.vb">
+      <DependentUpon>formEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginPos\formEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="modules\connectionModule.vb" />
     <Compile Include="loginPos\formLogin.vb">
       <SubType>Form</SubType>
@@ -124,6 +130,7 @@
     <Compile Include="mainPos\formSeniorDc.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="modules\moduleLogin.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -141,6 +148,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="loginPos\formEmployee.resx">
+      <DependentUpon>formEmployee.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginPos\formLogin.resx">
       <DependentUpon>formLogin.vb</DependentUpon>
     </EmbeddedResource>
