@@ -316,6 +316,8 @@ Partial Class formMainPos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1365, 736)
         Me.Controls.Add(Me.labelTime)
         Me.Controls.Add(Me.btnLogout)
@@ -339,6 +341,7 @@ Partial Class formMainPos
         Me.Resizable = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "ECT Pharmacy POS"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

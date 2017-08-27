@@ -98,6 +98,18 @@
     <Compile Include="loginPos\formEmployee.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="mainAdmin\formAdminAddItem.Designer.vb">
+      <DependentUpon>formAdminAddItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainAdmin\formAdminAddItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainAdmin\formMainAdmin.Designer.vb">
+      <DependentUpon>formMainAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainAdmin\formMainAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="modules\connectionModule.vb" />
     <Compile Include="loginPos\formLogin.vb">
       <SubType>Form</SubType>
@@ -153,6 +165,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginPos\formLogin.resx">
       <DependentUpon>formLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainAdmin\formAdminAddItem.resx">
+      <DependentUpon>formAdminAddItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainAdmin\formMainAdmin.resx">
+      <DependentUpon>formMainAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainPos\formMainPos.resx">
       <DependentUpon>formMainPos.vb</DependentUpon>

@@ -92,3 +92,56 @@ C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projek
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\projektKape\obj\Debug\projektKape.exe
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\projektKape\obj\Debug\projektKape.xml
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\projektKape\obj\Debug\projektKape.pdb
+E:\Documents\Github\projektKape\projektKape\bin\Debug\projektKape.exe.config
+E:\Documents\Github\projektKape\projektKape\bin\Debug\projektKape.exe
+E:\Documents\Github\projektKape\projektKape\bin\Debug\projektKape.pdb
+E:\Documents\Github\projektKape\projektKape\bin\Debug\projektKape.xml
+E:\Documents\Github\projektKape\projektKape\bin\Debug\MaterialDesignColors.dll
+E:\Documents\Github\projektKape\projektKape\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Documents\Github\projektKape\projektKape\bin\Debug\MetroFramework.Design.dll
+E:\Documents\Github\projektKape\projektKape\bin\Debug\MetroFramework.dll
+E:\Documents\Github\projektKape\projektKape\bin\Debug\MetroFramework.Fonts.dll
+E:\Documents\Github\projektKape\projektKape\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Documents\Github\projektKape\projektKape\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.vbprojResolveAssemblyReference.cache
+E:\Documents\Github\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
+E:\Documents\Github\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formEmployee.resources
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formLogin.resources
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formMainPos.resources
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formMainQtyDlg.resources
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formPwdDc.resources
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.exe
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.xml
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.pdb
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.exe
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.xml
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.pdb
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\projektKape.exe
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\projektKape.pdb
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\projektKape.xml
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\MetroFramework.Design.dll
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\MetroFramework.dll
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.vbprojResolveAssemblyReference.cache
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formEmployee.resources
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formLogin.resources
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formMainPos.resources
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formMainQtyDlg.resources
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formPwdDc.resources
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formMainAdmin.resources
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formAdminAddItem.resources
