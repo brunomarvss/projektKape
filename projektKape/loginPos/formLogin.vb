@@ -1,64 +1,10 @@
 ﻿Public Class formLogin
-    'Catches the matching credentials request by the user
-    Public global_user = vbEmpty
-    Public global_pass = vbEmpty
-
-    'Catches users inputed credentials to access her/his account
-    Public input_user = vbEmpty
-    Public input_pass = vbEmpty
-
-    'Enables user to clear txtfields when first time using it
-    Public token_user_count As Integer = 1
-    Public token_pass_count As Integer = 1
-
-
     Private Sub formLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call connectionModule.Connect()
     End Sub
 
     Private Sub buttonLogin_Click(sender As Object, e As EventArgs) Handles buttonLogin.Click
-        rs = New ADODB.Recordset
-
-        'Restriction 
-        If txtUser.Text = "" Or txtPass.Text = "" Then
-            MsgBox("You must fill up all fields before you login", vbCritical, "Error")
-            txtUser.Focus()
-            Exit Sub
-        End If
-
-        'Catches users inputed credentials
-        input_user = txtUser.Text.Trim
-        input_pass = txtPass.Text.Trim
-
-
-        With rs
-            If .State <> 0 Then .Close()
-            .Open("SELECT * FROM Employees WHERE AccessUser='" + input_user + "' AND AccessPass='" + input_pass + "' AND JobTitle='Owner'", cn, 1, 2)
-
-            'Catches when query finds any matching account
-            If .EOF = False Then
-                global_user = .Fields("AccessUser").Value.ToString
-                global_pass = .Fields("AccessPass").Value.ToString
-
-                If global_user.Equals(input_user) And global_pass.Equals(input_pass) Then
-                    MsgBox("WELCOME ADMIN!", MsgBoxStyle.Information, "ECT Pharmacy POS")
-                    Me.Hide()
-                    formMainAdmin.Show()
-                    Exit Sub
-
-                Else
-                    MsgBox("INVALID USERNAME OR PASSWORD!", MsgBoxStyle.Critical, "ECT Pharmacy POS")
-                    txtUser.Focus()
-                    Exit Sub
-                End If
-
-                'Notifies the user that login fails
-            Else
-                MsgBox("The username or password you've entered doesn't match with any account, please check it correctly", MsgBoxStyle.Critical, "ECT Pharmacy POS")
-                txtUser.Focus()
-                Exit Sub
-            End If
-        End With
+        Call moduleLogin.loginAdmin()
     End Sub
 
     'Show the text within password field when request toggle on it
@@ -90,7 +36,6 @@
 
     'Employee login access login
     Private Sub linkEmployeeLogin_Click(sender As Object, e As EventArgs) Handles linkEmployeeLogin.Click
-
         formEmployee.Show()
     End Sub
 End Class
