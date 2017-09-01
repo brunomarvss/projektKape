@@ -1,29 +1,31 @@
 ﻿Public Class formEmployee
-    Public listItems = vbEmpty
-
     Private Sub formEmployee_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call connectionModule.Connect()
+        Call moduleLogin.ListloginEmployee()
+    End Sub
 
-        With rs
-            If .State <> 0 Then .Close()
-            .Open("SELECT * FROM Employees WHERE NOT JobTitle='Owner'", cn, 1, 2)
+    Private Sub listEmployee_Click(sender As Object, e As EventArgs) Handles listEmployee.Click
+        Try
+            Dim item As ListView.SelectedListViewItemCollection
+            item = listEmployee.SelectedItems
+            Dim items As ListViewItem
+            Dim i As Integer = 0
 
-            ''''''''''''''''''''''''Select employee data only on the database''''''''''''''''''''''''''''
-            listEmployee.Items.Clear()
+            For Each items In item
+                FullName = items.SubItems(i).Text
+                i += 1
+                ContactDetails = items.SubItems(i).Text
+            Next
 
-            While .EOF = False
-                listItems = listEmployee.Items.Add(.Fields("FirstName").Value + " " + .Fields("LastName").Value)
-                listItems.SubItems.Insert(1, New ListViewItem.ListViewSubItem(Nothing, .Fields("Contact").Value))
-                .MoveNext()
-            End While
-            .Close()
-        End With
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Me.Close()
 
-        formMainPos.Show()
+        formMainPos.ShowDialog()
         formLogin.Hide()
     End Sub
 End Class

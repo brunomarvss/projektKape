@@ -7,31 +7,30 @@ NOTE: Mark '^^^' for finished tasks in line. e.g. "simple ui/ux ^^^"
       camelCase schema in variables
 -----------------------------------------------------------------------
 
-TESTING LNG TO
 
 
 $Requirements/tools:
-VB2010
+VB2015
 Access 2013
 LAPTOP intel i5, 8gbRam
 
 
 
-#######moduleLogin##############
-..Admin != POS, Admin== InventoryReports
-..Cashier == POS
+########moduleLogin########
+..Admin != POS, Admin== InventoryReports		^^^
+..Cashier == POS					^^^
 
-$admin and cashier login form
+$admin and cashier login form				^^^
 ##############################
 
 
-########modulePOS(CASHIER POV)##############
+########modulePOS(CASHIER POV)########
 *Simple UI/UX
 *big texts
 *full screen UI
 
 $Widgets
-$textInput
+$textInput						^^^
 -for search of item, query
 
 $ListView 
@@ -53,11 +52,11 @@ $confirmTransactionDialog (newForm)
 -fieldForCashPayment
 -if paid, listView will refresh, form will close
 
-######################
+#####################################
 
 
 
-#########moduleInventory(adminBackend)#########
+######moduleInventory(adminBackend)######
 
 $simple onLoad form with menu
 Sales Reports (daily, weekly, monthly, annual)
@@ -77,7 +76,7 @@ $
 
 
 
-##############SUGGESTIONS###########
+###############SUGGESTIONS###############
 
 
 

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formMainPos
     Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,11 @@ Partial Class formMainPos
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("12323")
-        Me.textBoxUser = New MetroFramework.Controls.MetroTextBox()
-        Me.MetroListView1 = New MetroFramework.Controls.MetroListView()
+        Me.txtSearchProduct = New MetroFramework.Controls.MetroTextBox()
+        Me.listProducts = New MetroFramework.Controls.MetroListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -52,60 +51,62 @@ Partial Class formMainPos
         Me.timerClock = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
-        'textBoxUser
+        'txtSearchProduct
         '
         '
         '
         '
-        Me.textBoxUser.CustomButton.Image = Nothing
-        Me.textBoxUser.CustomButton.Location = New System.Drawing.Point(413, 1)
-        Me.textBoxUser.CustomButton.Name = ""
-        Me.textBoxUser.CustomButton.Size = New System.Drawing.Size(39, 39)
-        Me.textBoxUser.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.textBoxUser.CustomButton.TabIndex = 1
-        Me.textBoxUser.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.textBoxUser.CustomButton.UseSelectable = True
-        Me.textBoxUser.CustomButton.Visible = False
-        Me.textBoxUser.FontSize = MetroFramework.MetroTextBoxSize.Tall
-        Me.textBoxUser.FontWeight = MetroFramework.MetroTextBoxWeight.Bold
-        Me.textBoxUser.Lines = New String(-1) {}
-        Me.textBoxUser.Location = New System.Drawing.Point(619, 90)
-        Me.textBoxUser.MaxLength = 32767
-        Me.textBoxUser.Multiline = True
-        Me.textBoxUser.Name = "textBoxUser"
-        Me.textBoxUser.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.textBoxUser.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.textBoxUser.SelectedText = ""
-        Me.textBoxUser.SelectionLength = 0
-        Me.textBoxUser.SelectionStart = 0
-        Me.textBoxUser.ShortcutsEnabled = True
-        Me.textBoxUser.Size = New System.Drawing.Size(453, 41)
-        Me.textBoxUser.TabIndex = 3
-        Me.textBoxUser.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.textBoxUser.UseSelectable = True
-        Me.textBoxUser.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.textBoxUser.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtSearchProduct.CustomButton.Image = Nothing
+        Me.txtSearchProduct.CustomButton.Location = New System.Drawing.Point(556, 2)
+        Me.txtSearchProduct.CustomButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSearchProduct.CustomButton.Name = ""
+        Me.txtSearchProduct.CustomButton.Size = New System.Drawing.Size(45, 45)
+        Me.txtSearchProduct.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtSearchProduct.CustomButton.TabIndex = 1
+        Me.txtSearchProduct.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtSearchProduct.CustomButton.UseSelectable = True
+        Me.txtSearchProduct.CustomButton.Visible = False
+        Me.txtSearchProduct.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtSearchProduct.FontWeight = MetroFramework.MetroTextBoxWeight.Bold
+        Me.txtSearchProduct.Lines = New String(-1) {}
+        Me.txtSearchProduct.Location = New System.Drawing.Point(825, 111)
+        Me.txtSearchProduct.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSearchProduct.MaxLength = 32767
+        Me.txtSearchProduct.Multiline = True
+        Me.txtSearchProduct.Name = "txtSearchProduct"
+        Me.txtSearchProduct.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtSearchProduct.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtSearchProduct.SelectedText = ""
+        Me.txtSearchProduct.SelectionLength = 0
+        Me.txtSearchProduct.SelectionStart = 0
+        Me.txtSearchProduct.ShortcutsEnabled = True
+        Me.txtSearchProduct.Size = New System.Drawing.Size(604, 50)
+        Me.txtSearchProduct.TabIndex = 3
+        Me.txtSearchProduct.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtSearchProduct.UseSelectable = True
+        Me.txtSearchProduct.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtSearchProduct.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
-        'MetroListView1
+        'listProducts
         '
-        Me.MetroListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
-        Me.MetroListView1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.MetroListView1.FullRowSelect = True
-        Me.MetroListView1.GridLines = True
-        Me.MetroListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
-        Me.MetroListView1.Location = New System.Drawing.Point(619, 224)
-        Me.MetroListView1.Name = "MetroListView1"
-        Me.MetroListView1.OwnerDraw = True
-        Me.MetroListView1.Size = New System.Drawing.Size(713, 419)
-        Me.MetroListView1.TabIndex = 4
-        Me.MetroListView1.UseCompatibleStateImageBehavior = False
-        Me.MetroListView1.UseSelectable = True
-        Me.MetroListView1.View = System.Windows.Forms.View.Details
+        Me.listProducts.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
+        Me.listProducts.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.listProducts.FullRowSelect = True
+        Me.listProducts.GridLines = True
+        Me.listProducts.Location = New System.Drawing.Point(825, 276)
+        Me.listProducts.Margin = New System.Windows.Forms.Padding(4)
+        Me.listProducts.Name = "listProducts"
+        Me.listProducts.OwnerDraw = True
+        Me.listProducts.Size = New System.Drawing.Size(949, 515)
+        Me.listProducts.TabIndex = 4
+        Me.listProducts.UseCompatibleStateImageBehavior = False
+        Me.listProducts.UseSelectable = True
+        Me.listProducts.View = System.Windows.Forms.View.Details
         '
         'ColumnHeader1
         '
         Me.ColumnHeader1.Text = "QTY"
-        Me.ColumnHeader1.Width = 50
+        Me.ColumnHeader1.Width = 67
         '
         'ColumnHeader2
         '
@@ -130,10 +131,11 @@ Partial Class formMainPos
         Me.MetroListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
         Me.MetroListView2.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.MetroListView2.FullRowSelect = True
-        Me.MetroListView2.Location = New System.Drawing.Point(61, 111)
+        Me.MetroListView2.Location = New System.Drawing.Point(81, 137)
+        Me.MetroListView2.Margin = New System.Windows.Forms.Padding(4)
         Me.MetroListView2.Name = "MetroListView2"
         Me.MetroListView2.OwnerDraw = True
-        Me.MetroListView2.Size = New System.Drawing.Size(350, 408)
+        Me.MetroListView2.Size = New System.Drawing.Size(465, 501)
         Me.MetroListView2.TabIndex = 5
         Me.MetroListView2.UseCompatibleStateImageBehavior = False
         Me.MetroListView2.UseSelectable = True
@@ -160,9 +162,10 @@ Partial Class formMainPos
         '
         Me.MetroLabel1.AutoSize = True
         Me.MetroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall
-        Me.MetroLabel1.Location = New System.Drawing.Point(619, 51)
+        Me.MetroLabel1.Location = New System.Drawing.Point(825, 63)
+        Me.MetroLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(105, 25)
+        Me.MetroLabel1.Size = New System.Drawing.Size(109, 25)
         Me.MetroLabel1.TabIndex = 6
         Me.MetroLabel1.Text = "Search Item:"
         '
@@ -170,27 +173,30 @@ Partial Class formMainPos
         '
         Me.MetroLabel2.AutoSize = True
         Me.MetroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall
-        Me.MetroLabel2.Location = New System.Drawing.Point(61, 653)
+        Me.MetroLabel2.Location = New System.Drawing.Point(81, 804)
+        Me.MetroLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel2.Name = "MetroLabel2"
-        Me.MetroLabel2.Size = New System.Drawing.Size(138, 25)
+        Me.MetroLabel2.Size = New System.Drawing.Size(145, 25)
         Me.MetroLabel2.TabIndex = 7
         Me.MetroLabel2.Text = "TOTAL AMOUNT"
         '
         'MetroLabel3
         '
         Me.MetroLabel3.AutoSize = True
-        Me.MetroLabel3.Location = New System.Drawing.Point(452, 123)
+        Me.MetroLabel3.Location = New System.Drawing.Point(603, 151)
+        Me.MetroLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel3.Name = "MetroLabel3"
-        Me.MetroLabel3.Size = New System.Drawing.Size(108, 19)
+        Me.MetroLabel3.Size = New System.Drawing.Size(114, 20)
         Me.MetroLabel3.TabIndex = 8
         Me.MetroLabel3.Text = "DISCOUNT TYPE"
         '
         'btnSenior
         '
         Me.btnSenior.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnSenior.Location = New System.Drawing.Point(458, 159)
+        Me.btnSenior.Location = New System.Drawing.Point(611, 196)
+        Me.btnSenior.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSenior.Name = "btnSenior"
-        Me.btnSenior.Size = New System.Drawing.Size(102, 81)
+        Me.btnSenior.Size = New System.Drawing.Size(136, 100)
         Me.btnSenior.TabIndex = 9
         Me.btnSenior.Text = "SENIOR"
         Me.btnSenior.UseSelectable = True
@@ -198,9 +204,10 @@ Partial Class formMainPos
         'btnPwd
         '
         Me.btnPwd.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnPwd.Location = New System.Drawing.Point(458, 259)
+        Me.btnPwd.Location = New System.Drawing.Point(611, 319)
+        Me.btnPwd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnPwd.Name = "btnPwd"
-        Me.btnPwd.Size = New System.Drawing.Size(102, 81)
+        Me.btnPwd.Size = New System.Drawing.Size(136, 100)
         Me.btnPwd.TabIndex = 10
         Me.btnPwd.Text = "PWD"
         Me.btnPwd.UseSelectable = True
@@ -210,9 +217,10 @@ Partial Class formMainPos
         Me.MetroLabel4.AutoSize = True
         Me.MetroLabel4.FontSize = MetroFramework.MetroLabelSize.Small
         Me.MetroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular
-        Me.MetroLabel4.Location = New System.Drawing.Point(1253, 712)
+        Me.MetroLabel4.Location = New System.Drawing.Point(1671, 876)
+        Me.MetroLabel4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel4.Name = "MetroLabel4"
-        Me.MetroLabel4.Size = New System.Drawing.Size(82, 15)
+        Me.MetroLabel4.Size = New System.Drawing.Size(91, 17)
         Me.MetroLabel4.TabIndex = 11
         Me.MetroLabel4.Text = "BRN SYSTEMS"
         '
@@ -222,9 +230,10 @@ Partial Class formMainPos
         Me.btnVoid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVoid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVoid.ForeColor = System.Drawing.Color.White
-        Me.btnVoid.Location = New System.Drawing.Point(458, 379)
+        Me.btnVoid.Location = New System.Drawing.Point(611, 466)
+        Me.btnVoid.Margin = New System.Windows.Forms.Padding(4)
         Me.btnVoid.Name = "btnVoid"
-        Me.btnVoid.Size = New System.Drawing.Size(102, 75)
+        Me.btnVoid.Size = New System.Drawing.Size(136, 92)
         Me.btnVoid.TabIndex = 12
         Me.btnVoid.Text = "VOID"
         Me.btnVoid.UseVisualStyleBackColor = False
@@ -235,9 +244,10 @@ Partial Class formMainPos
         Me.btnTender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTender.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTender.ForeColor = System.Drawing.Color.White
-        Me.btnTender.Location = New System.Drawing.Point(458, 487)
+        Me.btnTender.Location = New System.Drawing.Point(611, 599)
+        Me.btnTender.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTender.Name = "btnTender"
-        Me.btnTender.Size = New System.Drawing.Size(102, 75)
+        Me.btnTender.Size = New System.Drawing.Size(136, 92)
         Me.btnTender.TabIndex = 13
         Me.btnTender.Text = "TENDER"
         Me.btnTender.UseVisualStyleBackColor = False
@@ -246,45 +256,50 @@ Partial Class formMainPos
         '
         Me.labelTotalPrice.AutoSize = True
         Me.labelTotalPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labelTotalPrice.Location = New System.Drawing.Point(312, 650)
+        Me.labelTotalPrice.Location = New System.Drawing.Point(416, 800)
+        Me.labelTotalPrice.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelTotalPrice.Name = "labelTotalPrice"
-        Me.labelTotalPrice.Size = New System.Drawing.Size(75, 33)
+        Me.labelTotalPrice.Size = New System.Drawing.Size(95, 42)
         Me.labelTotalPrice.TabIndex = 14
         Me.labelTotalPrice.Text = "0.00"
         '
         'labelTempTotal
         '
         Me.labelTempTotal.AutoSize = True
-        Me.labelTempTotal.Location = New System.Drawing.Point(354, 560)
+        Me.labelTempTotal.Location = New System.Drawing.Point(472, 689)
+        Me.labelTempTotal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelTempTotal.Name = "labelTempTotal"
-        Me.labelTempTotal.Size = New System.Drawing.Size(33, 19)
+        Me.labelTempTotal.Size = New System.Drawing.Size(36, 20)
         Me.labelTempTotal.TabIndex = 15
         Me.labelTempTotal.Text = "0.00"
         '
         'labelDiscount
         '
         Me.labelDiscount.AutoSize = True
-        Me.labelDiscount.Location = New System.Drawing.Point(354, 592)
+        Me.labelDiscount.Location = New System.Drawing.Point(472, 729)
+        Me.labelDiscount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelDiscount.Name = "labelDiscount"
-        Me.labelDiscount.Size = New System.Drawing.Size(33, 19)
+        Me.labelDiscount.Size = New System.Drawing.Size(36, 20)
         Me.labelDiscount.TabIndex = 16
         Me.labelDiscount.Text = "0.00"
         '
         'MetroLabel5
         '
         Me.MetroLabel5.AutoSize = True
-        Me.MetroLabel5.Location = New System.Drawing.Point(61, 560)
+        Me.MetroLabel5.Location = New System.Drawing.Point(81, 689)
+        Me.MetroLabel5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel5.Name = "MetroLabel5"
-        Me.MetroLabel5.Size = New System.Drawing.Size(57, 19)
+        Me.MetroLabel5.Size = New System.Drawing.Size(58, 20)
         Me.MetroLabel5.TabIndex = 17
         Me.MetroLabel5.Text = "Subtotal"
         '
         'MetroLabel6
         '
         Me.MetroLabel6.AutoSize = True
-        Me.MetroLabel6.Location = New System.Drawing.Point(61, 592)
+        Me.MetroLabel6.Location = New System.Drawing.Point(81, 729)
+        Me.MetroLabel6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel6.Name = "MetroLabel6"
-        Me.MetroLabel6.Size = New System.Drawing.Size(95, 19)
+        Me.MetroLabel6.Size = New System.Drawing.Size(103, 20)
         Me.MetroLabel6.TabIndex = 18
         Me.MetroLabel6.Text = "Discount (20%)"
         '
@@ -292,9 +307,10 @@ Partial Class formMainPos
         '
         Me.btnLogout.FontSize = MetroFramework.MetroButtonSize.Medium
         Me.btnLogout.FontWeight = MetroFramework.MetroButtonWeight.Light
-        Me.btnLogout.Location = New System.Drawing.Point(1240, 36)
+        Me.btnLogout.Location = New System.Drawing.Point(1653, 44)
+        Me.btnLogout.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(92, 25)
+        Me.btnLogout.Size = New System.Drawing.Size(123, 31)
         Me.btnLogout.TabIndex = 19
         Me.btnLogout.Text = "LOGOUT"
         Me.btnLogout.UseSelectable = True
@@ -302,9 +318,10 @@ Partial Class formMainPos
         'labelTime
         '
         Me.labelTime.AutoSize = True
-        Me.labelTime.Location = New System.Drawing.Point(1099, 709)
+        Me.labelTime.Location = New System.Drawing.Point(1465, 873)
+        Me.labelTime.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelTime.Name = "labelTime"
-        Me.labelTime.Size = New System.Drawing.Size(15, 19)
+        Me.labelTime.Size = New System.Drawing.Size(15, 20)
         Me.labelTime.TabIndex = 20
         Me.labelTime.Text = "_"
         '
@@ -314,11 +331,11 @@ Partial Class formMainPos
         '
         'formMainPos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(1365, 736)
+        Me.ClientSize = New System.Drawing.Size(1820, 906)
         Me.Controls.Add(Me.labelTime)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.MetroLabel6)
@@ -335,9 +352,11 @@ Partial Class formMainPos
         Me.Controls.Add(Me.MetroLabel2)
         Me.Controls.Add(Me.MetroLabel1)
         Me.Controls.Add(Me.MetroListView2)
-        Me.Controls.Add(Me.MetroListView1)
-        Me.Controls.Add(Me.textBoxUser)
+        Me.Controls.Add(Me.listProducts)
+        Me.Controls.Add(Me.txtSearchProduct)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "formMainPos"
+        Me.Padding = New System.Windows.Forms.Padding(27, 74, 27, 25)
         Me.Resizable = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "ECT Pharmacy POS"
@@ -347,8 +366,8 @@ Partial Class formMainPos
 
     End Sub
 
-    Friend WithEvents textBoxUser As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents MetroListView1 As MetroFramework.Controls.MetroListView
+    Friend WithEvents txtSearchProduct As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents listProducts As MetroFramework.Controls.MetroListView
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents ColumnHeader2 As ColumnHeader
     Friend WithEvents ColumnHeader3 As ColumnHeader
