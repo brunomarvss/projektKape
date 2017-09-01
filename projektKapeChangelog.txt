@@ -1,5 +1,17 @@
 CHANGELOG:
 
+Update 09/2/2017 -12:57AM
+-Added listView (left) to add selected items and qty from listView (Right)
+-Added functionality discounts (PWD,Senior)
+-Added functionality of Void button
+-Added computation of total SRP from listView(left), displays computed results
+-Added onLoad action of list of all items
+-change the query in search textbox to 'BrandName'
+-readded column QTY in database table products
+by brunomarvsss
+#################
+
+
 Update 08/28/2017 -2:05AM
 -Try and Catch succesfully added in formLogin
 -module for login used for proper,categorize and easily locating of codes

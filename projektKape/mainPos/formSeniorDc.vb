@@ -8,5 +8,12 @@
 
     End Sub
 
+    Private Sub btnSenior_Click(sender As Object, e As EventArgs) Handles btnSenior.Click
+
+
+
+        formMainPos.labelDiscount.Text = Format(formMainPos.labelTempTotal.Text * 0.2, "0.00")
+        formMainPos.labelTotalPrice.Text = Format(formMainPos.labelTempTotal.Text - formMainPos.labelDiscount.Text, "0.00")
+    End Sub
 
 End Class

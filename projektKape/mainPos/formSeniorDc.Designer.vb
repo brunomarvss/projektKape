@@ -26,7 +26,7 @@ Partial Class formSeniorDc
         Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
         Me.MetroTextBox2 = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel2 = New MetroFramework.Controls.MetroLabel()
-        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
+        Me.btnSenior = New MetroFramework.Controls.MetroButton()
         Me.SuspendLayout()
         '
         'MetroLabel1
@@ -113,21 +113,21 @@ Partial Class formSeniorDc
         Me.MetroLabel2.TabIndex = 2
         Me.MetroLabel2.Text = "ID Number"
         '
-        'MetroButton1
+        'btnSenior
         '
-        Me.MetroButton1.Location = New System.Drawing.Point(263, 195)
-        Me.MetroButton1.Name = "MetroButton1"
-        Me.MetroButton1.Size = New System.Drawing.Size(153, 41)
-        Me.MetroButton1.TabIndex = 4
-        Me.MetroButton1.Text = "SAVE"
-        Me.MetroButton1.UseSelectable = True
+        Me.btnSenior.Location = New System.Drawing.Point(263, 195)
+        Me.btnSenior.Name = "btnSenior"
+        Me.btnSenior.Size = New System.Drawing.Size(153, 41)
+        Me.btnSenior.TabIndex = 4
+        Me.btnSenior.Text = "SAVE"
+        Me.btnSenior.UseSelectable = True
         '
         'formSeniorDc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(590, 267)
-        Me.Controls.Add(Me.MetroButton1)
+        Me.Controls.Add(Me.btnSenior)
         Me.Controls.Add(Me.MetroTextBox2)
         Me.Controls.Add(Me.MetroLabel2)
         Me.Controls.Add(Me.MetroTextBox1)
@@ -147,5 +147,5 @@ Partial Class formSeniorDc
     Friend WithEvents MetroTextBox1 As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroTextBox2 As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel2 As MetroFramework.Controls.MetroLabel
-    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnSenior As MetroFramework.Controls.MetroButton
 End Class

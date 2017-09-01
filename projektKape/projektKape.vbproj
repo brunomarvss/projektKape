@@ -124,12 +124,6 @@
     <Compile Include="mainPos\formMainPos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainPos\formMainQtyDlg.Designer.vb">
-      <DependentUpon>formMainQtyDlg.vb</DependentUpon>
-    </Compile>
-    <Compile Include="mainPos\formMainQtyDlg.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="mainPos\formPwdDc.Designer.vb">
       <DependentUpon>formPwdDc.vb</DependentUpon>
     </Compile>
@@ -175,9 +169,6 @@
     <EmbeddedResource Include="mainPos\formMainPos.resx">
       <DependentUpon>formMainPos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainPos\formMainQtyDlg.resx">
-      <DependentUpon>formMainQtyDlg.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="mainPos\formPwdDc.resx">
       <DependentUpon>formPwdDc.vb</DependentUpon>
     </EmbeddedResource>
@@ -206,11 +197,11 @@
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="ADODB">
-      <Guid>{00000200-0000-0010-8000-00AA006D2EA4}</Guid>
-      <VersionMajor>2</VersionMajor>
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
+      <WrapperTool>tlbimp</WrapperTool>
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
