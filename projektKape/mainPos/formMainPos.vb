@@ -76,9 +76,30 @@
         logoutMsg = MsgBox("DO YOU WANT TO LOGOUT?", MsgBoxStyle.YesNo, "ECT Pharmacy POS")
         If logoutMsg = vbYes Then
             MsgBox("LOGGED OUT!")
+
+            'Calls and clears all successfully signin credentials
+            Call moduleLogin.ClearLogin()
             Me.Close()
             formLogin.Show()
         End If
 
+    End Sub
+
+    Private Sub listProducts_Click(sender As Object, e As EventArgs) Handles listProducts.Click
+        Try
+            Dim item As ListView.SelectedListViewItemCollection
+            item = listProducts.SelectedItems
+            Dim items As ListViewItem
+            Dim i As Integer = 0
+
+            For Each items In item
+                FullName = items.SubItems(i).Text
+                i += 1
+                ContactDetails = items.SubItems(i).Text
+            Next
+
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
     End Sub
 End Class

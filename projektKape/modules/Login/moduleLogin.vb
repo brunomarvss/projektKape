@@ -20,7 +20,12 @@
     Public token_user_count As Integer = 1
     Public token_pass_count As Integer = 1
 
-
+    Public Sub ClearLogin()
+        formLogin.txtUser.Text = vbEmpty
+        formLogin.txtPass.Text = vbEmpty
+        input_user = vbEmpty
+        input_pass = vbEmpty
+    End Sub
 
     Public Sub ListloginEmployee()
         Try
@@ -76,6 +81,9 @@
                     'Checks if inputed credentials and global credentials are match
                     If global_user.Equals(input_user) And global_pass.Equals(input_pass) Then
                         MsgBox("WELCOME ADMIN!", MsgBoxStyle.Information, "ECT Pharmacy POS")
+
+                        'Calls and clears all successfully signin credentials
+                        Call moduleLogin.ClearLogin()
                         formLogin.Hide()
                         formMainAdmin.Show()
                         Exit Sub
