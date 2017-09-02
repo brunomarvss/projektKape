@@ -1,5 +1,7 @@
 CHANGELOG:
-
+Update 09/2/2017 - 2:14PM
+- Added code functionality for subtracting bought item to inventory in database
+by brunomarvss
 Update 09/2/2017 -12:57AM
 -Added listView (left) to add selected items and qty from listView (Right)
 -Added functionality discounts (PWD,Senior)

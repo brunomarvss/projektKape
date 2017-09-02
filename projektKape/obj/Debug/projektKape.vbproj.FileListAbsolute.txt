@@ -112,7 +112,6 @@ C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\o
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formEmployee.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formLogin.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formMainPos.resources
-C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formMainQtyDlg.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formPwdDc.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
@@ -147,3 +146,4 @@ C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projek
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.exe
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.xml
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.pdb
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\Interop.ADODB.dll

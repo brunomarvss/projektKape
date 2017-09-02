@@ -49,6 +49,9 @@ Partial Class formMainPos
         Me.labelTotalPrice = New System.Windows.Forms.Label()
         Me.labelTempTotal = New System.Windows.Forms.Label()
         Me.labelDiscount = New System.Windows.Forms.Label()
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'txtSearchProduct
@@ -68,7 +71,7 @@ Partial Class formMainPos
         Me.txtSearchProduct.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtSearchProduct.FontWeight = MetroFramework.MetroTextBoxWeight.Bold
         Me.txtSearchProduct.Lines = New String(-1) {}
-        Me.txtSearchProduct.Location = New System.Drawing.Point(619, 90)
+        Me.txtSearchProduct.Location = New System.Drawing.Point(587, 90)
         Me.txtSearchProduct.MaxLength = 32767
         Me.txtSearchProduct.Multiline = True
         Me.txtSearchProduct.Name = "txtSearchProduct"
@@ -78,7 +81,7 @@ Partial Class formMainPos
         Me.txtSearchProduct.SelectionLength = 0
         Me.txtSearchProduct.SelectionStart = 0
         Me.txtSearchProduct.ShortcutsEnabled = True
-        Me.txtSearchProduct.Size = New System.Drawing.Size(453, 41)
+        Me.txtSearchProduct.Size = New System.Drawing.Size(485, 41)
         Me.txtSearchProduct.TabIndex = 3
         Me.txtSearchProduct.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtSearchProduct.UseSelectable = True
@@ -87,8 +90,9 @@ Partial Class formMainPos
         '
         'btnSenior
         '
+        Me.btnSenior.Enabled = False
         Me.btnSenior.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnSenior.Location = New System.Drawing.Point(458, 159)
+        Me.btnSenior.Location = New System.Drawing.Point(432, 159)
         Me.btnSenior.Name = "btnSenior"
         Me.btnSenior.Size = New System.Drawing.Size(102, 81)
         Me.btnSenior.TabIndex = 9
@@ -97,8 +101,9 @@ Partial Class formMainPos
         '
         'btnPwd
         '
+        Me.btnPwd.Enabled = False
         Me.btnPwd.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnPwd.Location = New System.Drawing.Point(458, 259)
+        Me.btnPwd.Location = New System.Drawing.Point(432, 259)
         Me.btnPwd.Name = "btnPwd"
         Me.btnPwd.Size = New System.Drawing.Size(102, 81)
         Me.btnPwd.TabIndex = 10
@@ -119,10 +124,11 @@ Partial Class formMainPos
         'btnVoid
         '
         Me.btnVoid.BackColor = System.Drawing.Color.Red
+        Me.btnVoid.Enabled = False
         Me.btnVoid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVoid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVoid.ForeColor = System.Drawing.Color.White
-        Me.btnVoid.Location = New System.Drawing.Point(458, 379)
+        Me.btnVoid.Location = New System.Drawing.Point(432, 379)
         Me.btnVoid.Name = "btnVoid"
         Me.btnVoid.Size = New System.Drawing.Size(102, 75)
         Me.btnVoid.TabIndex = 12
@@ -132,10 +138,11 @@ Partial Class formMainPos
         'btnTender
         '
         Me.btnTender.BackColor = System.Drawing.Color.Green
+        Me.btnTender.Enabled = False
         Me.btnTender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTender.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTender.ForeColor = System.Drawing.Color.White
-        Me.btnTender.Location = New System.Drawing.Point(458, 487)
+        Me.btnTender.Location = New System.Drawing.Point(432, 487)
         Me.btnTender.Name = "btnTender"
         Me.btnTender.Size = New System.Drawing.Size(102, 75)
         Me.btnTender.TabIndex = 13
@@ -168,13 +175,13 @@ Partial Class formMainPos
         '
         'listProducts
         '
-        Me.listProducts.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
+        Me.listProducts.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader8})
         Me.listProducts.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listProducts.FullRowSelect = True
         Me.listProducts.GridLines = True
-        Me.listProducts.Location = New System.Drawing.Point(619, 159)
+        Me.listProducts.Location = New System.Drawing.Point(586, 159)
         Me.listProducts.Name = "listProducts"
-        Me.listProducts.Size = New System.Drawing.Size(713, 360)
+        Me.listProducts.Size = New System.Drawing.Size(760, 440)
         Me.listProducts.TabIndex = 22
         Me.listProducts.UseCompatibleStateImageBehavior = False
         Me.listProducts.View = System.Windows.Forms.View.Details
@@ -201,7 +208,7 @@ Partial Class formMainPos
         '
         'listBuy
         '
-        Me.listBuy.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
+        Me.listBuy.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader9, Me.ColumnHeader10})
         Me.listBuy.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listBuy.Location = New System.Drawing.Point(33, 90)
         Me.listBuy.Name = "listBuy"
@@ -229,7 +236,7 @@ Partial Class formMainPos
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(444, 111)
+        Me.Label1.Location = New System.Drawing.Point(418, 111)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(137, 20)
         Me.Label1.TabIndex = 24
@@ -239,7 +246,7 @@ Partial Class formMainPos
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(615, 55)
+        Me.Label2.Location = New System.Drawing.Point(583, 60)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(123, 20)
         Me.Label2.TabIndex = 25
@@ -305,6 +312,19 @@ Partial Class formMainPos
         Me.labelDiscount.TabIndex = 31
         Me.labelDiscount.Text = "0.00"
         '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "ITEM CODE"
+        Me.ColumnHeader8.Width = 112
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "ID"
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "STOCK"
+        '
         'formMainPos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -366,4 +386,7 @@ Partial Class formMainPos
     Friend WithEvents labelTotalPrice As Label
     Friend WithEvents labelTempTotal As Label
     Friend WithEvents labelDiscount As Label
+    Friend WithEvents ColumnHeader8 As ColumnHeader
+    Friend WithEvents ColumnHeader9 As ColumnHeader
+    Friend WithEvents ColumnHeader10 As ColumnHeader
 End Class
