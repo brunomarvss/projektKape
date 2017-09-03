@@ -1,4 +1,5 @@
 CHANGELOG:
+<<<<<<< HEAD
 Update 09/03/2017 - 4:46PM
 POS
 -Added columns in table Customer Records
@@ -7,6 +8,8 @@ POS
 -User should transact without problems in computations of items and transactions
 
 
+=======
+>>>>>>> 033ca777ae56b4dde404fa3bef8df1479737f26b
 Update 09/03/2017 - 9:40AM
 -Added new columns on table Inventory in the database
 -Normalize products and inventory for table products on column quantity

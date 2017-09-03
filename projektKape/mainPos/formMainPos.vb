@@ -10,7 +10,11 @@
 
             With rs
                 If .State <> 0 Then .Close()
+<<<<<<< HEAD
                 .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Products.RawPrice, Inventory.Available " +
+=======
+                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Inventory.Available " +
+>>>>>>> 033ca777ae56b4dde404fa3bef8df1479737f26b
                       "FROM Products " +
                       "INNER JOIN Inventory ON Products.ID=Inventory.ID;", cn, 1, 2)
 
@@ -96,6 +100,7 @@
             ''customer's change
             change = Val(paymentMsg) - Val(labelTotalPrice.Text)
 
+<<<<<<< HEAD
 
             '' code for subtracting bought item to inventory
             rs = New ADODB.Recordset
@@ -134,6 +139,20 @@
                     btnTender.Enabled = False
                     btnVoid.Enabled = False
                 End With
+=======
+            With rs
+                If .State <> 0 Then .Close()
+                While i < listBuy.Items.Count
+                    remStock = Val(listBuy.Items(i).SubItems(4).Text) - Val(listBuy.Items(i).SubItems(0).Text)
+                    MsgBox(remStock)
+                    .Open("UPDATE Inventory " +
+                          "SET Available='" + remStock + "', CurrentLevel='" + remStock + "' " +
+                          "WHERE ID=" + listBuy.Items(i).SubItems(3).Text + "", cn, 1, 2)
+                    i = i + 1
+                End While
+                refresh()
+            End With
+>>>>>>> 033ca777ae56b4dde404fa3bef8df1479737f26b
 
 
             Catch ex As Exception
@@ -153,6 +172,7 @@
 
             With rs
                 If .State <> 0 Then .Close()
+<<<<<<< HEAD
                 .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID,Products.RawPrice, Inventory.Available " +
                       "FROM Products " +
                       "INNER JOIN Inventory ON Products.ID=Inventory.ID " +
@@ -161,6 +181,16 @@
                 '''''''''''''''''''''''''Backup query if joining will be cancelled'''''''''''''''''''''''''
                 '.Open("SELECT * FROM Products WHERE BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
 
+=======
+                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Inventory.Available " +
+                      "FROM Products " +
+                      "INNER JOIN Inventory ON Products.ID=Inventory.ID " +
+                      "WHERE Products.BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
+
+                '''''''''''''''''''''''''Backup query if joining will be cancelled'''''''''''''''''''''''''
+                '.Open("SELECT * FROM Products WHERE BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
+
+>>>>>>> 033ca777ae56b4dde404fa3bef8df1479737f26b
                 '''''''''''''''''''''''''List all possible products search by employee'''''''''''''''''''''''''
                 listProducts.Items.Clear()
 
@@ -170,7 +200,10 @@
                     listItems.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, .Fields("GenericName").Value))
                     listItems.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, .Fields("SRP").Value))
                     listItems.SubItems.Insert(4, New ListViewItem.ListViewSubItem(Nothing, .Fields("ID").Value))
+<<<<<<< HEAD
                     listItems.SubItems.Insert(5, New ListViewItem.ListViewSubItem(Nothing, .Fields("RawPrice").Value))
+=======
+>>>>>>> 033ca777ae56b4dde404fa3bef8df1479737f26b
                     .MoveNext()
                 End While
                 .Close()
