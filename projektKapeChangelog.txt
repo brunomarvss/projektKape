@@ -1,4 +1,11 @@
 CHANGELOG:
+Update 09/03/2017 - 9:40AM
+-Added new columns on table Inventory in the database
+-Normalize products and inventory for table products on column quantity
+-Reconstructed query on Sub refresh for call of item on joining
+-Reconstructed query on product search for call of item on joining
+-Update will be on table inventory instead of products for old query on qty
+
 Update 09/2/2017 - 2:14PM
 - Added code functionality for subtracting bought item to inventory in database
 by brunomarvss
@@ -16,7 +23,7 @@ by brunomarvsss
 
 Update 08/28/2017 -2:05AM
 -Try and Catch succesfully added in formLogin
--module for login used for proper,categorize and easily locating of codes
+-module for login used for proper, categorize and easily locating of codes
 -List all possible products searched by the user in formMainPOS
 ##########
   

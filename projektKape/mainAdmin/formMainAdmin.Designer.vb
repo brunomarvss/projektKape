@@ -54,9 +54,10 @@ Partial Class formMainAdmin
         'labelTimeAdmin
         '
         Me.labelTimeAdmin.AutoSize = True
-        Me.labelTimeAdmin.Location = New System.Drawing.Point(1093, 712)
+        Me.labelTimeAdmin.Location = New System.Drawing.Point(1457, 876)
+        Me.labelTimeAdmin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelTimeAdmin.Name = "labelTimeAdmin"
-        Me.labelTimeAdmin.Size = New System.Drawing.Size(15, 19)
+        Me.labelTimeAdmin.Size = New System.Drawing.Size(15, 20)
         Me.labelTimeAdmin.TabIndex = 22
         Me.labelTimeAdmin.Text = "_"
         '
@@ -65,9 +66,10 @@ Partial Class formMainAdmin
         Me.MetroLabel4.AutoSize = True
         Me.MetroLabel4.FontSize = MetroFramework.MetroLabelSize.Small
         Me.MetroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular
-        Me.MetroLabel4.Location = New System.Drawing.Point(1247, 715)
+        Me.MetroLabel4.Location = New System.Drawing.Point(1663, 880)
+        Me.MetroLabel4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel4.Name = "MetroLabel4"
-        Me.MetroLabel4.Size = New System.Drawing.Size(82, 15)
+        Me.MetroLabel4.Size = New System.Drawing.Size(91, 17)
         Me.MetroLabel4.TabIndex = 21
         Me.MetroLabel4.Text = "BRN SYSTEMS"
         '
@@ -85,9 +87,11 @@ Partial Class formMainAdmin
         Me.GroupBox1.Controls.Add(Me.MetroButton2)
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox1.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(36, 89)
+        Me.GroupBox1.Location = New System.Drawing.Point(48, 110)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 357)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(267, 439)
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Menu"
@@ -96,9 +100,10 @@ Partial Class formMainAdmin
         '
         Me.MetroButton5.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton5.Highlight = True
-        Me.MetroButton5.Location = New System.Drawing.Point(21, 272)
+        Me.MetroButton5.Location = New System.Drawing.Point(28, 335)
+        Me.MetroButton5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MetroButton5.Name = "MetroButton5"
-        Me.MetroButton5.Size = New System.Drawing.Size(156, 49)
+        Me.MetroButton5.Size = New System.Drawing.Size(208, 60)
         Me.MetroButton5.TabIndex = 28
         Me.MetroButton5.Text = "Logout"
         Me.MetroButton5.UseSelectable = True
@@ -107,9 +112,10 @@ Partial Class formMainAdmin
         '
         Me.MetroButton4.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton4.Highlight = True
-        Me.MetroButton4.Location = New System.Drawing.Point(21, 217)
+        Me.MetroButton4.Location = New System.Drawing.Point(28, 267)
+        Me.MetroButton4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MetroButton4.Name = "MetroButton4"
-        Me.MetroButton4.Size = New System.Drawing.Size(156, 49)
+        Me.MetroButton4.Size = New System.Drawing.Size(208, 60)
         Me.MetroButton4.TabIndex = 27
         Me.MetroButton4.Text = "Admin"
         Me.MetroButton4.UseSelectable = True
@@ -118,9 +124,10 @@ Partial Class formMainAdmin
         '
         Me.MetroButton3.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton3.Highlight = True
-        Me.MetroButton3.Location = New System.Drawing.Point(21, 157)
+        Me.MetroButton3.Location = New System.Drawing.Point(28, 193)
+        Me.MetroButton3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MetroButton3.Name = "MetroButton3"
-        Me.MetroButton3.Size = New System.Drawing.Size(156, 54)
+        Me.MetroButton3.Size = New System.Drawing.Size(208, 66)
         Me.MetroButton3.TabIndex = 26
         Me.MetroButton3.Text = "View Reports"
         Me.MetroButton3.UseSelectable = True
@@ -130,9 +137,10 @@ Partial Class formMainAdmin
         Me.MetroButton1.BackColor = System.Drawing.Color.White
         Me.MetroButton1.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton1.Highlight = True
-        Me.MetroButton1.Location = New System.Drawing.Point(21, 37)
+        Me.MetroButton1.Location = New System.Drawing.Point(28, 46)
+        Me.MetroButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MetroButton1.Name = "MetroButton1"
-        Me.MetroButton1.Size = New System.Drawing.Size(156, 54)
+        Me.MetroButton1.Size = New System.Drawing.Size(208, 66)
         Me.MetroButton1.TabIndex = 24
         Me.MetroButton1.Text = "Suppliers"
         Me.MetroButton1.Theme = MetroFramework.MetroThemeStyle.Light
@@ -142,9 +150,10 @@ Partial Class formMainAdmin
         '
         Me.MetroButton2.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton2.Highlight = True
-        Me.MetroButton2.Location = New System.Drawing.Point(21, 97)
+        Me.MetroButton2.Location = New System.Drawing.Point(28, 119)
+        Me.MetroButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MetroButton2.Name = "MetroButton2"
-        Me.MetroButton2.Size = New System.Drawing.Size(156, 54)
+        Me.MetroButton2.Size = New System.Drawing.Size(208, 66)
         Me.MetroButton2.TabIndex = 25
         Me.MetroButton2.Text = "Items"
         Me.MetroButton2.UseSelectable = True
@@ -155,10 +164,11 @@ Partial Class formMainAdmin
         Me.listViewAdmin.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.listViewAdmin.FullRowSelect = True
         Me.listViewAdmin.GridLines = True
-        Me.listViewAdmin.Location = New System.Drawing.Point(30, 173)
+        Me.listViewAdmin.Location = New System.Drawing.Point(40, 213)
+        Me.listViewAdmin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.listViewAdmin.Name = "listViewAdmin"
         Me.listViewAdmin.OwnerDraw = True
-        Me.listViewAdmin.Size = New System.Drawing.Size(1005, 347)
+        Me.listViewAdmin.Size = New System.Drawing.Size(1339, 426)
         Me.listViewAdmin.TabIndex = 25
         Me.listViewAdmin.UseCompatibleStateImageBehavior = False
         Me.listViewAdmin.UseSelectable = True
@@ -213,18 +223,21 @@ Partial Class formMainAdmin
         Me.GroupBox2.Controls.Add(Me.MetroComboBox1)
         Me.GroupBox2.Controls.Add(Me.btnAddItem)
         Me.GroupBox2.Controls.Add(Me.listViewAdmin)
-        Me.GroupBox2.Location = New System.Drawing.Point(287, 89)
+        Me.GroupBox2.Location = New System.Drawing.Point(383, 110)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1041, 592)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(1388, 729)
         Me.GroupBox2.TabIndex = 26
         Me.GroupBox2.TabStop = False
         '
         'btnAddStock
         '
         Me.btnAddStock.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnAddStock.Location = New System.Drawing.Point(867, 37)
+        Me.btnAddStock.Location = New System.Drawing.Point(1156, 46)
+        Me.btnAddStock.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAddStock.Name = "btnAddStock"
-        Me.btnAddStock.Size = New System.Drawing.Size(147, 69)
+        Me.btnAddStock.Size = New System.Drawing.Size(196, 85)
         Me.btnAddStock.TabIndex = 31
         Me.btnAddStock.Text = "ADD STOCK"
         Me.btnAddStock.UseSelectable = True
@@ -233,9 +246,10 @@ Partial Class formMainAdmin
         '
         Me.MetroLabel2.AutoSize = True
         Me.MetroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall
-        Me.MetroLabel2.Location = New System.Drawing.Point(30, 119)
+        Me.MetroLabel2.Location = New System.Drawing.Point(40, 146)
+        Me.MetroLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel2.Name = "MetroLabel2"
-        Me.MetroLabel2.Size = New System.Drawing.Size(78, 25)
+        Me.MetroLabel2.Size = New System.Drawing.Size(83, 25)
         Me.MetroLabel2.TabIndex = 30
         Me.MetroLabel2.Text = "SEARCH:"
         '
@@ -245,9 +259,10 @@ Partial Class formMainAdmin
         '
         '
         Me.MetroTextBox1.CustomButton.Image = Nothing
-        Me.MetroTextBox1.CustomButton.Location = New System.Drawing.Point(301, 2)
+        Me.MetroTextBox1.CustomButton.Location = New System.Drawing.Point(537, 1)
+        Me.MetroTextBox1.CustomButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MetroTextBox1.CustomButton.Name = ""
-        Me.MetroTextBox1.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.MetroTextBox1.CustomButton.Size = New System.Drawing.Size(49, 46)
         Me.MetroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.MetroTextBox1.CustomButton.TabIndex = 1
         Me.MetroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -255,7 +270,8 @@ Partial Class formMainAdmin
         Me.MetroTextBox1.CustomButton.Visible = False
         Me.MetroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.MetroTextBox1.Lines = New String() {"SEARCH"}
-        Me.MetroTextBox1.Location = New System.Drawing.Point(326, 121)
+        Me.MetroTextBox1.Location = New System.Drawing.Point(435, 149)
+        Me.MetroTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MetroTextBox1.MaxLength = 32767
         Me.MetroTextBox1.Multiline = True
         Me.MetroTextBox1.Name = "MetroTextBox1"
@@ -265,7 +281,7 @@ Partial Class formMainAdmin
         Me.MetroTextBox1.SelectionLength = 0
         Me.MetroTextBox1.SelectionStart = 0
         Me.MetroTextBox1.ShortcutsEnabled = True
-        Me.MetroTextBox1.Size = New System.Drawing.Size(331, 32)
+        Me.MetroTextBox1.Size = New System.Drawing.Size(441, 39)
         Me.MetroTextBox1.TabIndex = 29
         Me.MetroTextBox1.Text = "SEARCH"
         Me.MetroTextBox1.UseSelectable = True
@@ -278,32 +294,36 @@ Partial Class formMainAdmin
         Me.MetroComboBox1.FormattingEnabled = True
         Me.MetroComboBox1.ItemHeight = 29
         Me.MetroComboBox1.Items.AddRange(New Object() {"BRAND NAME", "QTY", "SUPPLIER", "SRP", "STATUS"})
-        Me.MetroComboBox1.Location = New System.Drawing.Point(114, 119)
+        Me.MetroComboBox1.Location = New System.Drawing.Point(152, 146)
+        Me.MetroComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MetroComboBox1.Name = "MetroComboBox1"
-        Me.MetroComboBox1.Size = New System.Drawing.Size(194, 35)
+        Me.MetroComboBox1.Size = New System.Drawing.Size(257, 35)
         Me.MetroComboBox1.TabIndex = 27
         Me.MetroComboBox1.UseSelectable = True
         '
         'btnAddItem
         '
         Me.btnAddItem.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnAddItem.Location = New System.Drawing.Point(690, 37)
+        Me.btnAddItem.Location = New System.Drawing.Point(920, 46)
+        Me.btnAddItem.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAddItem.Name = "btnAddItem"
-        Me.btnAddItem.Size = New System.Drawing.Size(147, 69)
+        Me.btnAddItem.Size = New System.Drawing.Size(196, 85)
         Me.btnAddItem.TabIndex = 26
         Me.btnAddItem.Text = "ADD ITEM"
         Me.btnAddItem.UseSelectable = True
         '
         'formMainAdmin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1365, 736)
+        Me.ClientSize = New System.Drawing.Size(1820, 906)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.labelTimeAdmin)
         Me.Controls.Add(Me.MetroLabel4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "formMainAdmin"
+        Me.Padding = New System.Windows.Forms.Padding(27, 74, 27, 25)
         Me.Text = "ECT Pharmacy - ADMIN"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)

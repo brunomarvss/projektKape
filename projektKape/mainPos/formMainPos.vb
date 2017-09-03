@@ -10,13 +10,15 @@
 
             With rs
                 If .State <> 0 Then .Close()
-                .Open("SELECT * FROM Products '", cn, 1, 2)
+                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Inventory.Available " +
+                      "FROM Products " +
+                      "INNER JOIN Inventory ON Products.ID=Inventory.ID;", cn, 1, 2)
 
-                '''''''''''''''''''''''''Select employee data only on the database'''''''''''''''''''''''''
+                '''''''''''''''''''''''''List all registered products from the database'''''''''''''''''''''''''
                 listProducts.Items.Clear()
 
                 While .EOF = False
-                    listItems = listProducts.Items.Add(.Fields("Qty").Value)
+                    listItems = listProducts.Items.Add(.Fields("Available").Value)
                     listItems.SubItems.Insert(1, New ListViewItem.ListViewSubItem(Nothing, .Fields("BrandName").Value))
                     listItems.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, .Fields("GenericName").Value))
                     listItems.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, .Fields("SRP").Value))
@@ -101,8 +103,9 @@
                 While i < listBuy.Items.Count
                     remStock = Val(listBuy.Items(i).SubItems(4).Text) - Val(listBuy.Items(i).SubItems(0).Text)
                     MsgBox(remStock)
-                    .Open("UPDATE Products SET Qty='" + remStock + "' WHERE ID=" + listBuy.Items(i).SubItems(3).Text + "", cn, 1, 2)
-
+                    .Open("UPDATE Inventory " +
+                          "SET Available='" + remStock + "', CurrentLevel='" + remStock + "' " +
+                          "WHERE ID=" + listBuy.Items(i).SubItems(3).Text + "", cn, 1, 2)
                     i = i + 1
                 End While
                 refresh()
@@ -124,16 +127,23 @@
 
             With rs
                 If .State <> 0 Then .Close()
-                .Open("SELECT * FROM Products WHERE BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
+                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Inventory.Available " +
+                      "FROM Products " +
+                      "INNER JOIN Inventory ON Products.ID=Inventory.ID " +
+                      "WHERE Products.BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
 
-                '''''''''''''''''''''''''Select employee data only on the database'''''''''''''''''''''''''
+                '''''''''''''''''''''''''Backup query if joining will be cancelled'''''''''''''''''''''''''
+                '.Open("SELECT * FROM Products WHERE BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
+
+                '''''''''''''''''''''''''List all possible products search by employee'''''''''''''''''''''''''
                 listProducts.Items.Clear()
 
                 While .EOF = False
-                    listItems = listProducts.Items.Add(.Fields("Qty").Value)
+                    listItems = listProducts.Items.Add(.Fields("Available").Value)
                     listItems.SubItems.Insert(1, New ListViewItem.ListViewSubItem(Nothing, .Fields("BrandName").Value))
                     listItems.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, .Fields("GenericName").Value))
                     listItems.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, .Fields("SRP").Value))
+                    listItems.SubItems.Insert(4, New ListViewItem.ListViewSubItem(Nothing, .Fields("ID").Value))
                     .MoveNext()
                 End While
                 .Close()
