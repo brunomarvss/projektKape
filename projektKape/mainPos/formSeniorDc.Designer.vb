@@ -115,7 +115,7 @@ Partial Class formSeniorDc
         '
         'btnSenior
         '
-        Me.btnSenior.Location = New System.Drawing.Point(263, 195)
+        Me.btnSenior.Location = New System.Drawing.Point(256, 203)
         Me.btnSenior.Name = "btnSenior"
         Me.btnSenior.Size = New System.Drawing.Size(153, 41)
         Me.btnSenior.TabIndex = 4

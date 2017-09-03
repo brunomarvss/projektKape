@@ -10,17 +10,20 @@
 
             With rs
                 If .State <> 0 Then .Close()
-                .Open("SELECT * FROM Products '", cn, 1, 2)
+                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Products.RawPrice, Inventory.Available " +
+                      "FROM Products " +
+                      "INNER JOIN Inventory ON Products.ID=Inventory.ID;", cn, 1, 2)
 
-                '''''''''''''''''''''''''Select employee data only on the database'''''''''''''''''''''''''
+                '''''''''''''''''''''''''List all registered products from the database'''''''''''''''''''''''''
                 listProducts.Items.Clear()
 
                 While .EOF = False
-                    listItems = listProducts.Items.Add(.Fields("Qty").Value)
+                    listItems = listProducts.Items.Add(.Fields("Available").Value)
                     listItems.SubItems.Insert(1, New ListViewItem.ListViewSubItem(Nothing, .Fields("BrandName").Value))
                     listItems.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, .Fields("GenericName").Value))
                     listItems.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, .Fields("SRP").Value))
                     listItems.SubItems.Insert(4, New ListViewItem.ListViewSubItem(Nothing, .Fields("ID").Value))
+                    listItems.SubItems.Insert(5, New ListViewItem.ListViewSubItem(Nothing, .Fields("RawPrice").Value))
                     .MoveNext()
                 End While
                 .Close()
@@ -42,7 +45,7 @@
     End Sub
 
     Private Sub timerClock_Tick(sender As Object, e As EventArgs) Handles timerClock.Tick
-        ' labelTime.Text = Format(Now, "yyyy-MM-dd    hh:mm:ss")
+        labelTime.Text = Format(Now, "yyyy-MM-dd   hh:mm:ss tt")
     End Sub
 
     Private Sub btnSenior_Click(sender As Object, e As EventArgs) Handles btnSenior.Click
@@ -82,36 +85,62 @@
 
 
     End Sub
-
+    Dim paymentMsg As String
+    Dim change As String
     Private Sub btnTender_Click(sender As Object, e As EventArgs) Handles btnTender.Click
+        paymentMsg = InputBox("AMOUNT TO BE PAID: " + labelTotalPrice.Text + Environment.NewLine + Environment.NewLine + "ENTER PAYMENT:", "ECT PHARMACY", 0)
 
-        MsgBox("ARE SURE TO COMPLETE THIS TRANSACTION?", MsgBoxStyle.YesNo, "ECT Pharmacy POS")
-
-        '' code for subtracting bought item to inventory
-        rs = New ADODB.Recordset
-        Dim remStock As String
-        Dim i As Integer
-        i = 0
-
-        Try
+        If paymentMsg = "" Or Val(paymentMsg) < Val(labelTotalPrice.Text) Or IsNumeric(paymentMsg) = False Then
+            MsgBox("ERROR IN PAYMENT, PLEASE CHECK YOUR PAYMENT", vbOKOnly)
+        Else
+            ''customer's change
+            change = Val(paymentMsg) - Val(labelTotalPrice.Text)
 
 
-            With rs
-                If .State <> 0 Then .Close()
-                While i < listBuy.Items.Count
-                    remStock = Val(listBuy.Items(i).SubItems(4).Text) - Val(listBuy.Items(i).SubItems(0).Text)
-                    MsgBox(remStock)
-                    .Open("UPDATE Products SET Qty='" + remStock + "' WHERE ID=" + listBuy.Items(i).SubItems(3).Text + "", cn, 1, 2)
+            '' code for subtracting bought item to inventory
+            rs = New ADODB.Recordset
+            Dim remStock As String
+            Dim i As Integer
+            i = 0
 
-                    i = i + 1
-                End While
-                refresh()
-            End With
+            Try
+
+
+                With rs
+                    If .State <> 0 Then .Close()
+                    While i < listBuy.Items.Count
+                        remStock = Val(listBuy.Items(i).SubItems(5).Text) - Val(listBuy.Items(i).SubItems(0).Text)
+
+                        .Open("UPDATE Inventory " +
+                          "SET Available='" + remStock + "', CurrentLevel='" + remStock + "' " +
+                          "WHERE ID=" + listBuy.Items(i).SubItems(4).Text + "", cn, 1, 2)
+
+                        .Open("INSERT INTO CustomerRecord (customerID,customerItem,customerGItem,customerQty,customerDateOfSale,customerPaidPrice,customerTotalPrice,customerItemRawPrice,customerItemPrice,customerDiscountType,customerDiscName,customerDiscIdNo) VALUES ('1','" + listBuy.Items(i).SubItems(1).Text + "','" + listBuy.Items(i).SubItems(2).Text + "','" + listBuy.Items(i).SubItems(0).Text + "','" + labelTime.Text + "','" + Format(Val(paymentMsg), "0.00") + "','" + labelTotalPrice.Text + "','" + listBuy.Items(i).SubItems(6).Text + "','" + listBuy.Items(i).SubItems(3).Text + "','Senior','juad dela cruz','9999')", cn, 1, 2)
+                        i = i + 1
+                    End While
+                    MsgBox("CHANGE IS: " + Format(Val(change), "0.00"), vbInformation, "ECT Pharmacy POS")
+                    MsgBox("TRANSACTION COMPLETE!", vbInformation, "ECT Pharmacy POS")
+
+                    refresh()
+                    listBuy.Items.Clear()
+                    subTotal = 0
+                    total = 0
+                    discount = 0
+                    labelTempTotal.Text = Format(0, "0.00")
+                    labelTotalPrice.Text = Format(0, "0.00")
+                    labelDiscount.Text = Format(0, "0.00")
+                    btnPwd.Enabled = False
+                    btnSenior.Enabled = False
+                    btnTender.Enabled = False
+                    btnVoid.Enabled = False
+                End With
 
 
             Catch ex As Exception
-            MessageBox.Show(ex.ToString)
-        End Try
+                MessageBox.Show(ex.ToString)
+            End Try
+
+        End If
     End Sub
 
     Private Sub txtSearchProduct_Click(sender As Object, e As EventArgs) Handles txtSearchProduct.Click
@@ -124,16 +153,24 @@
 
             With rs
                 If .State <> 0 Then .Close()
-                .Open("SELECT * FROM Products WHERE BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
+                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID,Products.RawPrice, Inventory.Available " +
+                      "FROM Products " +
+                      "INNER JOIN Inventory ON Products.ID=Inventory.ID " +
+                      "WHERE Products.BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%' OR Products.GenericName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
 
-                '''''''''''''''''''''''''Select employee data only on the database'''''''''''''''''''''''''
+                '''''''''''''''''''''''''Backup query if joining will be cancelled'''''''''''''''''''''''''
+                '.Open("SELECT * FROM Products WHERE BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
+
+                '''''''''''''''''''''''''List all possible products search by employee'''''''''''''''''''''''''
                 listProducts.Items.Clear()
 
                 While .EOF = False
-                    listItems = listProducts.Items.Add(.Fields("Qty").Value)
+                    listItems = listProducts.Items.Add(.Fields("Available").Value)
                     listItems.SubItems.Insert(1, New ListViewItem.ListViewSubItem(Nothing, .Fields("BrandName").Value))
                     listItems.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, .Fields("GenericName").Value))
                     listItems.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, .Fields("SRP").Value))
+                    listItems.SubItems.Insert(4, New ListViewItem.ListViewSubItem(Nothing, .Fields("ID").Value))
+                    listItems.SubItems.Insert(5, New ListViewItem.ListViewSubItem(Nothing, .Fields("RawPrice").Value))
                     .MoveNext()
                 End While
                 .Close()
@@ -181,47 +218,48 @@
     Private Sub listProducts_DoubleClick(sender As Object, e As EventArgs) Handles listProducts.DoubleClick
         ' formMainQtyDlg.Close()
         'formMainQtyDlg.Show()
-        Try
-            rs = New ADODB.Recordset
+
+        rs = New ADODB.Recordset
 
 
-        Catch ex As Exception
-            MessageBox.Show(ex.ToString)
-        End Try
-
-        If listProducts.FocusedItem.SubItems(0).Text <> 0 Then
 
 
-            qtyMsg = InputBox("ENTER QUANTITY", "ECT PHARMACY", 0)
+            If listProducts.FocusedItem.SubItems(0).Text <> 0 Then
 
-            If qtyMsg = "" Or Val(qtyMsg) > Val(listProducts.FocusedItem.SubItems(0).Text) Then
-                MsgBox("ERROR IN QTY, PLEASE CHECK YOUR QUANTITY", vbOKOnly)
-            Else
 
-                viewTwo = listBuy.Items.Add(qtyMsg)
-                viewTwo.SubItems.Insert(1, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(1).Text))
-                viewTwo.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, Format(qtyMsg * listProducts.FocusedItem.SubItems(3).Text, "0.00")))
-                viewTwo.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(4).Text))
-                viewTwo.SubItems.Insert(4, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(0).Text))
+                qtyMsg = InputBox("ENTER QUANTITY", "ECT PHARMACY", 0)
+
+                If qtyMsg = "" Or Val(qtyMsg) > Val(listProducts.FocusedItem.SubItems(0).Text) Or IsNumeric(qtyMsg) <> True Then
+                    MsgBox("ERROR IN QTY, PLEASE CHECK YOUR QUANTITY", vbOKOnly)
+                Else
+
+                    viewTwo = listBuy.Items.Add(qtyMsg)
+                    viewTwo.SubItems.Insert(1, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(1).Text))
+                    viewTwo.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(2).Text))
+                    viewTwo.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, Format(qtyMsg * listProducts.FocusedItem.SubItems(3).Text, "0.00")))
+                    viewTwo.SubItems.Insert(4, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(4).Text))
+                    viewTwo.SubItems.Insert(5, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(0).Text))
+                viewTwo.SubItems.Insert(6, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(5).Text))
+
 
                 subTotal += Format(qtyMsg * listProducts.FocusedItem.SubItems(3).Text, "0.00")
 
 
 
 
-                labelTempTotal.Text = Format(subTotal, "0.00")
-                total = Format(subTotal, "0.00")
-                labelTotalPrice.Text = Format(total - discount, "0.00")
+                    labelTempTotal.Text = Format(subTotal, "0.00")
+                    total = Format(subTotal, "0.00")
+                    labelTotalPrice.Text = Format(total - discount, "0.00")
 
-                btnPwd.Enabled = True
-                btnSenior.Enabled = True
-                btnTender.Enabled = True
-                btnVoid.Enabled = True
+                    btnPwd.Enabled = True
+                    btnSenior.Enabled = True
+                    btnTender.Enabled = True
+                    btnVoid.Enabled = True
 
+                End If
+            Else
+                MsgBox("ITEM OUT OF STOCK!", vbOKOnly, "ECT PHARMACY")
             End If
-        Else
-            MsgBox("ITEM OUT OF STOCK!", vbOKOnly, "ECT PHARMACY")
-        End If
 
 
     End Sub

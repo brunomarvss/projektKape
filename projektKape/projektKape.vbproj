@@ -104,6 +104,12 @@
     <Compile Include="mainAdmin\formAdminAddItem.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="mainAdmin\formInventoryDetails.Designer.vb">
+      <DependentUpon>formInventoryDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainAdmin\formInventoryDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="mainAdmin\formMainAdmin.Designer.vb">
       <DependentUpon>formMainAdmin.vb</DependentUpon>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mainAdmin\formAdminAddItem.resx">
       <DependentUpon>formAdminAddItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainAdmin\formInventoryDetails.resx">
+      <DependentUpon>formInventoryDetails.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainAdmin\formMainAdmin.resx">
       <DependentUpon>formMainAdmin.vb</DependentUpon>

@@ -16,4 +16,8 @@
         formMainPos.labelTotalPrice.Text = Format(formMainPos.labelTempTotal.Text - formMainPos.labelDiscount.Text, "0.00")
     End Sub
 
+    Private Sub MetroButton1_Click(sender As Object, e As EventArgs)
+        Me.Close()
+
+    End Sub
 End Class

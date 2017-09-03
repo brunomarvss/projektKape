@@ -147,3 +147,4 @@ C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projek
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.xml
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.pdb
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\Interop.ADODB.dll
+C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.formInventoryDetails.resources
