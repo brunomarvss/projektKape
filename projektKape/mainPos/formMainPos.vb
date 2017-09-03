@@ -10,11 +10,7 @@
 
             With rs
                 If .State <> 0 Then .Close()
-<<<<<<< HEAD
                 .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Products.RawPrice, Inventory.Available " +
-=======
-                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Inventory.Available " +
->>>>>>> 033ca777ae56b4dde404fa3bef8df1479737f26b
                       "FROM Products " +
                       "INNER JOIN Inventory ON Products.ID=Inventory.ID;", cn, 1, 2)
 
@@ -100,7 +96,6 @@
             ''customer's change
             change = Val(paymentMsg) - Val(labelTotalPrice.Text)
 
-<<<<<<< HEAD
 
             '' code for subtracting bought item to inventory
             rs = New ADODB.Recordset
@@ -139,20 +134,6 @@
                     btnTender.Enabled = False
                     btnVoid.Enabled = False
                 End With
-=======
-            With rs
-                If .State <> 0 Then .Close()
-                While i < listBuy.Items.Count
-                    remStock = Val(listBuy.Items(i).SubItems(4).Text) - Val(listBuy.Items(i).SubItems(0).Text)
-                    MsgBox(remStock)
-                    .Open("UPDATE Inventory " +
-                          "SET Available='" + remStock + "', CurrentLevel='" + remStock + "' " +
-                          "WHERE ID=" + listBuy.Items(i).SubItems(3).Text + "", cn, 1, 2)
-                    i = i + 1
-                End While
-                refresh()
-            End With
->>>>>>> 033ca777ae56b4dde404fa3bef8df1479737f26b
 
 
             Catch ex As Exception
@@ -172,7 +153,6 @@
 
             With rs
                 If .State <> 0 Then .Close()
-<<<<<<< HEAD
                 .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID,Products.RawPrice, Inventory.Available " +
                       "FROM Products " +
                       "INNER JOIN Inventory ON Products.ID=Inventory.ID " +
@@ -181,16 +161,6 @@
                 '''''''''''''''''''''''''Backup query if joining will be cancelled'''''''''''''''''''''''''
                 '.Open("SELECT * FROM Products WHERE BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
 
-=======
-                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Inventory.Available " +
-                      "FROM Products " +
-                      "INNER JOIN Inventory ON Products.ID=Inventory.ID " +
-                      "WHERE Products.BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
-
-                '''''''''''''''''''''''''Backup query if joining will be cancelled'''''''''''''''''''''''''
-                '.Open("SELECT * FROM Products WHERE BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)
-
->>>>>>> 033ca777ae56b4dde404fa3bef8df1479737f26b
                 '''''''''''''''''''''''''List all possible products search by employee'''''''''''''''''''''''''
                 listProducts.Items.Clear()
 
@@ -200,10 +170,7 @@
                     listItems.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, .Fields("GenericName").Value))
                     listItems.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, .Fields("SRP").Value))
                     listItems.SubItems.Insert(4, New ListViewItem.ListViewSubItem(Nothing, .Fields("ID").Value))
-<<<<<<< HEAD
                     listItems.SubItems.Insert(5, New ListViewItem.ListViewSubItem(Nothing, .Fields("RawPrice").Value))
-=======
->>>>>>> 033ca777ae56b4dde404fa3bef8df1479737f26b
                     .MoveNext()
                 End While
                 .Close()
@@ -257,21 +224,21 @@
 
 
 
-            If listProducts.FocusedItem.SubItems(0).Text <> 0 Then
+        If listProducts.FocusedItem.SubItems(0).Text <> 0 Then
 
 
-                qtyMsg = InputBox("ENTER QUANTITY", "ECT PHARMACY", 0)
+            qtyMsg = InputBox("ENTER QUANTITY", "ECT PHARMACY", 0)
 
-                If qtyMsg = "" Or Val(qtyMsg) > Val(listProducts.FocusedItem.SubItems(0).Text) Or IsNumeric(qtyMsg) <> True Then
-                    MsgBox("ERROR IN QTY, PLEASE CHECK YOUR QUANTITY", vbOKOnly)
-                Else
+            If qtyMsg = "" Or Val(qtyMsg) > Val(listProducts.FocusedItem.SubItems(0).Text) Or IsNumeric(qtyMsg) <> True Then
+                MsgBox("ERROR IN QTY, PLEASE CHECK YOUR QUANTITY", vbOKOnly)
+            Else
 
-                    viewTwo = listBuy.Items.Add(qtyMsg)
-                    viewTwo.SubItems.Insert(1, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(1).Text))
-                    viewTwo.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(2).Text))
-                    viewTwo.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, Format(qtyMsg * listProducts.FocusedItem.SubItems(3).Text, "0.00")))
-                    viewTwo.SubItems.Insert(4, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(4).Text))
-                    viewTwo.SubItems.Insert(5, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(0).Text))
+                viewTwo = listBuy.Items.Add(qtyMsg)
+                viewTwo.SubItems.Insert(1, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(1).Text))
+                viewTwo.SubItems.Insert(2, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(2).Text))
+                viewTwo.SubItems.Insert(3, New ListViewItem.ListViewSubItem(Nothing, Format(qtyMsg * listProducts.FocusedItem.SubItems(3).Text, "0.00")))
+                viewTwo.SubItems.Insert(4, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(4).Text))
+                viewTwo.SubItems.Insert(5, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(0).Text))
                 viewTwo.SubItems.Insert(6, New ListViewItem.ListViewSubItem(Nothing, listProducts.FocusedItem.SubItems(5).Text))
 
 
@@ -280,19 +247,19 @@
 
 
 
-                    labelTempTotal.Text = Format(subTotal, "0.00")
-                    total = Format(subTotal, "0.00")
-                    labelTotalPrice.Text = Format(total - discount, "0.00")
+                labelTempTotal.Text = Format(subTotal, "0.00")
+                total = Format(subTotal, "0.00")
+                labelTotalPrice.Text = Format(total - discount, "0.00")
 
-                    btnPwd.Enabled = True
-                    btnSenior.Enabled = True
-                    btnTender.Enabled = True
-                    btnVoid.Enabled = True
+                btnPwd.Enabled = True
+                btnSenior.Enabled = True
+                btnTender.Enabled = True
+                btnVoid.Enabled = True
 
-                End If
-            Else
-                MsgBox("ITEM OUT OF STOCK!", vbOKOnly, "ECT PHARMACY")
             End If
+        Else
+            MsgBox("ITEM OUT OF STOCK!", vbOKOnly, "ECT PHARMACY")
+        End If
 
 
     End Sub
