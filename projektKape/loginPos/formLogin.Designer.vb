@@ -33,10 +33,10 @@ Partial Class formLogin
         'buttonLogin
         '
         Me.buttonLogin.FontSize = MetroFramework.MetroButtonSize.Medium
-        Me.buttonLogin.Location = New System.Drawing.Point(60, 395)
-        Me.buttonLogin.Margin = New System.Windows.Forms.Padding(80, 0, 80, 133)
+        Me.buttonLogin.Location = New System.Drawing.Point(80, 486)
+        Me.buttonLogin.Margin = New System.Windows.Forms.Padding(107, 0, 107, 164)
         Me.buttonLogin.Name = "buttonLogin"
-        Me.buttonLogin.Size = New System.Drawing.Size(267, 39)
+        Me.buttonLogin.Size = New System.Drawing.Size(356, 48)
         Me.buttonLogin.Style = MetroFramework.MetroColorStyle.Purple
         Me.buttonLogin.TabIndex = 4
         Me.buttonLogin.Text = "LOGIN"
@@ -48,10 +48,10 @@ Partial Class formLogin
         '
         '
         Me.txtUser.CustomButton.Image = Nothing
-        Me.txtUser.CustomButton.Location = New System.Drawing.Point(229, 1)
-        Me.txtUser.CustomButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtUser.CustomButton.Location = New System.Drawing.Point(413, 2)
+        Me.txtUser.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.txtUser.CustomButton.Name = ""
-        Me.txtUser.CustomButton.Size = New System.Drawing.Size(37, 37)
+        Me.txtUser.CustomButton.Size = New System.Drawing.Size(57, 53)
         Me.txtUser.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtUser.CustomButton.TabIndex = 1
         Me.txtUser.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -59,8 +59,8 @@ Partial Class formLogin
         Me.txtUser.CustomButton.Visible = False
         Me.txtUser.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtUser.Lines = New String() {"Username"}
-        Me.txtUser.Location = New System.Drawing.Point(60, 178)
-        Me.txtUser.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtUser.Location = New System.Drawing.Point(80, 219)
+        Me.txtUser.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.txtUser.MaxLength = 32767
         Me.txtUser.Multiline = True
         Me.txtUser.Name = "txtUser"
@@ -70,7 +70,7 @@ Partial Class formLogin
         Me.txtUser.SelectionLength = 0
         Me.txtUser.SelectionStart = 0
         Me.txtUser.ShortcutsEnabled = True
-        Me.txtUser.Size = New System.Drawing.Size(267, 39)
+        Me.txtUser.Size = New System.Drawing.Size(356, 48)
         Me.txtUser.TabIndex = 1
         Me.txtUser.Text = "Username"
         Me.txtUser.Theme = MetroFramework.MetroThemeStyle.Light
@@ -85,10 +85,10 @@ Partial Class formLogin
         '
         '
         Me.txtPass.CustomButton.Image = Nothing
-        Me.txtPass.CustomButton.Location = New System.Drawing.Point(231, 1)
-        Me.txtPass.CustomButton.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtPass.CustomButton.Location = New System.Drawing.Point(416, 2)
+        Me.txtPass.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.txtPass.CustomButton.Name = ""
-        Me.txtPass.CustomButton.Size = New System.Drawing.Size(35, 35)
+        Me.txtPass.CustomButton.Size = New System.Drawing.Size(55, 50)
         Me.txtPass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtPass.CustomButton.TabIndex = 1
         Me.txtPass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -96,8 +96,8 @@ Partial Class formLogin
         Me.txtPass.CustomButton.Visible = False
         Me.txtPass.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtPass.Lines = New String() {"Password"}
-        Me.txtPass.Location = New System.Drawing.Point(60, 228)
-        Me.txtPass.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.txtPass.Location = New System.Drawing.Point(80, 281)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.txtPass.MaxLength = 32767
         Me.txtPass.Multiline = True
         Me.txtPass.Name = "txtPass"
@@ -107,13 +107,12 @@ Partial Class formLogin
         Me.txtPass.SelectionLength = 0
         Me.txtPass.SelectionStart = 0
         Me.txtPass.ShortcutsEnabled = True
-        Me.txtPass.Size = New System.Drawing.Size(267, 37)
+        Me.txtPass.Size = New System.Drawing.Size(356, 46)
         Me.txtPass.TabIndex = 2
         Me.txtPass.Text = "Password"
         Me.txtPass.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtPass.UseSelectable = True
         Me.txtPass.UseStyleColors = True
-        Me.txtPass.UseSystemPasswordChar = True
         Me.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtPass.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
@@ -121,10 +120,10 @@ Partial Class formLogin
         '
         Me.checkToggle.AutoSize = True
         Me.checkToggle.FontSize = MetroFramework.MetroCheckBoxSize.Medium
-        Me.checkToggle.Location = New System.Drawing.Point(60, 280)
-        Me.checkToggle.Margin = New System.Windows.Forms.Padding(60, 285, 5, 4)
+        Me.checkToggle.Location = New System.Drawing.Point(80, 345)
+        Me.checkToggle.Margin = New System.Windows.Forms.Padding(80, 351, 7, 5)
         Me.checkToggle.Name = "checkToggle"
-        Me.checkToggle.Size = New System.Drawing.Size(127, 19)
+        Me.checkToggle.Size = New System.Drawing.Size(136, 20)
         Me.checkToggle.TabIndex = 3
         Me.checkToggle.Text = "Toggle Password"
         Me.checkToggle.Theme = MetroFramework.MetroThemeStyle.Light
@@ -135,10 +134,10 @@ Partial Class formLogin
         Me.MetroLabel1.AutoSize = True
         Me.MetroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall
         Me.MetroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular
-        Me.MetroLabel1.Location = New System.Drawing.Point(49, 59)
-        Me.MetroLabel1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.MetroLabel1.Location = New System.Drawing.Point(65, 73)
+        Me.MetroLabel1.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(271, 25)
+        Me.MetroLabel1.Size = New System.Drawing.Size(288, 25)
         Me.MetroLabel1.TabIndex = 13
         Me.MetroLabel1.Text = "Organize your sales and network"
         Me.MetroLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -146,19 +145,19 @@ Partial Class formLogin
         'linkEmployeeLogin
         '
         Me.linkEmployeeLogin.AutoSize = True
-        Me.linkEmployeeLogin.Location = New System.Drawing.Point(60, 455)
-        Me.linkEmployeeLogin.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.linkEmployeeLogin.Location = New System.Drawing.Point(80, 560)
+        Me.linkEmployeeLogin.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
         Me.linkEmployeeLogin.Name = "linkEmployeeLogin"
-        Me.linkEmployeeLogin.Size = New System.Drawing.Size(80, 19)
+        Me.linkEmployeeLogin.Size = New System.Drawing.Size(82, 20)
         Me.linkEmployeeLogin.TabIndex = 14
         Me.linkEmployeeLogin.Text = "Not Admin?"
         Me.linkEmployeeLogin.UseStyleColors = True
         '
         'formLogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(400, 550)
+        Me.ClientSize = New System.Drawing.Size(533, 677)
         Me.Controls.Add(Me.linkEmployeeLogin)
         Me.Controls.Add(Me.MetroLabel1)
         Me.Controls.Add(Me.checkToggle)
@@ -166,11 +165,11 @@ Partial Class formLogin
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.buttonLogin)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
+        Me.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.MaximizeBox = False
         Me.Movable = False
         Me.Name = "formLogin"
-        Me.Padding = New System.Windows.Forms.Padding(0, 74, 0, 0)
+        Me.Padding = New System.Windows.Forms.Padding(0, 91, 0, 0)
         Me.Resizable = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Style = MetroFramework.MetroColorStyle.[Default]

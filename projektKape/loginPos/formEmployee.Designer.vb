@@ -35,18 +35,20 @@ Partial Class formEmployee
         'MetroLabel1
         '
         Me.MetroLabel1.AutoSize = True
-        Me.MetroLabel1.Location = New System.Drawing.Point(23, 143)
+        Me.MetroLabel1.Location = New System.Drawing.Point(17, 116)
+        Me.MetroLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(176, 20)
+        Me.MetroLabel1.Size = New System.Drawing.Size(168, 19)
         Me.MetroLabel1.TabIndex = 0
         Me.MetroLabel1.Text = "Select a employee to login."
         '
         'MetroLabel2
         '
         Me.MetroLabel2.AutoSize = True
-        Me.MetroLabel2.Location = New System.Drawing.Point(23, 111)
+        Me.MetroLabel2.Location = New System.Drawing.Point(17, 90)
+        Me.MetroLabel2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.MetroLabel2.Name = "MetroLabel2"
-        Me.MetroLabel2.Size = New System.Drawing.Size(609, 20)
+        Me.MetroLabel2.Size = New System.Drawing.Size(609, 19)
         Me.MetroLabel2.TabIndex = 1
         Me.MetroLabel2.Text = "_________________________________________________________________________________" &
     "___________________"
@@ -56,19 +58,20 @@ Partial Class formEmployee
         Me.MetroLabel3.AutoSize = True
         Me.MetroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall
         Me.MetroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold
-        Me.MetroLabel3.Location = New System.Drawing.Point(23, 86)
+        Me.MetroLabel3.Location = New System.Drawing.Point(17, 70)
+        Me.MetroLabel3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.MetroLabel3.Name = "MetroLabel3"
-        Me.MetroLabel3.Size = New System.Drawing.Size(106, 25)
+        Me.MetroLabel3.Size = New System.Drawing.Size(103, 25)
         Me.MetroLabel3.TabIndex = 2
         Me.MetroLabel3.Text = "Employees"
         '
         'btnLogin
         '
         Me.btnLogin.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnLogin.Location = New System.Drawing.Point(456, 446)
-        Me.btnLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnLogin.Location = New System.Drawing.Point(342, 362)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(169, 32)
+        Me.btnLogin.Size = New System.Drawing.Size(127, 26)
         Me.btnLogin.TabIndex = 4
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseSelectable = True
@@ -76,10 +79,10 @@ Partial Class formEmployee
         'linkEmployeeLogin
         '
         Me.linkEmployeeLogin.AutoSize = True
-        Me.linkEmployeeLogin.Location = New System.Drawing.Point(23, 454)
-        Me.linkEmployeeLogin.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.linkEmployeeLogin.Location = New System.Drawing.Point(17, 369)
+        Me.linkEmployeeLogin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.linkEmployeeLogin.Name = "linkEmployeeLogin"
-        Me.linkEmployeeLogin.Size = New System.Drawing.Size(129, 20)
+        Me.linkEmployeeLogin.Size = New System.Drawing.Size(123, 19)
         Me.linkEmployeeLogin.TabIndex = 15
         Me.linkEmployeeLogin.Text = "Back to Login Panel"
         Me.linkEmployeeLogin.UseStyleColors = True
@@ -91,13 +94,12 @@ Partial Class formEmployee
         Me.listEmployee.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.listEmployee.FullRowSelect = True
         Me.listEmployee.GridLines = True
-        Me.listEmployee.Location = New System.Drawing.Point(23, 181)
-        Me.listEmployee.Margin = New System.Windows.Forms.Padding(4)
+        Me.listEmployee.Location = New System.Drawing.Point(17, 147)
         Me.listEmployee.MultiSelect = False
         Me.listEmployee.Name = "listEmployee"
         Me.listEmployee.OwnerDraw = True
         Me.listEmployee.ShowGroups = False
-        Me.listEmployee.Size = New System.Drawing.Size(609, 243)
+        Me.listEmployee.Size = New System.Drawing.Size(458, 198)
         Me.listEmployee.TabIndex = 102
         Me.listEmployee.UseCompatibleStateImageBehavior = False
         Me.listEmployee.UseSelectable = True
@@ -117,18 +119,18 @@ Partial Class formEmployee
         '
         'formEmployee
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(645, 500)
+        Me.ClientSize = New System.Drawing.Size(484, 406)
         Me.Controls.Add(Me.listEmployee)
         Me.Controls.Add(Me.linkEmployeeLogin)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.MetroLabel3)
         Me.Controls.Add(Me.MetroLabel2)
         Me.Controls.Add(Me.MetroLabel1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "formEmployee"
-        Me.Padding = New System.Windows.Forms.Padding(20, 74, 20, 20)
+        Me.Padding = New System.Windows.Forms.Padding(15, 60, 15, 16)
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

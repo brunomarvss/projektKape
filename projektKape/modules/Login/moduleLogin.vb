@@ -4,7 +4,7 @@
     Public listItems = vbEmpty
 
     'Gets all the information clicked by the user in a row on list of employees
-    Public FullName = vbEmpty
+    Public EmployeeName = vbEmpty
     Public ContactDetails = vbEmpty
 
     '''''''''''''''''''''''''formLogin variables'''''''''''''''''''''''''

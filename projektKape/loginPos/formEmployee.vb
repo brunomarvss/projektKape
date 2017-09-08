@@ -12,7 +12,7 @@
             Dim i As Integer = 0
 
             For Each items In item
-                FullName = items.SubItems(i).Text
+                employeeName = items.SubItems(i).Text
                 i += 1
                 ContactDetails = items.SubItems(i).Text
             Next
