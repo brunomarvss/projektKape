@@ -23,8 +23,8 @@ Partial Class formSeniorDc
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
-        Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
-        Me.MetroTextBox2 = New MetroFramework.Controls.MetroTextBox()
+        Me.textboxSCusName = New MetroFramework.Controls.MetroTextBox()
+        Me.textboxSCusNo = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel2 = New MetroFramework.Controls.MetroLabel()
         Me.btnSenior = New MetroFramework.Controls.MetroButton()
         Me.SuspendLayout()
@@ -39,69 +39,69 @@ Partial Class formSeniorDc
         Me.MetroLabel1.TabIndex = 0
         Me.MetroLabel1.Text = "Customer Name"
         '
-        'MetroTextBox1
+        'textboxSCusName
         '
         '
         '
         '
-        Me.MetroTextBox1.CustomButton.Image = Nothing
-        Me.MetroTextBox1.CustomButton.Location = New System.Drawing.Point(336, 1)
-        Me.MetroTextBox1.CustomButton.Name = ""
-        Me.MetroTextBox1.CustomButton.Size = New System.Drawing.Size(35, 35)
-        Me.MetroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.MetroTextBox1.CustomButton.TabIndex = 1
-        Me.MetroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.MetroTextBox1.CustomButton.UseSelectable = True
-        Me.MetroTextBox1.CustomButton.Visible = False
-        Me.MetroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Tall
-        Me.MetroTextBox1.Lines = New String(-1) {}
-        Me.MetroTextBox1.Location = New System.Drawing.Point(187, 88)
-        Me.MetroTextBox1.MaxLength = 32767
-        Me.MetroTextBox1.Multiline = True
-        Me.MetroTextBox1.Name = "MetroTextBox1"
-        Me.MetroTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MetroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.MetroTextBox1.SelectedText = ""
-        Me.MetroTextBox1.SelectionLength = 0
-        Me.MetroTextBox1.SelectionStart = 0
-        Me.MetroTextBox1.ShortcutsEnabled = True
-        Me.MetroTextBox1.Size = New System.Drawing.Size(372, 37)
-        Me.MetroTextBox1.TabIndex = 1
-        Me.MetroTextBox1.UseSelectable = True
-        Me.MetroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.MetroTextBox1.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.textboxSCusName.CustomButton.Image = Nothing
+        Me.textboxSCusName.CustomButton.Location = New System.Drawing.Point(336, 1)
+        Me.textboxSCusName.CustomButton.Name = ""
+        Me.textboxSCusName.CustomButton.Size = New System.Drawing.Size(35, 35)
+        Me.textboxSCusName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.textboxSCusName.CustomButton.TabIndex = 1
+        Me.textboxSCusName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.textboxSCusName.CustomButton.UseSelectable = True
+        Me.textboxSCusName.CustomButton.Visible = False
+        Me.textboxSCusName.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.textboxSCusName.Lines = New String(-1) {}
+        Me.textboxSCusName.Location = New System.Drawing.Point(187, 88)
+        Me.textboxSCusName.MaxLength = 32767
+        Me.textboxSCusName.Multiline = True
+        Me.textboxSCusName.Name = "textboxSCusName"
+        Me.textboxSCusName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.textboxSCusName.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.textboxSCusName.SelectedText = ""
+        Me.textboxSCusName.SelectionLength = 0
+        Me.textboxSCusName.SelectionStart = 0
+        Me.textboxSCusName.ShortcutsEnabled = True
+        Me.textboxSCusName.Size = New System.Drawing.Size(372, 37)
+        Me.textboxSCusName.TabIndex = 1
+        Me.textboxSCusName.UseSelectable = True
+        Me.textboxSCusName.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.textboxSCusName.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
-        'MetroTextBox2
-        '
-        '
+        'textboxSCusNo
         '
         '
-        Me.MetroTextBox2.CustomButton.Image = Nothing
-        Me.MetroTextBox2.CustomButton.Location = New System.Drawing.Point(336, 1)
-        Me.MetroTextBox2.CustomButton.Name = ""
-        Me.MetroTextBox2.CustomButton.Size = New System.Drawing.Size(35, 35)
-        Me.MetroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.MetroTextBox2.CustomButton.TabIndex = 1
-        Me.MetroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.MetroTextBox2.CustomButton.UseSelectable = True
-        Me.MetroTextBox2.CustomButton.Visible = False
-        Me.MetroTextBox2.FontSize = MetroFramework.MetroTextBoxSize.Tall
-        Me.MetroTextBox2.Lines = New String(-1) {}
-        Me.MetroTextBox2.Location = New System.Drawing.Point(187, 142)
-        Me.MetroTextBox2.MaxLength = 32767
-        Me.MetroTextBox2.Multiline = True
-        Me.MetroTextBox2.Name = "MetroTextBox2"
-        Me.MetroTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MetroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.MetroTextBox2.SelectedText = ""
-        Me.MetroTextBox2.SelectionLength = 0
-        Me.MetroTextBox2.SelectionStart = 0
-        Me.MetroTextBox2.ShortcutsEnabled = True
-        Me.MetroTextBox2.Size = New System.Drawing.Size(372, 37)
-        Me.MetroTextBox2.TabIndex = 3
-        Me.MetroTextBox2.UseSelectable = True
-        Me.MetroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.MetroTextBox2.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        '
+        Me.textboxSCusNo.CustomButton.Image = Nothing
+        Me.textboxSCusNo.CustomButton.Location = New System.Drawing.Point(336, 1)
+        Me.textboxSCusNo.CustomButton.Name = ""
+        Me.textboxSCusNo.CustomButton.Size = New System.Drawing.Size(35, 35)
+        Me.textboxSCusNo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.textboxSCusNo.CustomButton.TabIndex = 1
+        Me.textboxSCusNo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.textboxSCusNo.CustomButton.UseSelectable = True
+        Me.textboxSCusNo.CustomButton.Visible = False
+        Me.textboxSCusNo.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.textboxSCusNo.Lines = New String(-1) {}
+        Me.textboxSCusNo.Location = New System.Drawing.Point(187, 142)
+        Me.textboxSCusNo.MaxLength = 32767
+        Me.textboxSCusNo.Multiline = True
+        Me.textboxSCusNo.Name = "textboxSCusNo"
+        Me.textboxSCusNo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.textboxSCusNo.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.textboxSCusNo.SelectedText = ""
+        Me.textboxSCusNo.SelectionLength = 0
+        Me.textboxSCusNo.SelectionStart = 0
+        Me.textboxSCusNo.ShortcutsEnabled = True
+        Me.textboxSCusNo.Size = New System.Drawing.Size(372, 37)
+        Me.textboxSCusNo.TabIndex = 3
+        Me.textboxSCusNo.UseSelectable = True
+        Me.textboxSCusNo.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.textboxSCusNo.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroLabel2
         '
@@ -128,9 +128,9 @@ Partial Class formSeniorDc
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(590, 267)
         Me.Controls.Add(Me.btnSenior)
-        Me.Controls.Add(Me.MetroTextBox2)
+        Me.Controls.Add(Me.textboxSCusNo)
         Me.Controls.Add(Me.MetroLabel2)
-        Me.Controls.Add(Me.MetroTextBox1)
+        Me.Controls.Add(Me.textboxSCusName)
         Me.Controls.Add(Me.MetroLabel1)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -144,8 +144,8 @@ Partial Class formSeniorDc
     End Sub
 
     Friend WithEvents MetroLabel1 As MetroFramework.Controls.MetroLabel
-    Friend WithEvents MetroTextBox1 As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents MetroTextBox2 As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents textboxSCusName As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents textboxSCusNo As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel2 As MetroFramework.Controls.MetroLabel
     Friend WithEvents btnSenior As MetroFramework.Controls.MetroButton
 End Class

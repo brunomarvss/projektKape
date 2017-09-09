@@ -5,19 +5,24 @@
 
     Private Sub formMainAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer2.Start()
+        moduleAdminStatistics.evaluateDailySales()
     End Sub
 
-    Private Sub MetroComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MetroComboBox1.SelectedIndexChanged
+    Private Sub MetroComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) 
 
     End Sub
 
-    Private Sub btnAddItem_Click(sender As Object, e As EventArgs) Handles btnAddItem.Click
+    Private Sub btnAddItem_Click(sender As Object, e As EventArgs) 
         formAdminAddItem.Close()
         formAdminAddItem.Show()
     End Sub
 
-    Private Sub btnAddStock_Click(sender As Object, e As EventArgs) Handles btnAddStock.Click
+    Private Sub btnAddStock_Click(sender As Object, e As EventArgs) 
         MsgBox("Double click an item in the listview to add a stock.", vbInformation)
 
+    End Sub
+
+    Private Sub btnAddEmployee_Click(sender As Object, e As EventArgs) Handles btnAddEmployee.Click
+        formAddEmployee.ShowDialog()
     End Sub
 End Class

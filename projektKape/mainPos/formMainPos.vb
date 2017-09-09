@@ -1,9 +1,12 @@
 ﻿Public Class formMainPos
     Dim lvi As ListViewItem
     Dim viewTwo As ListViewItem
-    Dim subTotal As Double
-    Dim total As Double
-    Dim discount As Double
+    Public subTotal As Double
+    Public total As Double
+    Public discount As Double
+    Public discountName As String = ""
+    Public discountType As String = ""
+    Public discountNo As String = ""
     Sub refresh()
         Try
             rs = New ADODB.Recordset
@@ -48,21 +51,6 @@
         labelTime.Text = Format(Now, "yyyy-MM-dd   hh:mm:ss tt")
     End Sub
 
-    Private Sub btnSenior_Click(sender As Object, e As EventArgs) Handles btnSenior.Click
-        formSeniorDc.Show()
-    End Sub
-
-    Private Sub btnSenior_MouseClick(sender As Object, e As MouseEventArgs) Handles btnSenior.MouseClick
-        formSeniorDc.Close()
-        formPwdDc.Close()
-        formSeniorDc.Show()
-    End Sub
-
-    Private Sub btnPwd_Click(sender As Object, e As EventArgs) Handles btnPwd.Click
-        formPwdDc.Close()
-        formSeniorDc.Close()
-        formPwdDc.Show()
-    End Sub
 
     Private Sub btnVoid_Click(sender As Object, e As EventArgs) Handles btnVoid.Click
         Dim askVoid = ""
@@ -74,9 +62,8 @@
             discount = 0
             labelTempTotal.Text = Format(0, "0.00")
             labelTotalPrice.Text = Format(0, "0.00")
-            labelDiscount.Text = Format(0, "0.00")
-            btnPwd.Enabled = False
-            btnSenior.Enabled = False
+
+
             btnTender.Enabled = False
             btnVoid.Enabled = False
 
@@ -87,16 +74,13 @@
     End Sub
     Dim paymentMsg As String
     Dim change As String
+    'Dim cusNum As String
     Private Sub btnTender_Click(sender As Object, e As EventArgs) Handles btnTender.Click
-        paymentMsg = InputBox("AMOUNT TO BE PAID: " + labelTotalPrice.Text + Environment.NewLine + Environment.NewLine + "ENTER PAYMENT:", "ECT PHARMACY", 0)
-
-        If paymentMsg = "" Or Val(paymentMsg) < Val(labelTotalPrice.Text) Or IsNumeric(paymentMsg) = False Then
-            MsgBox("ERROR IN PAYMENT, PLEASE CHECK YOUR PAYMENT", vbOKOnly)
-        Else
-            ''customer's change
-            change = Val(paymentMsg) - Val(labelTotalPrice.Text)
+        formCashTender.Show()
 
 
+<<<<<<< HEAD
+=======
             '' code for subtracting bought item to inventory
             rs = New ADODB.Recordset
             Dim remStock As String
@@ -115,9 +99,12 @@
                           "SET Available='" + remStock + "', CurrentLevel='" + remStock + "' " +
                           "WHERE ID=" + listBuy.Items(i).SubItems(4).Text + "", cn, 1, 2)
 
-                        .Open("INSERT INTO CustomerRecord (customerID,customerItem,customerGItem,customerQty,customerDateOfSale,customerPaidPrice,customerTotalPrice,customerItemRawPrice,customerItemPrice,customerDiscountType,customerDiscName,customerDiscIdNo) VALUES ('1','" + listBuy.Items(i).SubItems(1).Text + "','" + listBuy.Items(i).SubItems(2).Text + "','" + listBuy.Items(i).SubItems(0).Text + "','" + labelTime.Text + "','" + Format(Val(paymentMsg), "0.00") + "','" + labelTotalPrice.Text + "','" + listBuy.Items(i).SubItems(6).Text + "','" + listBuy.Items(i).SubItems(3).Text + "','Senior','juad dela cruz','9999')", cn, 1, 2)
+                        .Open("INSERT INTO CustomerRecord (CSR_ID,CSR_Item,CSR_GItem,CSR_Qty,CSR_DateOfSale,CSR_TimeOfSale,CSR_PaidPrice,CSR_TotalPrice,CSR_ItemRawPrice,CSR_ItemPrice,CSR_DiscountType,CSR_DiscName,CSR_DiscIdNo,CSR_TransactBy) " +
+                              "VALUES ('1','" + listBuy.Items(i).SubItems(1).Text + "','" + listBuy.Items(i).SubItems(2).Text + "','" + listBuy.Items(i).SubItems(0).Text + "','" + Format(Now, "yyyy-MM-dd") + "','" + Format(Now, "hh:mm:ss tt") + "','" + Format(Val(paymentMsg), "0.00") + "','" + labelTotalPrice.Text + "','" + listBuy.Items(i).SubItems(6).Text + "','" + listBuy.Items(i).SubItems(3).Text + "','Senior','juad dela cruz','9999','" + EmployeeName + "');", cn, 1, 2)
+
                         i = i + 1
                     End While
+
                     MsgBox("CHANGE IS: " + Format(Val(change), "0.00"), vbInformation, "ECT Pharmacy POS")
                     MsgBox("TRANSACTION COMPLETE!", vbInformation, "ECT Pharmacy POS")
 
@@ -141,6 +128,7 @@
             End Try
 
         End If
+>>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
     End Sub
 
     Private Sub txtSearchProduct_Click(sender As Object, e As EventArgs) Handles txtSearchProduct.Click
@@ -203,7 +191,7 @@
             Dim i As Integer = 0
 
             For Each items In item
-                FullName = items.SubItems(i).Text
+                EmployeeName = items.SubItems(i).Text
                 i += 1
                 ContactDetails = items.SubItems(i).Text
             Next
@@ -229,7 +217,7 @@
 
             qtyMsg = InputBox("ENTER QUANTITY", "ECT PHARMACY", 0)
 
-            If qtyMsg = "" Or Val(qtyMsg) > Val(listProducts.FocusedItem.SubItems(0).Text) Or IsNumeric(qtyMsg) <> True Then
+            If qtyMsg = "" Or qtyMsg = "0" Or Val(qtyMsg) > Val(listProducts.FocusedItem.SubItems(0).Text) Or IsNumeric(qtyMsg) <> True Then
                 MsgBox("ERROR IN QTY, PLEASE CHECK YOUR QUANTITY", vbOKOnly)
             Else
 
@@ -251,14 +239,31 @@
                 total = Format(subTotal, "0.00")
                 labelTotalPrice.Text = Format(total - discount, "0.00")
 
-                btnPwd.Enabled = True
-                btnSenior.Enabled = True
+
                 btnTender.Enabled = True
                 btnVoid.Enabled = True
 
             End If
         Else
             MsgBox("ITEM OUT OF STOCK!", vbOKOnly, "ECT PHARMACY")
+        End If
+
+
+    End Sub
+
+
+
+    Private Sub listBuy_DoubleClick(sender As Object, e As EventArgs) Handles listBuy.DoubleClick
+
+        Dim result As Integer = MessageBox.Show("DO YOU WANT TO DELETE THIS ITEM?", "ECT Pharmacy", MessageBoxButtons.YesNo)
+        If result = DialogResult.Yes Then
+            'MsgBox(listBuy.FocusedItem.Index)
+            subTotal = Val(labelTempTotal.Text) - Val(listBuy.Items(listBuy.FocusedItem.Index).SubItems(3).Text)
+            listBuy.Items.RemoveAt(listBuy.FocusedItem.Index)
+            labelTempTotal.Text = Format(subTotal, "0.00")
+            total = Format(subTotal, "0.00")
+            labelTotalPrice.Text = Format(total - discount, "0.00")
+            MsgBox("ITEM DELETED!")
         End If
 
 

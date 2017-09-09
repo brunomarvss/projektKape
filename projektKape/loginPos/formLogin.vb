@@ -11,11 +11,11 @@
     Private Sub checkToggle_CheckedChanged(sender As Object, e As EventArgs) Handles checkToggle.CheckedChanged
         If checkToggle.Checked = True Then
             txtPass.PasswordChar = Nothing
-            txtPass.UseSystemPasswordChar = False
+            txtPass.UseSystemPasswordChar = True
 
         Else
             txtPass.PasswordChar = "●"
-            txtPass.UseSystemPasswordChar = True
+            txtPass.UseSystemPasswordChar = False
         End If
     End Sub
 
@@ -31,6 +31,10 @@
         If token_pass_count = 1 Then
             token_pass_count -= 1
             txtPass.Clear()
+
+            ''  Hides user inputed password credential
+            txtPass.PasswordChar = "●"
+            txtPass.UseSystemPasswordChar = False
         End If
     End Sub
 
