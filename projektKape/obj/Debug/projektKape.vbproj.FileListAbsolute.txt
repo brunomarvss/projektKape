@@ -178,9 +178,12 @@ E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.r
 E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
 E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formAddEmployee.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formInventoryDetails.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formCashTender.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\obj\Debug\projektKape.formChange.resources
+=======
+>>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
 =======
 >>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc

@@ -1,5 +1,6 @@
 CHANGELOG:
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Update 09/09/2017 - 10:28PM
 by brunomarvss
@@ -13,6 +14,8 @@ POS
 
 
 
+=======
+>>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
 =======
 >>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
 Update 09/04/2017 - 10:23AM
