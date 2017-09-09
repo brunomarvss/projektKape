@@ -122,8 +122,7 @@
     <Compile Include="mainAdmin\formMainAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     <Compile Include="mainPos\formCashTender.Designer.vb">
       <DependentUpon>formCashTender.vb</DependentUpon>
     </Compile>
@@ -136,10 +135,6 @@
     <Compile Include="mainPos\formChange.vb">
       <SubType>Form</SubType>
     </Compile>
-=======
->>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
-=======
->>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
     <Compile Include="modules\Admin\moduleAddEmployee.vb" />
     <Compile Include="modules\Admin\moduleAdminStatistics.vb" />
     <Compile Include="modules\Database\connectionModule.vb" />

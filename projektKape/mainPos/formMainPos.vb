@@ -75,61 +75,9 @@
     Dim paymentMsg As String
     Dim change As String
     'Dim cusNum As String
-    Private Sub btnTender_Click(sender As Object, e As EventArgs) Handles btnTender.Click
-        formCashTender.Show()
 
 
-<<<<<<< HEAD
-=======
-            '' code for subtracting bought item to inventory
-            rs = New ADODB.Recordset
-            Dim remStock As String
-            Dim i As Integer
-            i = 0
 
-            Try
-
-
-                With rs
-                    If .State <> 0 Then .Close()
-                    While i < listBuy.Items.Count
-                        remStock = Val(listBuy.Items(i).SubItems(5).Text) - Val(listBuy.Items(i).SubItems(0).Text)
-
-                        .Open("UPDATE Inventory " +
-                          "SET Available='" + remStock + "', CurrentLevel='" + remStock + "' " +
-                          "WHERE ID=" + listBuy.Items(i).SubItems(4).Text + "", cn, 1, 2)
-
-                        .Open("INSERT INTO CustomerRecord (CSR_ID,CSR_Item,CSR_GItem,CSR_Qty,CSR_DateOfSale,CSR_TimeOfSale,CSR_PaidPrice,CSR_TotalPrice,CSR_ItemRawPrice,CSR_ItemPrice,CSR_DiscountType,CSR_DiscName,CSR_DiscIdNo,CSR_TransactBy) " +
-                              "VALUES ('1','" + listBuy.Items(i).SubItems(1).Text + "','" + listBuy.Items(i).SubItems(2).Text + "','" + listBuy.Items(i).SubItems(0).Text + "','" + Format(Now, "yyyy-MM-dd") + "','" + Format(Now, "hh:mm:ss tt") + "','" + Format(Val(paymentMsg), "0.00") + "','" + labelTotalPrice.Text + "','" + listBuy.Items(i).SubItems(6).Text + "','" + listBuy.Items(i).SubItems(3).Text + "','Senior','juad dela cruz','9999','" + EmployeeName + "');", cn, 1, 2)
-
-                        i = i + 1
-                    End While
-
-                    MsgBox("CHANGE IS: " + Format(Val(change), "0.00"), vbInformation, "ECT Pharmacy POS")
-                    MsgBox("TRANSACTION COMPLETE!", vbInformation, "ECT Pharmacy POS")
-
-                    refresh()
-                    listBuy.Items.Clear()
-                    subTotal = 0
-                    total = 0
-                    discount = 0
-                    labelTempTotal.Text = Format(0, "0.00")
-                    labelTotalPrice.Text = Format(0, "0.00")
-                    labelDiscount.Text = Format(0, "0.00")
-                    btnPwd.Enabled = False
-                    btnSenior.Enabled = False
-                    btnTender.Enabled = False
-                    btnVoid.Enabled = False
-                End With
-
-
-            Catch ex As Exception
-                MessageBox.Show(ex.ToString)
-            End Try
-
-        End If
->>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
-    End Sub
 
     Private Sub txtSearchProduct_Click(sender As Object, e As EventArgs) Handles txtSearchProduct.Click
 
@@ -269,5 +217,7 @@
 
     End Sub
 
-
+    Private Sub btnTender_Click(sender As Object, e As EventArgs) Handles btnTender.Click
+        formCashTender.Show()
+    End Sub
 End Class
