@@ -1,0 +1,84 @@
+CHANGELOG:
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+Update 09/09/2017 - 10:28PM
+by brunomarvss
+POS
+- Reinvented the Tender transaction algorithm
+-should be able to remove items from the left side listView
+-added formTender and formChange
+-removed pwd and senior button to formmainPOS, transferred to formTender
+-removed discount labels in formmainPOS 
+-should be ble to transact in POS correctly
+
+
+
+=======
+>>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
+=======
+>>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
+Update 09/04/2017 - 10:23AM
+by ebantay
+LOGIN
+-Fixed password text field
+
+POS
+-Table CustomerRecord on the database seperates the date and time
+-Modified column names Customer% to CSR_
+-Modified query on saving customer record
+-Added column on the database for records who transacted on customers 
+
+ADMIN
+-Added button for employees
+-Added saving functionalty for new employee data
+#################
+
+
+Update 09/03/2017 - 4:46PM
+POS
+-Added columns in table Customer Records
+-Added functionality in Tender transaction to insert rown on database
+-Fixed UI in POS
+-User should transact without problems in computations of items and transactions
+#################
+
+
+Update 09/03/2017 - 9:40AM
+-Added new columns on table Inventory in the database
+-Normalize products and inventory for table products on column quantity
+-Reconstructed query on Sub refresh for call of item on joining
+-Reconstructed query on product search for call of item on joining
+-Update will be on table inventory instead of products for old query on qty
+#################
+
+
+Update 09/2/2017 - 2:14PM
+- Added code functionality for subtracting bought item to inventory in database
+by brunomarvss
+Update 09/2/2017 -12:57AM
+-Added listView (left) to add selected items and qty from listView (Right)
+-Added functionality discounts (PWD,Senior)
+-Added functionality of Void button
+-Added computation of total SRP from listView(left), displays computed results
+-Added onLoad action of list of all items
+-change the query in search textbox to 'BrandName'
+-readded column QTY in database table products
+by brunomarvsss
+#################
+
+
+Update 08/28/2017 -2:05AM
+-Try and Catch succesfully added in formLogin
+-module for login used for proper, categorize and easily locating of codes
+-List all possible products searched by the user in formMainPOS
+#################
+  
+
+Update 08/27/2017 - 11:28PM 
+-Fix login via Admin
+-Added Admin Main Form
+-Added widgets in Admin Main Form
+-Added form in 'Add Item'
+by: brunomarvsss
+#################
