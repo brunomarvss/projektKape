@@ -184,3 +184,11 @@ C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\o
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.formAddEmployee.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.formCashTender.resources
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.formChange.resources
+D:\Documents\GitHub\projektKape-master\projektKape\bin\Debug\projektKape.exe.config
+D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\Interop.ADODB.dll
+D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\Interop.ADOR.dll
+D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\Interop.AZROLESLib.dll
+D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
+D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\projektKape.exe
+D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\projektKape.xml
+D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\projektKape.pdb

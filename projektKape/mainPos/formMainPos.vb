@@ -13,7 +13,7 @@
 
             With rs
                 If .State <> 0 Then .Close()
-                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID, Products.RawPrice, Inventory.Available " +
+                .Open("SELECT Products.*, Inventory.Available " +
                       "FROM Products " +
                       "INNER JOIN Inventory ON Products.ID=Inventory.ID;", cn, 1, 2)
 
@@ -89,7 +89,7 @@
 
             With rs
                 If .State <> 0 Then .Close()
-                .Open("SELECT Products.BrandName, Products.GenericName, Products.SRP, Products.ID,Products.RawPrice, Inventory.Available " +
+                .Open("SELECT Products.*, Inventory.Available " +
                       "FROM Products " +
                       "INNER JOIN Inventory ON Products.ID=Inventory.ID " +
                       "WHERE Products.BrandName LIKE '%" + txtSearchProduct.Text.Trim + "%' OR Products.GenericName LIKE '%" + txtSearchProduct.Text.Trim + "%'", cn, 1, 2)

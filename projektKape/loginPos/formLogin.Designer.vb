@@ -28,6 +28,7 @@ Partial Class formLogin
         Me.checkToggle = New MetroFramework.Controls.MetroCheckBox()
         Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
         Me.linkEmployeeLogin = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel2 = New MetroFramework.Controls.MetroLabel()
         Me.SuspendLayout()
         '
         'buttonLogin
@@ -48,10 +49,10 @@ Partial Class formLogin
         '
         '
         Me.txtUser.CustomButton.Image = Nothing
-        Me.txtUser.CustomButton.Location = New System.Drawing.Point(413, 2)
+        Me.txtUser.CustomButton.Location = New System.Drawing.Point(310, 2)
         Me.txtUser.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.txtUser.CustomButton.Name = ""
-        Me.txtUser.CustomButton.Size = New System.Drawing.Size(57, 53)
+        Me.txtUser.CustomButton.Size = New System.Drawing.Size(43, 43)
         Me.txtUser.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtUser.CustomButton.TabIndex = 1
         Me.txtUser.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -85,10 +86,10 @@ Partial Class formLogin
         '
         '
         Me.txtPass.CustomButton.Image = Nothing
-        Me.txtPass.CustomButton.Location = New System.Drawing.Point(416, 2)
+        Me.txtPass.CustomButton.Location = New System.Drawing.Point(312, 2)
         Me.txtPass.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.txtPass.CustomButton.Name = ""
-        Me.txtPass.CustomButton.Size = New System.Drawing.Size(55, 50)
+        Me.txtPass.CustomButton.Size = New System.Drawing.Size(41, 41)
         Me.txtPass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtPass.CustomButton.TabIndex = 1
         Me.txtPass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -123,7 +124,7 @@ Partial Class formLogin
         Me.checkToggle.Location = New System.Drawing.Point(80, 345)
         Me.checkToggle.Margin = New System.Windows.Forms.Padding(80, 351, 7, 5)
         Me.checkToggle.Name = "checkToggle"
-        Me.checkToggle.Size = New System.Drawing.Size(136, 20)
+        Me.checkToggle.Size = New System.Drawing.Size(128, 19)
         Me.checkToggle.TabIndex = 3
         Me.checkToggle.Text = "Toggle Password"
         Me.checkToggle.Theme = MetroFramework.MetroThemeStyle.Light
@@ -137,7 +138,7 @@ Partial Class formLogin
         Me.MetroLabel1.Location = New System.Drawing.Point(65, 73)
         Me.MetroLabel1.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(288, 25)
+        Me.MetroLabel1.Size = New System.Drawing.Size(271, 25)
         Me.MetroLabel1.TabIndex = 13
         Me.MetroLabel1.Text = "Organize your sales and network"
         Me.MetroLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -148,16 +149,28 @@ Partial Class formLogin
         Me.linkEmployeeLogin.Location = New System.Drawing.Point(80, 560)
         Me.linkEmployeeLogin.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
         Me.linkEmployeeLogin.Name = "linkEmployeeLogin"
-        Me.linkEmployeeLogin.Size = New System.Drawing.Size(82, 20)
+        Me.linkEmployeeLogin.Size = New System.Drawing.Size(80, 19)
         Me.linkEmployeeLogin.TabIndex = 14
         Me.linkEmployeeLogin.Text = "Not Admin?"
         Me.linkEmployeeLogin.UseStyleColors = True
         '
+        'MetroLabel2
+        '
+        Me.MetroLabel2.AutoSize = True
+        Me.MetroLabel2.Location = New System.Drawing.Point(17, 52)
+        Me.MetroLabel2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel2.Name = "MetroLabel2"
+        Me.MetroLabel2.Size = New System.Drawing.Size(609, 19)
+        Me.MetroLabel2.TabIndex = 15
+        Me.MetroLabel2.Text = "_________________________________________________________________________________" &
+    "___________________"
+        '
         'formLogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(533, 677)
+        Me.Controls.Add(Me.MetroLabel2)
         Me.Controls.Add(Me.linkEmployeeLogin)
         Me.Controls.Add(Me.MetroLabel1)
         Me.Controls.Add(Me.checkToggle)
@@ -185,4 +198,5 @@ Partial Class formLogin
     Friend WithEvents MetroLabel1 As MetroFramework.Controls.MetroLabel
     Friend WithEvents linkEmployeeLogin As MetroFramework.Controls.MetroLabel
     Protected Friend WithEvents txtUser As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents MetroLabel2 As MetroFramework.Controls.MetroLabel
 End Class

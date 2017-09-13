@@ -82,7 +82,7 @@ Partial Class formAddEmployee
         Me.txtLname.SelectionStart = 0
         Me.txtLname.ShortcutsEnabled = True
         Me.txtLname.Size = New System.Drawing.Size(186, 35)
-        Me.txtLname.TabIndex = 5
+        Me.txtLname.TabIndex = 1
         Me.txtLname.Text = "Last Name"
         Me.txtLname.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtLname.UseSelectable = True
@@ -98,7 +98,7 @@ Partial Class formAddEmployee
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(315, 48)
         Me.btnSave.Style = MetroFramework.MetroColorStyle.Purple
-        Me.btnSave.TabIndex = 6
+        Me.btnSave.TabIndex = 9
         Me.btnSave.Text = "SAVE"
         Me.btnSave.UseSelectable = True
         '
@@ -108,10 +108,10 @@ Partial Class formAddEmployee
         Me.MetroLabel1.Location = New System.Drawing.Point(46, 109)
         Me.MetroLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(268, 38)
+        Me.MetroLabel1.Size = New System.Drawing.Size(288, 57)
         Me.MetroLabel1.TabIndex = 7
         Me.MetroLabel1.Text = "-Input the credentials of your employee." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "-Leave or skip the text field if not ap" &
-    "plicable."
+    "plicable." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "-Required to fill-up fields that has asterisk mark."
         '
         'MetroLabel3
         '
@@ -154,7 +154,7 @@ Partial Class formAddEmployee
         Me.txtFname.SelectionStart = 0
         Me.txtFname.ShortcutsEnabled = True
         Me.txtFname.Size = New System.Drawing.Size(186, 35)
-        Me.txtFname.TabIndex = 9
+        Me.txtFname.TabIndex = 2
         Me.txtFname.Text = "First Name"
         Me.txtFname.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtFname.UseSelectable = True
@@ -191,7 +191,7 @@ Partial Class formAddEmployee
         Me.txtSuffix.SelectionStart = 0
         Me.txtSuffix.ShortcutsEnabled = True
         Me.txtSuffix.Size = New System.Drawing.Size(186, 35)
-        Me.txtSuffix.TabIndex = 11
+        Me.txtSuffix.TabIndex = 4
         Me.txtSuffix.Text = "Suffix"
         Me.txtSuffix.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtSuffix.UseSelectable = True
@@ -240,7 +240,7 @@ Partial Class formAddEmployee
         Me.txtMname.SelectionStart = 0
         Me.txtMname.ShortcutsEnabled = True
         Me.txtMname.Size = New System.Drawing.Size(186, 35)
-        Me.txtMname.TabIndex = 10
+        Me.txtMname.TabIndex = 3
         Me.txtMname.Text = "Middle Name"
         Me.txtMname.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtMname.UseSelectable = True
@@ -276,7 +276,7 @@ Partial Class formAddEmployee
         Me.txtProvince.CustomButton.UseSelectable = True
         Me.txtProvince.CustomButton.Visible = False
         Me.txtProvince.FontSize = MetroFramework.MetroTextBoxSize.Tall
-        Me.txtProvince.Lines = New String() {"State/Province"}
+        Me.txtProvince.Lines = New String() {"Province"}
         Me.txtProvince.Location = New System.Drawing.Point(440, 331)
         Me.txtProvince.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.txtProvince.MaxLength = 32767
@@ -289,8 +289,8 @@ Partial Class formAddEmployee
         Me.txtProvince.SelectionStart = 0
         Me.txtProvince.ShortcutsEnabled = True
         Me.txtProvince.Size = New System.Drawing.Size(186, 35)
-        Me.txtProvince.TabIndex = 16
-        Me.txtProvince.Text = "State/Province"
+        Me.txtProvince.TabIndex = 8
+        Me.txtProvince.Text = "Province"
         Me.txtProvince.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtProvince.UseSelectable = True
         Me.txtProvince.UseStyleColors = True
@@ -326,7 +326,7 @@ Partial Class formAddEmployee
         Me.txtCity.SelectionStart = 0
         Me.txtCity.ShortcutsEnabled = True
         Me.txtCity.Size = New System.Drawing.Size(186, 35)
-        Me.txtCity.TabIndex = 15
+        Me.txtCity.TabIndex = 7
         Me.txtCity.Text = "City"
         Me.txtCity.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtCity.UseSelectable = True
@@ -363,7 +363,7 @@ Partial Class formAddEmployee
         Me.txtAddress.SelectionStart = 0
         Me.txtAddress.ShortcutsEnabled = True
         Me.txtAddress.Size = New System.Drawing.Size(186, 35)
-        Me.txtAddress.TabIndex = 14
+        Me.txtAddress.TabIndex = 6
         Me.txtAddress.Text = "Address Details"
         Me.txtAddress.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtAddress.UseSelectable = True
@@ -400,7 +400,7 @@ Partial Class formAddEmployee
         Me.txtContact.SelectionStart = 0
         Me.txtContact.ShortcutsEnabled = True
         Me.txtContact.Size = New System.Drawing.Size(186, 35)
-        Me.txtContact.TabIndex = 13
+        Me.txtContact.TabIndex = 5
         Me.txtContact.Text = "Contact Number"
         Me.txtContact.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtContact.UseSelectable = True
@@ -461,7 +461,7 @@ Partial Class formAddEmployee
         Me.txtJobTitle.SelectionStart = 0
         Me.txtJobTitle.ShortcutsEnabled = True
         Me.txtJobTitle.Size = New System.Drawing.Size(186, 35)
-        Me.txtJobTitle.TabIndex = 19
+        Me.txtJobTitle.TabIndex = 0
         Me.txtJobTitle.Text = "Work Title"
         Me.txtJobTitle.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtJobTitle.UseSelectable = True

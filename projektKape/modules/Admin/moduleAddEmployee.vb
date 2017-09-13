@@ -62,9 +62,9 @@
 
             With rs
                 If .State <> 0 Then .Close()
-                .Open("INSERT INTO Employees (LastName, FirstName, MiddleName, Suffix, JobTitle, Contact, Address, City)" +
+                .Open("INSERT INTO Employees (LastName, FirstName, MiddleName, Suffix, JobTitle, Contact, Address, City, Province)" +
                       "VALUES ('" + setLname + "', '" + setFname + "', '" + setMname + "', '" + setSuffix + "', '" +
-                      setJob + "', '" + setContact + "', '" + setAddress + "', '" + setCity + "');", cn, 1, 2)
+                      setJob + "', '" + setContact + "', '" + setAddress + "', '" + setCity + "', '" + setProvince + "');", cn, 1, 2)
 
                 '''''''''''''''''''''''''Insert employee data on the database'''''''''''''''''''''''''
                 MsgBox("Saving Successful!", MsgBoxStyle.Information, "Record Saved")

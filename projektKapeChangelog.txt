@@ -2,6 +2,39 @@ CHANGELOG:
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+Update 09/13/2017 - 4:55AM
+by ebantay
+ADMIN
+-Added module addsupplier
+-Added form for adding new supplier
+-Searchable accounts of suppliers and could search by category
+#################
+
+
+Update 09/12/2017 - 5:18AM
+by ebantay
+-Added saving functionalty for new product data
+-List of registered products
+-Searchable text search of products and could search by category
+#################
+
+
+Update 09/11/2017 - 6:32AM
+by ebantay
+>DATABASE
+-Changed data type on foreign keys in order to communicate with tables
+-Column field 'State/Province' changed to Province only
+
+>POS
+-modified query refresh function same with text changed when searching products 
+
+>ADMIN
+-Added additional note for creation of account for new employee
+-List of registered accounts of employee on employee section
+-Searchable accounts of employee and could search by category
+#################
+
+
 Update 09/09/2017 - 10:28PM
 by brunomarvss
 POS
@@ -11,7 +44,7 @@ POS
 -removed pwd and senior button to formmainPOS, transferred to formTender
 -removed discount labels in formmainPOS 
 -should be ble to transact in POS correctly
-
+#################
 
 
 =======
@@ -20,16 +53,16 @@ POS
 >>>>>>> 5bb3d9c199bd638f83388aabe178d866d1a4e7fc
 Update 09/04/2017 - 10:23AM
 by ebantay
-LOGIN
+>LOGIN
 -Fixed password text field
 
-POS
+>POS
 -Table CustomerRecord on the database seperates the date and time
 -Modified column names Customer% to CSR_
 -Modified query on saving customer record
 -Added column on the database for records who transacted on customers 
 
-ADMIN
+>ADMIN
 -Added button for employees
 -Added saving functionalty for new employee data
 #################
