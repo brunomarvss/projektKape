@@ -1,8 +1,38 @@
-﻿Module moduleAddProduct
+﻿
+Module moduleAddProduct
+    Sub LoadRegisteredSuppliers()
+        Try
+            rs = New ADODB.Recordset
+
+            With rs
+                If .State <> 0 Then .Close()
+                .Open("SELECT * FROM Suppliers;", cn, 1, 2)
+
+                '''''''''''''''''''''''''Select employee data only on the database'''''''''''''''''''''''''
+                formAddProduct.comboSupplierList.Items.Clear()
+                formAddProduct.comboSupplierIDs.Items.Clear()
+                formAddProduct.comboSupplierList.Items.Add("(Select One Supplier)")
+                formAddProduct.comboSupplierIDs.Items.Add("(Select One Supplier)")
+
+                While .EOF = False
+                    formAddProduct.comboSupplierList.Items.Add(.Fields("Company").Value)
+                    formAddProduct.comboSupplierIDs.Items.Add(.Fields("ID").Value)
+                    .MoveNext()
+                End While
+                .Close()
+            End With
+
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+        End Try
+    End Sub
     Sub AddNewProduct()
         ''  Declares the variable only on adding employees
         Dim getBrand = "", getGeneric = "", getQty = "", getSupplier = "", getRawPrice = "", getSRP As String = ""
         Dim setBrand = "", setGeneric = "", setQty = "", setSupplier = "", setRawPrice = "", setSRP As String = ""
+        Dim selectedSupplier As Integer = formAddProduct.comboSupplierList.SelectedIndex
+        Dim selectedSupplierID As String = formAddProduct.comboSupplierIDs.Items.Item(selectedSupplier)
+
 
         Try
             rs = New ADODB.Recordset
@@ -47,15 +77,19 @@
             With rs
                 If .State <> 0 Then .Close()
                 .Open("INSERT INTO Products (BrandName, GenericName, RawPrice, SRP, Supplier_ID)" +
-                      "VALUES ('" + setBrand + "', '" + setGeneric + "', '" + setRawPrice + "', '" + setSRP + "', '" + setSupplier + "');", cn, 1, 2)
+                      "VALUES ('" + setBrand + "', '" + setGeneric + "', '" + setRawPrice + "', '" + setSRP + "', '" + selectedSupplierID + "');", cn, 1, 2)
 
                 If .State <> 0 Then .Close()
-                .Open("INSERT INTO Inventory (Available)" +
-                      "VALUES ('" + setQty + "');", cn, 1, 2)
-
+                .Open("INSERT INTO Inventory (Available, CurrentLevel)" +
+                      "VALUES ('" + setQty + "','" + setQty + "');", cn, 1, 2)
 
                 ''  Insert product data on the database
                 MsgBox("Saving Successful!", MsgBoxStyle.Information, "Record Saved")
+                formAddProduct.txtBrand.Text = Nothing
+                formAddProduct.txtGeneric.Text = Nothing
+                formAddProduct.txtQty.Text = Nothing
+                formAddProduct.txtRawPrice.Text = Nothing
+                formAddProduct.txtSRP.Text = Nothing
             End With
 
         Catch ex As Exception

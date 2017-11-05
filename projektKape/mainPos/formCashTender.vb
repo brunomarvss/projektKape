@@ -64,8 +64,8 @@
                           "SET Available='" + remStock + "', CurrentLevel='" + remStock + "' " +
                           "WHERE ID=" + My.Forms.formMainPos.listBuy.Items(i).SubItems(4).Text + "", cn, 1, 2)
 
-                        .Open("INSERT INTO CustomerRecord (CSR_ID,CSR_Item,CSR_GItem,CSR_Qty,CSR_DateOfSale,CSR_TimeOfSale,CSR_PaidPrice,CSR_TotalPrice,CSR_ItemRawPrice,CSR_ItemPrice,CSR_DiscountType,CSR_DiscName,CSR_DiscIdNo,CSR_TransactBy) " +
-                              "VALUES ('" + cusNum + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(1).Text + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(2).Text + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(0).Text + "','" + Format(Now, "yyyy-MM-dd") + "','" + Format(Now, "hh:mm:ss tt") + "','" + Format(Val(txtBoxPayment.Text), "0.00") + "','" + labelTotalTender.Text + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(6).Text + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(3).Text + "','" + My.Forms.formMainPos.discountType + " ','" + My.Forms.formMainPos.discountName + "','" + My.Forms.formMainPos.discountNo + "','" + EmployeeName + "');", cn, 1, 2)
+                        .Open("INSERT INTO CustomerRecord (CSR_ID,CSR_Item,CSR_GItem,CSR_Qty,CSR_DateOfSale,CSR_PaidPrice,CSR_TotalPrice,CSR_ItemRawPrice,CSR_ItemPrice,CSR_DiscountType,CSR_DiscName,CSR_DiscIdNo,CSR_TransactBy) " +
+                              "VALUES ('" + cusNum + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(1).Text + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(2).Text + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(0).Text + "','" + Format(Now, "MM/dd/yyyy hh:mm:ss tt") + "','" + Format(Val(txtBoxPayment.Text), "0.00") + "','" + labelTotalTender.Text + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(6).Text + "','" + My.Forms.formMainPos.listBuy.Items(i).SubItems(3).Text + "','" + My.Forms.formMainPos.discountType + " ','" + My.Forms.formMainPos.discountName + "','" + My.Forms.formMainPos.discountNo + "','" + EmployeeName + "');", cn, 1, 2)
 
                         i = i + 1
                     End While

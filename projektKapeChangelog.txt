@@ -1,6 +1,16 @@
 CHANGELOG:
-<<<<<<< HEAD
-<<<<<<< HEAD
+Update 09/18/2017 - 10:12AM
+by ebantay
+
+ADMIN
+-Dashboard functionality that shows all sales
+-Reports on specific date
+-Checks all registered suppliers on adding new product
+
+DATABASE
+-Modified table CustomerRecord, Date and Time are together on only one column
+#################
+
 
 Update 09/13/2017 - 4:55AM
 by ebantay

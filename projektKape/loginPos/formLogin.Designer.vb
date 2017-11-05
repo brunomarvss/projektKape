@@ -114,6 +114,7 @@ Partial Class formLogin
         Me.txtPass.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtPass.UseSelectable = True
         Me.txtPass.UseStyleColors = True
+        Me.txtPass.UseSystemPasswordChar = True
         Me.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtPass.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '

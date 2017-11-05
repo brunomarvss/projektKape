@@ -27,5 +27,6 @@
 
         formMainPos.ShowDialog()
         formLogin.Hide()
+        Me.Hide()
     End Sub
 End Class

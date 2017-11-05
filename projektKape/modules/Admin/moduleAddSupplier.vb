@@ -8,7 +8,7 @@
             rs = New ADODB.Recordset
 
             ''  Initialize declared variables
-            getCompany = formAddSupplier.txtJobTitle.Text.Trim
+            getCompany = formAddSupplier.txtCompany.Text.Trim
 
             getLname = formAddSupplier.txtLname.Text.Trim
             getFname = formAddSupplier.txtFname.Text.Trim
@@ -63,6 +63,16 @@
                       setCompany + "', '" + setContact + "', '" + setAddress + "', '" + setCity + "', '" + setProvince + "');", cn, 1, 2)
 
                 MsgBox("Saving Successful!", MsgBoxStyle.Information, "Record Saved")
+                formAddSupplier.txtCompany.Text = Nothing
+
+                formAddSupplier.txtLname.Text = Nothing
+                formAddSupplier.txtFname.Text = Nothing
+                formAddSupplier.txtSuffix.Text = Nothing
+
+                formAddSupplier.txtContact.Text = Nothing
+                formAddSupplier.txtAddress.Text = Nothing
+                formAddSupplier.txtCity.Text = Nothing
+                formAddSupplier.txtProvince.Text = Nothing
             End With
 
         Catch ex As Exception

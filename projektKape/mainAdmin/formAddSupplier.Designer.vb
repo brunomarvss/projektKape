@@ -24,7 +24,7 @@ Partial Class formAddSupplier
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.MetroLabel7 = New MetroFramework.Controls.MetroLabel()
-        Me.txtJobTitle = New MetroFramework.Controls.MetroTextBox()
+        Me.txtCompany = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel6 = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel5 = New MetroFramework.Controls.MetroLabel()
         Me.txtProvince = New MetroFramework.Controls.MetroTextBox()
@@ -44,59 +44,57 @@ Partial Class formAddSupplier
         Me.MetroLabel7.AutoSize = True
         Me.MetroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall
         Me.MetroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold
-        Me.MetroLabel7.Location = New System.Drawing.Point(80, 232)
-        Me.MetroLabel7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel7.Location = New System.Drawing.Point(107, 286)
         Me.MetroLabel7.Name = "MetroLabel7"
-        Me.MetroLabel7.Size = New System.Drawing.Size(97, 25)
+        Me.MetroLabel7.Size = New System.Drawing.Size(102, 25)
         Me.MetroLabel7.TabIndex = 32
         Me.MetroLabel7.Text = "Company:"
         '
-        'txtJobTitle
+        'txtCompany
         '
         '
         '
         '
-        Me.txtJobTitle.CustomButton.Image = Nothing
-        Me.txtJobTitle.CustomButton.Location = New System.Drawing.Point(114, 1)
-        Me.txtJobTitle.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
-        Me.txtJobTitle.CustomButton.Name = ""
-        Me.txtJobTitle.CustomButton.Size = New System.Drawing.Size(25, 27)
-        Me.txtJobTitle.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtJobTitle.CustomButton.TabIndex = 1
-        Me.txtJobTitle.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtJobTitle.CustomButton.UseSelectable = True
-        Me.txtJobTitle.CustomButton.Visible = False
-        Me.txtJobTitle.FontSize = MetroFramework.MetroTextBoxSize.Tall
-        Me.txtJobTitle.Lines = New String() {"Company Name"}
-        Me.txtJobTitle.Location = New System.Drawing.Point(180, 232)
-        Me.txtJobTitle.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
-        Me.txtJobTitle.MaxLength = 32767
-        Me.txtJobTitle.Multiline = True
-        Me.txtJobTitle.Name = "txtJobTitle"
-        Me.txtJobTitle.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtJobTitle.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtJobTitle.SelectedText = ""
-        Me.txtJobTitle.SelectionLength = 0
-        Me.txtJobTitle.SelectionStart = 0
-        Me.txtJobTitle.ShortcutsEnabled = True
-        Me.txtJobTitle.Size = New System.Drawing.Size(186, 35)
-        Me.txtJobTitle.TabIndex = 0
-        Me.txtJobTitle.Text = "Company Name"
-        Me.txtJobTitle.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtJobTitle.UseSelectable = True
-        Me.txtJobTitle.UseStyleColors = True
-        Me.txtJobTitle.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtJobTitle.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtCompany.CustomButton.Image = Nothing
+        Me.txtCompany.CustomButton.Location = New System.Drawing.Point(275, 1)
+        Me.txtCompany.CustomButton.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
+        Me.txtCompany.CustomButton.Name = ""
+        Me.txtCompany.CustomButton.Size = New System.Drawing.Size(55, 50)
+        Me.txtCompany.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtCompany.CustomButton.TabIndex = 1
+        Me.txtCompany.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtCompany.CustomButton.UseSelectable = True
+        Me.txtCompany.CustomButton.Visible = False
+        Me.txtCompany.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtCompany.Lines = New String() {"Company Name"}
+        Me.txtCompany.Location = New System.Drawing.Point(240, 286)
+        Me.txtCompany.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
+        Me.txtCompany.MaxLength = 32767
+        Me.txtCompany.Multiline = True
+        Me.txtCompany.Name = "txtCompany"
+        Me.txtCompany.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCompany.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtCompany.SelectedText = ""
+        Me.txtCompany.SelectionLength = 0
+        Me.txtCompany.SelectionStart = 0
+        Me.txtCompany.ShortcutsEnabled = True
+        Me.txtCompany.Size = New System.Drawing.Size(248, 43)
+        Me.txtCompany.TabIndex = 0
+        Me.txtCompany.Text = "Company Name"
+        Me.txtCompany.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtCompany.UseSelectable = True
+        Me.txtCompany.UseStyleColors = True
+        Me.txtCompany.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtCompany.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'MetroLabel6
         '
         Me.MetroLabel6.AutoSize = True
         Me.MetroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall
         Me.MetroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Bold
-        Me.MetroLabel6.Location = New System.Drawing.Point(398, 289)
-        Me.MetroLabel6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel6.Location = New System.Drawing.Point(531, 356)
         Me.MetroLabel6.Name = "MetroLabel6"
-        Me.MetroLabel6.Size = New System.Drawing.Size(85, 25)
+        Me.MetroLabel6.Size = New System.Drawing.Size(88, 25)
         Me.MetroLabel6.TabIndex = 30
         Me.MetroLabel6.Text = "Address:"
         '
@@ -105,10 +103,9 @@ Partial Class formAddSupplier
         Me.MetroLabel5.AutoSize = True
         Me.MetroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall
         Me.MetroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold
-        Me.MetroLabel5.Location = New System.Drawing.Point(398, 232)
-        Me.MetroLabel5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel5.Location = New System.Drawing.Point(531, 286)
         Me.MetroLabel5.Name = "MetroLabel5"
-        Me.MetroLabel5.Size = New System.Drawing.Size(87, 25)
+        Me.MetroLabel5.Size = New System.Drawing.Size(90, 25)
         Me.MetroLabel5.TabIndex = 29
         Me.MetroLabel5.Text = "Phone #:"
         '
@@ -118,10 +115,10 @@ Partial Class formAddSupplier
         '
         '
         Me.txtProvince.CustomButton.Image = Nothing
-        Me.txtProvince.CustomButton.Location = New System.Drawing.Point(114, 1)
-        Me.txtProvince.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtProvince.CustomButton.Location = New System.Drawing.Point(275, 1)
+        Me.txtProvince.CustomButton.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtProvince.CustomButton.Name = ""
-        Me.txtProvince.CustomButton.Size = New System.Drawing.Size(25, 27)
+        Me.txtProvince.CustomButton.Size = New System.Drawing.Size(55, 50)
         Me.txtProvince.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtProvince.CustomButton.TabIndex = 1
         Me.txtProvince.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -129,8 +126,8 @@ Partial Class formAddSupplier
         Me.txtProvince.CustomButton.Visible = False
         Me.txtProvince.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtProvince.Lines = New String() {"Province"}
-        Me.txtProvince.Location = New System.Drawing.Point(494, 379)
-        Me.txtProvince.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtProvince.Location = New System.Drawing.Point(659, 466)
+        Me.txtProvince.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtProvince.MaxLength = 32767
         Me.txtProvince.Multiline = True
         Me.txtProvince.Name = "txtProvince"
@@ -140,7 +137,7 @@ Partial Class formAddSupplier
         Me.txtProvince.SelectionLength = 0
         Me.txtProvince.SelectionStart = 0
         Me.txtProvince.ShortcutsEnabled = True
-        Me.txtProvince.Size = New System.Drawing.Size(186, 35)
+        Me.txtProvince.Size = New System.Drawing.Size(248, 43)
         Me.txtProvince.TabIndex = 7
         Me.txtProvince.Text = "Province"
         Me.txtProvince.Theme = MetroFramework.MetroThemeStyle.Light
@@ -155,10 +152,10 @@ Partial Class formAddSupplier
         '
         '
         Me.txtCity.CustomButton.Image = Nothing
-        Me.txtCity.CustomButton.Location = New System.Drawing.Point(114, 1)
-        Me.txtCity.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtCity.CustomButton.Location = New System.Drawing.Point(275, 1)
+        Me.txtCity.CustomButton.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtCity.CustomButton.Name = ""
-        Me.txtCity.CustomButton.Size = New System.Drawing.Size(25, 27)
+        Me.txtCity.CustomButton.Size = New System.Drawing.Size(55, 50)
         Me.txtCity.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtCity.CustomButton.TabIndex = 1
         Me.txtCity.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -166,8 +163,8 @@ Partial Class formAddSupplier
         Me.txtCity.CustomButton.Visible = False
         Me.txtCity.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtCity.Lines = New String() {"City"}
-        Me.txtCity.Location = New System.Drawing.Point(494, 334)
-        Me.txtCity.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtCity.Location = New System.Drawing.Point(659, 411)
+        Me.txtCity.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtCity.MaxLength = 32767
         Me.txtCity.Multiline = True
         Me.txtCity.Name = "txtCity"
@@ -177,7 +174,7 @@ Partial Class formAddSupplier
         Me.txtCity.SelectionLength = 0
         Me.txtCity.SelectionStart = 0
         Me.txtCity.ShortcutsEnabled = True
-        Me.txtCity.Size = New System.Drawing.Size(186, 35)
+        Me.txtCity.Size = New System.Drawing.Size(248, 43)
         Me.txtCity.TabIndex = 6
         Me.txtCity.Text = "City"
         Me.txtCity.Theme = MetroFramework.MetroThemeStyle.Light
@@ -192,10 +189,10 @@ Partial Class formAddSupplier
         '
         '
         Me.txtAddress.CustomButton.Image = Nothing
-        Me.txtAddress.CustomButton.Location = New System.Drawing.Point(114, 1)
-        Me.txtAddress.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtAddress.CustomButton.Location = New System.Drawing.Point(275, 1)
+        Me.txtAddress.CustomButton.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtAddress.CustomButton.Name = ""
-        Me.txtAddress.CustomButton.Size = New System.Drawing.Size(25, 27)
+        Me.txtAddress.CustomButton.Size = New System.Drawing.Size(55, 50)
         Me.txtAddress.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtAddress.CustomButton.TabIndex = 1
         Me.txtAddress.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -203,8 +200,8 @@ Partial Class formAddSupplier
         Me.txtAddress.CustomButton.Visible = False
         Me.txtAddress.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtAddress.Lines = New String() {"Address Details"}
-        Me.txtAddress.Location = New System.Drawing.Point(494, 289)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtAddress.Location = New System.Drawing.Point(659, 356)
+        Me.txtAddress.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtAddress.MaxLength = 32767
         Me.txtAddress.Multiline = True
         Me.txtAddress.Name = "txtAddress"
@@ -214,7 +211,7 @@ Partial Class formAddSupplier
         Me.txtAddress.SelectionLength = 0
         Me.txtAddress.SelectionStart = 0
         Me.txtAddress.ShortcutsEnabled = True
-        Me.txtAddress.Size = New System.Drawing.Size(186, 35)
+        Me.txtAddress.Size = New System.Drawing.Size(248, 43)
         Me.txtAddress.TabIndex = 5
         Me.txtAddress.Text = "Address Details"
         Me.txtAddress.Theme = MetroFramework.MetroThemeStyle.Light
@@ -229,10 +226,10 @@ Partial Class formAddSupplier
         '
         '
         Me.txtContact.CustomButton.Image = Nothing
-        Me.txtContact.CustomButton.Location = New System.Drawing.Point(114, 1)
-        Me.txtContact.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtContact.CustomButton.Location = New System.Drawing.Point(275, 1)
+        Me.txtContact.CustomButton.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtContact.CustomButton.Name = ""
-        Me.txtContact.CustomButton.Size = New System.Drawing.Size(25, 27)
+        Me.txtContact.CustomButton.Size = New System.Drawing.Size(55, 50)
         Me.txtContact.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtContact.CustomButton.TabIndex = 1
         Me.txtContact.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -240,8 +237,8 @@ Partial Class formAddSupplier
         Me.txtContact.CustomButton.Visible = False
         Me.txtContact.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtContact.Lines = New String() {"Contact Number"}
-        Me.txtContact.Location = New System.Drawing.Point(494, 232)
-        Me.txtContact.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtContact.Location = New System.Drawing.Point(659, 286)
+        Me.txtContact.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtContact.MaxLength = 32767
         Me.txtContact.Multiline = True
         Me.txtContact.Name = "txtContact"
@@ -251,7 +248,7 @@ Partial Class formAddSupplier
         Me.txtContact.SelectionLength = 0
         Me.txtContact.SelectionStart = 0
         Me.txtContact.ShortcutsEnabled = True
-        Me.txtContact.Size = New System.Drawing.Size(186, 35)
+        Me.txtContact.Size = New System.Drawing.Size(248, 43)
         Me.txtContact.TabIndex = 4
         Me.txtContact.Text = "Contact Number"
         Me.txtContact.Theme = MetroFramework.MetroThemeStyle.Light
@@ -265,10 +262,9 @@ Partial Class formAddSupplier
         Me.MetroLabel4.AutoSize = True
         Me.MetroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall
         Me.MetroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold
-        Me.MetroLabel4.Location = New System.Drawing.Point(104, 289)
-        Me.MetroLabel4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel4.Location = New System.Drawing.Point(139, 356)
         Me.MetroLabel4.Name = "MetroLabel4"
-        Me.MetroLabel4.Size = New System.Drawing.Size(67, 25)
+        Me.MetroLabel4.Size = New System.Drawing.Size(69, 25)
         Me.MetroLabel4.TabIndex = 24
         Me.MetroLabel4.Text = "Name:"
         '
@@ -278,10 +274,10 @@ Partial Class formAddSupplier
         '
         '
         Me.txtFname.CustomButton.Image = Nothing
-        Me.txtFname.CustomButton.Location = New System.Drawing.Point(114, 1)
-        Me.txtFname.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtFname.CustomButton.Location = New System.Drawing.Point(275, 1)
+        Me.txtFname.CustomButton.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtFname.CustomButton.Name = ""
-        Me.txtFname.CustomButton.Size = New System.Drawing.Size(25, 27)
+        Me.txtFname.CustomButton.Size = New System.Drawing.Size(55, 50)
         Me.txtFname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtFname.CustomButton.TabIndex = 1
         Me.txtFname.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -289,8 +285,8 @@ Partial Class formAddSupplier
         Me.txtFname.CustomButton.Visible = False
         Me.txtFname.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtFname.Lines = New String() {"First Name"}
-        Me.txtFname.Location = New System.Drawing.Point(180, 346)
-        Me.txtFname.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtFname.Location = New System.Drawing.Point(240, 426)
+        Me.txtFname.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtFname.MaxLength = 32767
         Me.txtFname.Multiline = True
         Me.txtFname.Name = "txtFname"
@@ -300,7 +296,7 @@ Partial Class formAddSupplier
         Me.txtFname.SelectionLength = 0
         Me.txtFname.SelectionStart = 0
         Me.txtFname.ShortcutsEnabled = True
-        Me.txtFname.Size = New System.Drawing.Size(186, 35)
+        Me.txtFname.Size = New System.Drawing.Size(248, 43)
         Me.txtFname.TabIndex = 2
         Me.txtFname.Text = "First Name"
         Me.txtFname.Theme = MetroFramework.MetroThemeStyle.Light
@@ -315,10 +311,10 @@ Partial Class formAddSupplier
         '
         '
         Me.txtLname.CustomButton.Image = Nothing
-        Me.txtLname.CustomButton.Location = New System.Drawing.Point(114, 1)
-        Me.txtLname.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtLname.CustomButton.Location = New System.Drawing.Point(275, 1)
+        Me.txtLname.CustomButton.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtLname.CustomButton.Name = ""
-        Me.txtLname.CustomButton.Size = New System.Drawing.Size(25, 27)
+        Me.txtLname.CustomButton.Size = New System.Drawing.Size(55, 50)
         Me.txtLname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtLname.CustomButton.TabIndex = 1
         Me.txtLname.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -326,8 +322,8 @@ Partial Class formAddSupplier
         Me.txtLname.CustomButton.Visible = False
         Me.txtLname.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtLname.Lines = New String() {"Last Name"}
-        Me.txtLname.Location = New System.Drawing.Point(180, 289)
-        Me.txtLname.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtLname.Location = New System.Drawing.Point(240, 356)
+        Me.txtLname.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtLname.MaxLength = 32767
         Me.txtLname.Multiline = True
         Me.txtLname.Name = "txtLname"
@@ -337,7 +333,7 @@ Partial Class formAddSupplier
         Me.txtLname.SelectionLength = 0
         Me.txtLname.SelectionStart = 0
         Me.txtLname.ShortcutsEnabled = True
-        Me.txtLname.Size = New System.Drawing.Size(186, 35)
+        Me.txtLname.Size = New System.Drawing.Size(248, 43)
         Me.txtLname.TabIndex = 1
         Me.txtLname.Text = "Last Name"
         Me.txtLname.Theme = MetroFramework.MetroThemeStyle.Light
@@ -349,10 +345,9 @@ Partial Class formAddSupplier
         'MetroLabel2
         '
         Me.MetroLabel2.AutoSize = True
-        Me.MetroLabel2.Location = New System.Drawing.Point(17, 100)
-        Me.MetroLabel2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel2.Location = New System.Drawing.Point(23, 123)
         Me.MetroLabel2.Name = "MetroLabel2"
-        Me.MetroLabel2.Size = New System.Drawing.Size(609, 19)
+        Me.MetroLabel2.Size = New System.Drawing.Size(609, 20)
         Me.MetroLabel2.TabIndex = 33
         Me.MetroLabel2.Text = "_________________________________________________________________________________" &
     "___________________"
@@ -360,10 +355,10 @@ Partial Class formAddSupplier
         'btnSave
         '
         Me.btnSave.FontSize = MetroFramework.MetroButtonSize.Medium
-        Me.btnSave.Location = New System.Drawing.Point(209, 496)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(107, 0, 107, 164)
+        Me.btnSave.Location = New System.Drawing.Point(279, 610)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(143, 0, 143, 202)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(315, 48)
+        Me.btnSave.Size = New System.Drawing.Size(420, 59)
         Me.btnSave.Style = MetroFramework.MetroColorStyle.Purple
         Me.btnSave.TabIndex = 8
         Me.btnSave.Text = "SAVE"
@@ -375,10 +370,10 @@ Partial Class formAddSupplier
         '
         '
         Me.txtSuffix.CustomButton.Image = Nothing
-        Me.txtSuffix.CustomButton.Location = New System.Drawing.Point(114, 1)
-        Me.txtSuffix.CustomButton.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtSuffix.CustomButton.Location = New System.Drawing.Point(275, 1)
+        Me.txtSuffix.CustomButton.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtSuffix.CustomButton.Name = ""
-        Me.txtSuffix.CustomButton.Size = New System.Drawing.Size(25, 27)
+        Me.txtSuffix.CustomButton.Size = New System.Drawing.Size(55, 50)
         Me.txtSuffix.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtSuffix.CustomButton.TabIndex = 1
         Me.txtSuffix.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -386,8 +381,8 @@ Partial Class formAddSupplier
         Me.txtSuffix.CustomButton.Visible = False
         Me.txtSuffix.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtSuffix.Lines = New String() {"Suffix e.g. (Jr.)"}
-        Me.txtSuffix.Location = New System.Drawing.Point(180, 391)
-        Me.txtSuffix.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.txtSuffix.Location = New System.Drawing.Point(240, 481)
+        Me.txtSuffix.Margin = New System.Windows.Forms.Padding(9, 6, 9, 6)
         Me.txtSuffix.MaxLength = 32767
         Me.txtSuffix.Multiline = True
         Me.txtSuffix.Name = "txtSuffix"
@@ -397,7 +392,7 @@ Partial Class formAddSupplier
         Me.txtSuffix.SelectionLength = 0
         Me.txtSuffix.SelectionStart = 0
         Me.txtSuffix.ShortcutsEnabled = True
-        Me.txtSuffix.Size = New System.Drawing.Size(186, 35)
+        Me.txtSuffix.Size = New System.Drawing.Size(248, 43)
         Me.txtSuffix.TabIndex = 3
         Me.txtSuffix.Text = "Suffix e.g. (Jr.)"
         Me.txtSuffix.Theme = MetroFramework.MetroThemeStyle.Light
@@ -408,14 +403,14 @@ Partial Class formAddSupplier
         '
         'formAddSupplier
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(760, 627)
+        Me.ClientSize = New System.Drawing.Size(1013, 772)
         Me.Controls.Add(Me.txtSuffix)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.MetroLabel2)
         Me.Controls.Add(Me.MetroLabel7)
-        Me.Controls.Add(Me.txtJobTitle)
+        Me.Controls.Add(Me.txtCompany)
         Me.Controls.Add(Me.MetroLabel6)
         Me.Controls.Add(Me.MetroLabel5)
         Me.Controls.Add(Me.txtProvince)
@@ -425,9 +420,9 @@ Partial Class formAddSupplier
         Me.Controls.Add(Me.MetroLabel4)
         Me.Controls.Add(Me.txtFname)
         Me.Controls.Add(Me.txtLname)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "formAddSupplier"
-        Me.Padding = New System.Windows.Forms.Padding(15, 49, 15, 16)
+        Me.Padding = New System.Windows.Forms.Padding(20, 74, 20, 20)
         Me.Text = "Supplier Details"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -435,7 +430,7 @@ Partial Class formAddSupplier
     End Sub
 
     Friend WithEvents MetroLabel7 As MetroFramework.Controls.MetroLabel
-    Protected Friend WithEvents txtJobTitle As MetroFramework.Controls.MetroTextBox
+    Protected Friend WithEvents txtCompany As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel6 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel5 As MetroFramework.Controls.MetroLabel
     Protected Friend WithEvents txtProvince As MetroFramework.Controls.MetroTextBox

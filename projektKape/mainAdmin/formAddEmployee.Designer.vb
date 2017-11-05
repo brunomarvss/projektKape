@@ -1,10 +1,10 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formAddEmployee
     Inherits MetroFramework.Forms.MetroForm
     'Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -21,7 +21,7 @@ Partial Class formAddEmployee
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MetroLabel2 = New MetroFramework.Controls.MetroLabel()
         Me.txtLname = New MetroFramework.Controls.MetroTextBox()
@@ -69,6 +69,7 @@ Partial Class formAddEmployee
         Me.txtLname.CustomButton.UseSelectable = True
         Me.txtLname.CustomButton.Visible = False
         Me.txtLname.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtLname.ForeColor = System.Drawing.Color.Red
         Me.txtLname.Lines = New String() {"Last Name"}
         Me.txtLname.Location = New System.Drawing.Point(126, 241)
         Me.txtLname.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
@@ -108,10 +109,10 @@ Partial Class formAddEmployee
         Me.MetroLabel1.Location = New System.Drawing.Point(46, 109)
         Me.MetroLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(288, 57)
+        Me.MetroLabel1.Size = New System.Drawing.Size(268, 38)
         Me.MetroLabel1.TabIndex = 7
         Me.MetroLabel1.Text = "-Input the credentials of your employee." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "-Leave or skip the text field if not ap" &
-    "plicable." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "-Required to fill-up fields that has asterisk mark."
+    "plicable."
         '
         'MetroLabel3
         '
@@ -141,6 +142,7 @@ Partial Class formAddEmployee
         Me.txtFname.CustomButton.UseSelectable = True
         Me.txtFname.CustomButton.Visible = False
         Me.txtFname.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtFname.ForeColor = System.Drawing.Color.Red
         Me.txtFname.Lines = New String() {"First Name"}
         Me.txtFname.Location = New System.Drawing.Point(126, 298)
         Me.txtFname.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
@@ -178,6 +180,7 @@ Partial Class formAddEmployee
         Me.txtSuffix.CustomButton.UseSelectable = True
         Me.txtSuffix.CustomButton.Visible = False
         Me.txtSuffix.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtSuffix.ForeColor = System.Drawing.Color.Red
         Me.txtSuffix.Lines = New String() {"Suffix"}
         Me.txtSuffix.Location = New System.Drawing.Point(126, 388)
         Me.txtSuffix.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
@@ -227,6 +230,7 @@ Partial Class formAddEmployee
         Me.txtMname.CustomButton.UseSelectable = True
         Me.txtMname.CustomButton.Visible = False
         Me.txtMname.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtMname.ForeColor = System.Drawing.Color.Red
         Me.txtMname.Lines = New String() {"Middle Name"}
         Me.txtMname.Location = New System.Drawing.Point(126, 343)
         Me.txtMname.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
@@ -276,6 +280,7 @@ Partial Class formAddEmployee
         Me.txtProvince.CustomButton.UseSelectable = True
         Me.txtProvince.CustomButton.Visible = False
         Me.txtProvince.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtProvince.ForeColor = System.Drawing.Color.Red
         Me.txtProvince.Lines = New String() {"Province"}
         Me.txtProvince.Location = New System.Drawing.Point(440, 331)
         Me.txtProvince.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
@@ -313,6 +318,7 @@ Partial Class formAddEmployee
         Me.txtCity.CustomButton.UseSelectable = True
         Me.txtCity.CustomButton.Visible = False
         Me.txtCity.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtCity.ForeColor = System.Drawing.Color.Red
         Me.txtCity.Lines = New String() {"City"}
         Me.txtCity.Location = New System.Drawing.Point(440, 286)
         Me.txtCity.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
@@ -350,6 +356,7 @@ Partial Class formAddEmployee
         Me.txtAddress.CustomButton.UseSelectable = True
         Me.txtAddress.CustomButton.Visible = False
         Me.txtAddress.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtAddress.ForeColor = System.Drawing.Color.Red
         Me.txtAddress.Lines = New String() {"Address Details"}
         Me.txtAddress.Location = New System.Drawing.Point(440, 241)
         Me.txtAddress.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
@@ -387,6 +394,7 @@ Partial Class formAddEmployee
         Me.txtContact.CustomButton.UseSelectable = True
         Me.txtContact.CustomButton.Visible = False
         Me.txtContact.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtContact.ForeColor = System.Drawing.Color.Red
         Me.txtContact.Lines = New String() {"Contact Number"}
         Me.txtContact.Location = New System.Drawing.Point(440, 184)
         Me.txtContact.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
@@ -448,6 +456,7 @@ Partial Class formAddEmployee
         Me.txtJobTitle.CustomButton.UseSelectable = True
         Me.txtJobTitle.CustomButton.Visible = False
         Me.txtJobTitle.FontSize = MetroFramework.MetroTextBoxSize.Tall
+        Me.txtJobTitle.ForeColor = System.Drawing.Color.Red
         Me.txtJobTitle.Lines = New String() {"Work Title"}
         Me.txtJobTitle.Location = New System.Drawing.Point(126, 184)
         Me.txtJobTitle.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)

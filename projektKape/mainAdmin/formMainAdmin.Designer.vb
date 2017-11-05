@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formMainAdmin
     Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,28 +20,38 @@ Partial Class formMainAdmin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.labelTimeAdmin = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel4 = New MetroFramework.Controls.MetroLabel()
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.MetroButton6 = New MetroFramework.Controls.MetroButton()
         Me.MetroButton5 = New MetroFramework.Controls.MetroButton()
-        Me.MetroButton3 = New MetroFramework.Controls.MetroButton()
+        Me.btnViewReport = New MetroFramework.Controls.MetroButton()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.MetroButton4 = New MetroFramework.Controls.MetroButton()
         Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
         Me.MetroTabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.MetroTabPage1 = New MetroFramework.Controls.MetroTabPage()
-        Me.MetroProgressBar5 = New MetroFramework.Controls.MetroProgressBar()
-        Me.MetroProgressBar6 = New MetroFramework.Controls.MetroProgressBar()
-        Me.MetroProgressBar3 = New MetroFramework.Controls.MetroProgressBar()
-        Me.MetroProgressBar4 = New MetroFramework.Controls.MetroProgressBar()
-        Me.MetroProgressBar2 = New MetroFramework.Controls.MetroProgressBar()
-        Me.StatDaily = New MetroFramework.Controls.MetroProgressBar()
+        Me.MetroLabel14 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel15 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel16 = New MetroFramework.Controls.MetroLabel()
+        Me.comboSearchYear = New MetroFramework.Controls.MetroComboBox()
+        Me.comboSearchMonth = New MetroFramework.Controls.MetroComboBox()
+        Me.comboSearchDay = New MetroFramework.Controls.MetroComboBox()
+        Me.MetroLabel13 = New MetroFramework.Controls.MetroLabel()
+        Me.comboSelectedReport = New MetroFramework.Controls.MetroComboBox()
+        Me.MetroUserControl1 = New MetroFramework.Controls.MetroUserControl()
+        Me.lblYearly = New MetroFramework.Controls.MetroLabel()
+        Me.lblMonthly = New MetroFramework.Controls.MetroLabel()
+        Me.lblWeekly = New MetroFramework.Controls.MetroLabel()
+        Me.lblDaily = New MetroFramework.Controls.MetroLabel()
         Me.MetroTabPage2 = New MetroFramework.Controls.MetroTabPage()
+        Me.MetroLabel8 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel11 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel12 = New MetroFramework.Controls.MetroLabel()
         Me.btnAddStock = New MetroFramework.Controls.MetroButton()
         Me.MetroLabel2 = New MetroFramework.Controls.MetroLabel()
         Me.txtSearchProduct = New MetroFramework.Controls.MetroTextBox()
@@ -82,6 +92,7 @@ Partial Class formMainAdmin
         Me.MetroLabel = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel9 = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel10 = New MetroFramework.Controls.MetroLabel()
+        Me.TimerStats = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.MetroTabControl1.SuspendLayout()
         Me.MetroTabPage1.SuspendLayout()
@@ -93,9 +104,10 @@ Partial Class formMainAdmin
         'labelTimeAdmin
         '
         Me.labelTimeAdmin.AutoSize = True
-        Me.labelTimeAdmin.Location = New System.Drawing.Point(1093, 712)
+        Me.labelTimeAdmin.Location = New System.Drawing.Point(1457, 876)
+        Me.labelTimeAdmin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.labelTimeAdmin.Name = "labelTimeAdmin"
-        Me.labelTimeAdmin.Size = New System.Drawing.Size(15, 19)
+        Me.labelTimeAdmin.Size = New System.Drawing.Size(15, 20)
         Me.labelTimeAdmin.TabIndex = 22
         Me.labelTimeAdmin.Text = "_"
         '
@@ -104,30 +116,33 @@ Partial Class formMainAdmin
         Me.MetroLabel4.AutoSize = True
         Me.MetroLabel4.FontSize = MetroFramework.MetroLabelSize.Small
         Me.MetroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular
-        Me.MetroLabel4.Location = New System.Drawing.Point(1247, 715)
+        Me.MetroLabel4.Location = New System.Drawing.Point(1663, 880)
+        Me.MetroLabel4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel4.Name = "MetroLabel4"
-        Me.MetroLabel4.Size = New System.Drawing.Size(82, 15)
+        Me.MetroLabel4.Size = New System.Drawing.Size(91, 17)
         Me.MetroLabel4.TabIndex = 21
         Me.MetroLabel4.Text = "BRN SYSTEMS"
         '
-        'Timer2
+        'Timer
         '
-        Me.Timer2.Interval = 1000
+        Me.Timer.Interval = 1000
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
         Me.GroupBox1.Controls.Add(Me.MetroButton6)
         Me.GroupBox1.Controls.Add(Me.MetroButton5)
-        Me.GroupBox1.Controls.Add(Me.MetroButton3)
+        Me.GroupBox1.Controls.Add(Me.btnViewReport)
         Me.GroupBox1.Controls.Add(Me.MetroButton1)
         Me.GroupBox1.Controls.Add(Me.MetroButton4)
         Me.GroupBox1.Controls.Add(Me.MetroButton2)
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox1.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(36, 89)
+        Me.GroupBox1.Location = New System.Drawing.Point(48, 110)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 427)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(267, 526)
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Menu"
@@ -136,9 +151,10 @@ Partial Class formMainAdmin
         '
         Me.MetroButton6.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton6.Highlight = True
-        Me.MetroButton6.Location = New System.Drawing.Point(21, 139)
+        Me.MetroButton6.Location = New System.Drawing.Point(28, 171)
+        Me.MetroButton6.Margin = New System.Windows.Forms.Padding(4)
         Me.MetroButton6.Name = "MetroButton6"
-        Me.MetroButton6.Size = New System.Drawing.Size(156, 54)
+        Me.MetroButton6.Size = New System.Drawing.Size(208, 66)
         Me.MetroButton6.TabIndex = 29
         Me.MetroButton6.Text = "Employees"
         Me.MetroButton6.UseSelectable = True
@@ -147,32 +163,35 @@ Partial Class formMainAdmin
         '
         Me.MetroButton5.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton5.Highlight = True
-        Me.MetroButton5.Location = New System.Drawing.Point(21, 356)
+        Me.MetroButton5.Location = New System.Drawing.Point(28, 438)
+        Me.MetroButton5.Margin = New System.Windows.Forms.Padding(4)
         Me.MetroButton5.Name = "MetroButton5"
-        Me.MetroButton5.Size = New System.Drawing.Size(156, 49)
+        Me.MetroButton5.Size = New System.Drawing.Size(208, 60)
         Me.MetroButton5.TabIndex = 28
         Me.MetroButton5.Text = "Logout"
         Me.MetroButton5.UseSelectable = True
         '
-        'MetroButton3
+        'btnViewReport
         '
-        Me.MetroButton3.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.MetroButton3.Highlight = True
-        Me.MetroButton3.Location = New System.Drawing.Point(21, 259)
-        Me.MetroButton3.Name = "MetroButton3"
-        Me.MetroButton3.Size = New System.Drawing.Size(156, 54)
-        Me.MetroButton3.TabIndex = 26
-        Me.MetroButton3.Text = "View Reports"
-        Me.MetroButton3.UseSelectable = True
+        Me.btnViewReport.FontSize = MetroFramework.MetroButtonSize.Tall
+        Me.btnViewReport.Highlight = True
+        Me.btnViewReport.Location = New System.Drawing.Point(28, 319)
+        Me.btnViewReport.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnViewReport.Name = "btnViewReport"
+        Me.btnViewReport.Size = New System.Drawing.Size(208, 66)
+        Me.btnViewReport.TabIndex = 26
+        Me.btnViewReport.Text = "View Reports"
+        Me.btnViewReport.UseSelectable = True
         '
         'MetroButton1
         '
         Me.MetroButton1.BackColor = System.Drawing.Color.White
         Me.MetroButton1.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton1.Highlight = True
-        Me.MetroButton1.Location = New System.Drawing.Point(21, 199)
+        Me.MetroButton1.Location = New System.Drawing.Point(28, 245)
+        Me.MetroButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.MetroButton1.Name = "MetroButton1"
-        Me.MetroButton1.Size = New System.Drawing.Size(156, 54)
+        Me.MetroButton1.Size = New System.Drawing.Size(208, 66)
         Me.MetroButton1.TabIndex = 24
         Me.MetroButton1.Text = "Suppliers"
         Me.MetroButton1.Theme = MetroFramework.MetroThemeStyle.Light
@@ -182,9 +201,10 @@ Partial Class formMainAdmin
         '
         Me.MetroButton4.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton4.Highlight = True
-        Me.MetroButton4.Location = New System.Drawing.Point(21, 24)
+        Me.MetroButton4.Location = New System.Drawing.Point(28, 30)
+        Me.MetroButton4.Margin = New System.Windows.Forms.Padding(4)
         Me.MetroButton4.Name = "MetroButton4"
-        Me.MetroButton4.Size = New System.Drawing.Size(156, 49)
+        Me.MetroButton4.Size = New System.Drawing.Size(208, 60)
         Me.MetroButton4.TabIndex = 27
         Me.MetroButton4.Text = "Dashboard"
         Me.MetroButton4.UseSelectable = True
@@ -193,9 +213,10 @@ Partial Class formMainAdmin
         '
         Me.MetroButton2.FontSize = MetroFramework.MetroButtonSize.Tall
         Me.MetroButton2.Highlight = True
-        Me.MetroButton2.Location = New System.Drawing.Point(21, 79)
+        Me.MetroButton2.Location = New System.Drawing.Point(28, 97)
+        Me.MetroButton2.Margin = New System.Windows.Forms.Padding(4)
         Me.MetroButton2.Name = "MetroButton2"
-        Me.MetroButton2.Size = New System.Drawing.Size(156, 54)
+        Me.MetroButton2.Size = New System.Drawing.Size(208, 66)
         Me.MetroButton2.TabIndex = 25
         Me.MetroButton2.Text = "Products"
         Me.MetroButton2.UseSelectable = True
@@ -206,85 +227,195 @@ Partial Class formMainAdmin
         Me.MetroTabControl1.Controls.Add(Me.MetroTabPage2)
         Me.MetroTabControl1.Controls.Add(Me.MetroTabPage3)
         Me.MetroTabControl1.Controls.Add(Me.MetroTabPage4)
-        Me.MetroTabControl1.Location = New System.Drawing.Point(290, 89)
-        Me.MetroTabControl1.Margin = New System.Windows.Forms.Padding(2)
+        Me.MetroTabControl1.Location = New System.Drawing.Point(387, 110)
+        Me.MetroTabControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MetroTabControl1.Name = "MetroTabControl1"
-        Me.MetroTabControl1.SelectedIndex = 3
-        Me.MetroTabControl1.Size = New System.Drawing.Size(1036, 585)
+        Me.MetroTabControl1.SelectedIndex = 1
+        Me.MetroTabControl1.Size = New System.Drawing.Size(1381, 720)
         Me.MetroTabControl1.TabIndex = 33
         Me.MetroTabControl1.UseSelectable = True
         '
         'MetroTabPage1
         '
-        Me.MetroTabPage1.Controls.Add(Me.MetroProgressBar5)
-        Me.MetroTabPage1.Controls.Add(Me.MetroProgressBar6)
-        Me.MetroTabPage1.Controls.Add(Me.MetroProgressBar3)
-        Me.MetroTabPage1.Controls.Add(Me.MetroProgressBar4)
-        Me.MetroTabPage1.Controls.Add(Me.MetroProgressBar2)
-        Me.MetroTabPage1.Controls.Add(Me.StatDaily)
+        Me.MetroTabPage1.Controls.Add(Me.MetroLabel14)
+        Me.MetroTabPage1.Controls.Add(Me.MetroLabel15)
+        Me.MetroTabPage1.Controls.Add(Me.MetroLabel16)
+        Me.MetroTabPage1.Controls.Add(Me.comboSearchYear)
+        Me.MetroTabPage1.Controls.Add(Me.comboSearchMonth)
+        Me.MetroTabPage1.Controls.Add(Me.comboSearchDay)
+        Me.MetroTabPage1.Controls.Add(Me.MetroLabel13)
+        Me.MetroTabPage1.Controls.Add(Me.comboSelectedReport)
+        Me.MetroTabPage1.Controls.Add(Me.MetroUserControl1)
+        Me.MetroTabPage1.Controls.Add(Me.lblYearly)
+        Me.MetroTabPage1.Controls.Add(Me.lblMonthly)
+        Me.MetroTabPage1.Controls.Add(Me.lblWeekly)
+        Me.MetroTabPage1.Controls.Add(Me.lblDaily)
         Me.MetroTabPage1.HorizontalScrollbarBarColor = True
         Me.MetroTabPage1.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage1.HorizontalScrollbarSize = 8
+        Me.MetroTabPage1.HorizontalScrollbarSize = 10
         Me.MetroTabPage1.Location = New System.Drawing.Point(4, 38)
-        Me.MetroTabPage1.Margin = New System.Windows.Forms.Padding(2)
+        Me.MetroTabPage1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MetroTabPage1.Name = "MetroTabPage1"
-        Me.MetroTabPage1.Size = New System.Drawing.Size(1028, 543)
+        Me.MetroTabPage1.Size = New System.Drawing.Size(1373, 678)
         Me.MetroTabPage1.TabIndex = 0
         Me.MetroTabPage1.Text = "Dashboard"
         Me.MetroTabPage1.VerticalScrollbarBarColor = True
         Me.MetroTabPage1.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage1.VerticalScrollbarSize = 8
+        Me.MetroTabPage1.VerticalScrollbarSize = 11
         '
-        'MetroProgressBar5
+        'MetroLabel14
         '
-        Me.MetroProgressBar5.Location = New System.Drawing.Point(391, 297)
-        Me.MetroProgressBar5.Margin = New System.Windows.Forms.Padding(2)
-        Me.MetroProgressBar5.Name = "MetroProgressBar5"
-        Me.MetroProgressBar5.Size = New System.Drawing.Size(248, 19)
-        Me.MetroProgressBar5.TabIndex = 7
+        Me.MetroLabel14.AutoSize = True
+        Me.MetroLabel14.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.MetroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Bold
+        Me.MetroLabel14.Location = New System.Drawing.Point(196, 343)
+        Me.MetroLabel14.Name = "MetroLabel14"
+        Me.MetroLabel14.Size = New System.Drawing.Size(82, 25)
+        Me.MetroLabel14.TabIndex = 111
+        Me.MetroLabel14.Text = "Reports"
         '
-        'MetroProgressBar6
+        'MetroLabel15
         '
-        Me.MetroProgressBar6.Location = New System.Drawing.Point(391, 236)
-        Me.MetroProgressBar6.Margin = New System.Windows.Forms.Padding(2)
-        Me.MetroProgressBar6.Name = "MetroProgressBar6"
-        Me.MetroProgressBar6.Size = New System.Drawing.Size(248, 19)
-        Me.MetroProgressBar6.TabIndex = 6
+        Me.MetroLabel15.AutoSize = True
+        Me.MetroLabel15.Location = New System.Drawing.Point(196, 368)
+        Me.MetroLabel15.Name = "MetroLabel15"
+        Me.MetroLabel15.Size = New System.Drawing.Size(609, 20)
+        Me.MetroLabel15.TabIndex = 110
+        Me.MetroLabel15.Text = "_________________________________________________________________________________" &
+    "___________________"
         '
-        'MetroProgressBar3
+        'MetroLabel16
         '
-        Me.MetroProgressBar3.Location = New System.Drawing.Point(46, 289)
-        Me.MetroProgressBar3.Margin = New System.Windows.Forms.Padding(2)
-        Me.MetroProgressBar3.Name = "MetroProgressBar3"
-        Me.MetroProgressBar3.Size = New System.Drawing.Size(248, 19)
-        Me.MetroProgressBar3.TabIndex = 5
+        Me.MetroLabel16.AutoSize = True
+        Me.MetroLabel16.Location = New System.Drawing.Point(196, 400)
+        Me.MetroLabel16.Name = "MetroLabel16"
+        Me.MetroLabel16.Size = New System.Drawing.Size(579, 20)
+        Me.MetroLabel16.TabIndex = 109
+        Me.MetroLabel16.Text = "Make sure you choose specific date you want before proceeding on ""View Reports"" S" &
+    "ection."
         '
-        'MetroProgressBar4
+        'comboSearchYear
         '
-        Me.MetroProgressBar4.Location = New System.Drawing.Point(46, 229)
-        Me.MetroProgressBar4.Margin = New System.Windows.Forms.Padding(2)
-        Me.MetroProgressBar4.Name = "MetroProgressBar4"
-        Me.MetroProgressBar4.Size = New System.Drawing.Size(248, 19)
-        Me.MetroProgressBar4.TabIndex = 4
+        Me.comboSearchYear.FontSize = MetroFramework.MetroComboBoxSize.Tall
+        Me.comboSearchYear.FormattingEnabled = True
+        Me.comboSearchYear.ItemHeight = 29
+        Me.comboSearchYear.Items.AddRange(New Object() {"2017"})
+        Me.comboSearchYear.Location = New System.Drawing.Point(622, 224)
+        Me.comboSearchYear.Margin = New System.Windows.Forms.Padding(4)
+        Me.comboSearchYear.Name = "comboSearchYear"
+        Me.comboSearchYear.Size = New System.Drawing.Size(257, 35)
+        Me.comboSearchYear.TabIndex = 46
+        Me.comboSearchYear.UseSelectable = True
         '
-        'MetroProgressBar2
+        'comboSearchMonth
         '
-        Me.MetroProgressBar2.Location = New System.Drawing.Point(46, 161)
-        Me.MetroProgressBar2.Margin = New System.Windows.Forms.Padding(2)
-        Me.MetroProgressBar2.Name = "MetroProgressBar2"
-        Me.MetroProgressBar2.Size = New System.Drawing.Size(248, 19)
-        Me.MetroProgressBar2.TabIndex = 3
+        Me.comboSearchMonth.FontSize = MetroFramework.MetroComboBoxSize.Tall
+        Me.comboSearchMonth.FormattingEnabled = True
+        Me.comboSearchMonth.ItemHeight = 29
+        Me.comboSearchMonth.Items.AddRange(New Object() {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"})
+        Me.comboSearchMonth.Location = New System.Drawing.Point(622, 133)
+        Me.comboSearchMonth.Margin = New System.Windows.Forms.Padding(4)
+        Me.comboSearchMonth.Name = "comboSearchMonth"
+        Me.comboSearchMonth.Size = New System.Drawing.Size(257, 35)
+        Me.comboSearchMonth.TabIndex = 45
+        Me.comboSearchMonth.UseSelectable = True
         '
-        'StatDaily
+        'comboSearchDay
         '
-        Me.StatDaily.Location = New System.Drawing.Point(46, 101)
-        Me.StatDaily.Margin = New System.Windows.Forms.Padding(2)
-        Me.StatDaily.Name = "StatDaily"
-        Me.StatDaily.Size = New System.Drawing.Size(248, 19)
-        Me.StatDaily.TabIndex = 2
+        Me.comboSearchDay.FontSize = MetroFramework.MetroComboBoxSize.Tall
+        Me.comboSearchDay.FormattingEnabled = True
+        Me.comboSearchDay.ItemHeight = 29
+        Me.comboSearchDay.Items.AddRange(New Object() {"01", "02", "03", "04", "05", "06", "07", "08", "09"})
+        Me.comboSearchDay.Location = New System.Drawing.Point(622, 59)
+        Me.comboSearchDay.Margin = New System.Windows.Forms.Padding(4)
+        Me.comboSearchDay.Name = "comboSearchDay"
+        Me.comboSearchDay.Size = New System.Drawing.Size(257, 35)
+        Me.comboSearchDay.TabIndex = 44
+        Me.comboSearchDay.UseSelectable = True
+        '
+        'MetroLabel13
+        '
+        Me.MetroLabel13.AutoSize = True
+        Me.MetroLabel13.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.MetroLabel13.Location = New System.Drawing.Point(121, 27)
+        Me.MetroLabel13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.MetroLabel13.Name = "MetroLabel13"
+        Me.MetroLabel13.Size = New System.Drawing.Size(147, 25)
+        Me.MetroLabel13.TabIndex = 43
+        Me.MetroLabel13.Text = "SELECT REPORT:"
+        '
+        'comboSelectedReport
+        '
+        Me.comboSelectedReport.FontSize = MetroFramework.MetroComboBoxSize.Tall
+        Me.comboSelectedReport.FormattingEnabled = True
+        Me.comboSelectedReport.ItemHeight = 29
+        Me.comboSelectedReport.Items.AddRange(New Object() {"DAILY", "WEEKLY", "MONTHLY", "YEARLY"})
+        Me.comboSelectedReport.Location = New System.Drawing.Point(121, 59)
+        Me.comboSelectedReport.Margin = New System.Windows.Forms.Padding(4)
+        Me.comboSelectedReport.Name = "comboSelectedReport"
+        Me.comboSelectedReport.Size = New System.Drawing.Size(257, 35)
+        Me.comboSelectedReport.TabIndex = 41
+        Me.comboSelectedReport.UseSelectable = True
+        '
+        'MetroUserControl1
+        '
+        Me.MetroUserControl1.Location = New System.Drawing.Point(263, 132)
+        Me.MetroUserControl1.Margin = New System.Windows.Forms.Padding(4)
+        Me.MetroUserControl1.Name = "MetroUserControl1"
+        Me.MetroUserControl1.Size = New System.Drawing.Size(200, 185)
+        Me.MetroUserControl1.TabIndex = 23
+        Me.MetroUserControl1.UseSelectable = True
+        Me.MetroUserControl1.Visible = False
+        '
+        'lblYearly
+        '
+        Me.lblYearly.AutoSize = True
+        Me.lblYearly.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.lblYearly.FontWeight = MetroFramework.MetroLabelWeight.Bold
+        Me.lblYearly.Location = New System.Drawing.Point(440, 234)
+        Me.lblYearly.Name = "lblYearly"
+        Me.lblYearly.Size = New System.Drawing.Size(87, 25)
+        Me.lblYearly.TabIndex = 22
+        Me.lblYearly.Text = "lblYearly"
+        '
+        'lblMonthly
+        '
+        Me.lblMonthly.AutoSize = True
+        Me.lblMonthly.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.lblMonthly.FontWeight = MetroFramework.MetroLabelWeight.Bold
+        Me.lblMonthly.Location = New System.Drawing.Point(440, 160)
+        Me.lblMonthly.Name = "lblMonthly"
+        Me.lblMonthly.Size = New System.Drawing.Size(109, 25)
+        Me.lblMonthly.TabIndex = 21
+        Me.lblMonthly.Text = "lblMonthly"
+        '
+        'lblWeekly
+        '
+        Me.lblWeekly.AutoSize = True
+        Me.lblWeekly.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.lblWeekly.FontWeight = MetroFramework.MetroLabelWeight.Bold
+        Me.lblWeekly.Location = New System.Drawing.Point(622, 104)
+        Me.lblWeekly.Name = "lblWeekly"
+        Me.lblWeekly.Size = New System.Drawing.Size(98, 25)
+        Me.lblWeekly.TabIndex = 20
+        Me.lblWeekly.Text = "lblWeekly"
+        '
+        'lblDaily
+        '
+        Me.lblDaily.AutoSize = True
+        Me.lblDaily.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.lblDaily.FontWeight = MetroFramework.MetroLabelWeight.Bold
+        Me.lblDaily.Location = New System.Drawing.Point(622, 27)
+        Me.lblDaily.Name = "lblDaily"
+        Me.lblDaily.Size = New System.Drawing.Size(78, 25)
+        Me.lblDaily.TabIndex = 19
+        Me.lblDaily.Text = "lblDaily"
         '
         'MetroTabPage2
         '
+        Me.MetroTabPage2.Controls.Add(Me.MetroLabel8)
+        Me.MetroTabPage2.Controls.Add(Me.MetroLabel11)
+        Me.MetroTabPage2.Controls.Add(Me.MetroLabel12)
         Me.MetroTabPage2.Controls.Add(Me.btnAddStock)
         Me.MetroTabPage2.Controls.Add(Me.MetroLabel2)
         Me.MetroTabPage2.Controls.Add(Me.txtSearchProduct)
@@ -293,23 +424,54 @@ Partial Class formMainAdmin
         Me.MetroTabPage2.Controls.Add(Me.listProducts)
         Me.MetroTabPage2.HorizontalScrollbarBarColor = True
         Me.MetroTabPage2.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage2.HorizontalScrollbarSize = 8
+        Me.MetroTabPage2.HorizontalScrollbarSize = 10
         Me.MetroTabPage2.Location = New System.Drawing.Point(4, 38)
-        Me.MetroTabPage2.Margin = New System.Windows.Forms.Padding(2)
+        Me.MetroTabPage2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MetroTabPage2.Name = "MetroTabPage2"
-        Me.MetroTabPage2.Size = New System.Drawing.Size(1028, 543)
+        Me.MetroTabPage2.Size = New System.Drawing.Size(1373, 678)
         Me.MetroTabPage2.TabIndex = 1
         Me.MetroTabPage2.Text = "Products"
         Me.MetroTabPage2.VerticalScrollbarBarColor = True
         Me.MetroTabPage2.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage2.VerticalScrollbarSize = 8
+        Me.MetroTabPage2.VerticalScrollbarSize = 11
+        '
+        'MetroLabel8
+        '
+        Me.MetroLabel8.AutoSize = True
+        Me.MetroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.MetroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold
+        Me.MetroLabel8.Location = New System.Drawing.Point(19, 43)
+        Me.MetroLabel8.Name = "MetroLabel8"
+        Me.MetroLabel8.Size = New System.Drawing.Size(92, 25)
+        Me.MetroLabel8.TabIndex = 108
+        Me.MetroLabel8.Text = "Products"
+        '
+        'MetroLabel11
+        '
+        Me.MetroLabel11.AutoSize = True
+        Me.MetroLabel11.Location = New System.Drawing.Point(19, 68)
+        Me.MetroLabel11.Name = "MetroLabel11"
+        Me.MetroLabel11.Size = New System.Drawing.Size(609, 20)
+        Me.MetroLabel11.TabIndex = 107
+        Me.MetroLabel11.Text = "_________________________________________________________________________________" &
+    "___________________"
+        '
+        'MetroLabel12
+        '
+        Me.MetroLabel12.AutoSize = True
+        Me.MetroLabel12.Location = New System.Drawing.Point(19, 100)
+        Me.MetroLabel12.Name = "MetroLabel12"
+        Me.MetroLabel12.Size = New System.Drawing.Size(412, 20)
+        Me.MetroLabel12.TabIndex = 106
+        Me.MetroLabel12.Text = "List of registered products that available for selling on the system."
         '
         'btnAddStock
         '
         Me.btnAddStock.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnAddStock.Location = New System.Drawing.Point(850, 35)
+        Me.btnAddStock.Location = New System.Drawing.Point(1133, 43)
+        Me.btnAddStock.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddStock.Name = "btnAddStock"
-        Me.btnAddStock.Size = New System.Drawing.Size(147, 69)
+        Me.btnAddStock.Size = New System.Drawing.Size(196, 85)
         Me.btnAddStock.TabIndex = 43
         Me.btnAddStock.Text = "ADD STOCK"
         Me.btnAddStock.UseSelectable = True
@@ -318,9 +480,10 @@ Partial Class formMainAdmin
         '
         Me.MetroLabel2.AutoSize = True
         Me.MetroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall
-        Me.MetroLabel2.Location = New System.Drawing.Point(13, 121)
+        Me.MetroLabel2.Location = New System.Drawing.Point(17, 153)
+        Me.MetroLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel2.Name = "MetroLabel2"
-        Me.MetroLabel2.Size = New System.Drawing.Size(78, 25)
+        Me.MetroLabel2.Size = New System.Drawing.Size(83, 25)
         Me.MetroLabel2.TabIndex = 42
         Me.MetroLabel2.Text = "SEARCH:"
         '
@@ -330,10 +493,10 @@ Partial Class formMainAdmin
         '
         '
         Me.txtSearchProduct.CustomButton.Image = Nothing
-        Me.txtSearchProduct.CustomButton.Location = New System.Drawing.Point(301, 2)
-        Me.txtSearchProduct.CustomButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSearchProduct.CustomButton.Location = New System.Drawing.Point(385, 1)
+        Me.txtSearchProduct.CustomButton.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.txtSearchProduct.CustomButton.Name = ""
-        Me.txtSearchProduct.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.txtSearchProduct.CustomButton.Size = New System.Drawing.Size(37, 37)
         Me.txtSearchProduct.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtSearchProduct.CustomButton.TabIndex = 1
         Me.txtSearchProduct.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -341,7 +504,8 @@ Partial Class formMainAdmin
         Me.txtSearchProduct.CustomButton.Visible = False
         Me.txtSearchProduct.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtSearchProduct.Lines = New String() {"SEARCH"}
-        Me.txtSearchProduct.Location = New System.Drawing.Point(308, 116)
+        Me.txtSearchProduct.Location = New System.Drawing.Point(408, 148)
+        Me.txtSearchProduct.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSearchProduct.MaxLength = 32767
         Me.txtSearchProduct.Multiline = True
         Me.txtSearchProduct.Name = "txtSearchProduct"
@@ -351,7 +515,7 @@ Partial Class formMainAdmin
         Me.txtSearchProduct.SelectionLength = 0
         Me.txtSearchProduct.SelectionStart = 0
         Me.txtSearchProduct.ShortcutsEnabled = True
-        Me.txtSearchProduct.Size = New System.Drawing.Size(331, 32)
+        Me.txtSearchProduct.Size = New System.Drawing.Size(423, 39)
         Me.txtSearchProduct.TabIndex = 41
         Me.txtSearchProduct.Text = "SEARCH"
         Me.txtSearchProduct.UseSelectable = True
@@ -364,18 +528,20 @@ Partial Class formMainAdmin
         Me.comboSearchProduct.FormattingEnabled = True
         Me.comboSearchProduct.ItemHeight = 29
         Me.comboSearchProduct.Items.AddRange(New Object() {"BRAND NAME", "QTY", "SUPPLIER", "SRP", "STATUS"})
-        Me.comboSearchProduct.Location = New System.Drawing.Point(97, 116)
+        Me.comboSearchProduct.Location = New System.Drawing.Point(129, 148)
+        Me.comboSearchProduct.Margin = New System.Windows.Forms.Padding(4)
         Me.comboSearchProduct.Name = "comboSearchProduct"
-        Me.comboSearchProduct.Size = New System.Drawing.Size(194, 35)
+        Me.comboSearchProduct.Size = New System.Drawing.Size(257, 35)
         Me.comboSearchProduct.TabIndex = 40
         Me.comboSearchProduct.UseSelectable = True
         '
         'btnAddProduct
         '
         Me.btnAddProduct.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnAddProduct.Location = New System.Drawing.Point(673, 35)
+        Me.btnAddProduct.Location = New System.Drawing.Point(897, 43)
+        Me.btnAddProduct.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddProduct.Name = "btnAddProduct"
-        Me.btnAddProduct.Size = New System.Drawing.Size(147, 69)
+        Me.btnAddProduct.Size = New System.Drawing.Size(196, 85)
         Me.btnAddProduct.TabIndex = 39
         Me.btnAddProduct.Text = "ADD ITEM"
         Me.btnAddProduct.UseSelectable = True
@@ -386,10 +552,11 @@ Partial Class formMainAdmin
         Me.listProducts.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.listProducts.FullRowSelect = True
         Me.listProducts.GridLines = True
-        Me.listProducts.Location = New System.Drawing.Point(13, 171)
+        Me.listProducts.Location = New System.Drawing.Point(17, 210)
+        Me.listProducts.Margin = New System.Windows.Forms.Padding(4)
         Me.listProducts.Name = "listProducts"
         Me.listProducts.OwnerDraw = True
-        Me.listProducts.Size = New System.Drawing.Size(1005, 347)
+        Me.listProducts.Size = New System.Drawing.Size(1339, 426)
         Me.listProducts.TabIndex = 38
         Me.listProducts.UseCompatibleStateImageBehavior = False
         Me.listProducts.UseSelectable = True
@@ -447,23 +614,25 @@ Partial Class formMainAdmin
         Me.MetroTabPage3.Controls.Add(Me.MetroLabel5)
         Me.MetroTabPage3.HorizontalScrollbarBarColor = True
         Me.MetroTabPage3.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage3.HorizontalScrollbarSize = 10
+        Me.MetroTabPage3.HorizontalScrollbarSize = 12
         Me.MetroTabPage3.Location = New System.Drawing.Point(4, 38)
+        Me.MetroTabPage3.Margin = New System.Windows.Forms.Padding(4)
         Me.MetroTabPage3.Name = "MetroTabPage3"
-        Me.MetroTabPage3.Size = New System.Drawing.Size(1028, 543)
+        Me.MetroTabPage3.Size = New System.Drawing.Size(1373, 678)
         Me.MetroTabPage3.TabIndex = 2
         Me.MetroTabPage3.Text = "Employees"
         Me.MetroTabPage3.VerticalScrollbarBarColor = True
         Me.MetroTabPage3.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage3.VerticalScrollbarSize = 10
+        Me.MetroTabPage3.VerticalScrollbarSize = 13
         '
         'MetroLabel6
         '
         Me.MetroLabel6.AutoSize = True
         Me.MetroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall
-        Me.MetroLabel6.Location = New System.Drawing.Point(13, 124)
+        Me.MetroLabel6.Location = New System.Drawing.Point(17, 153)
+        Me.MetroLabel6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel6.Name = "MetroLabel6"
-        Me.MetroLabel6.Size = New System.Drawing.Size(78, 25)
+        Me.MetroLabel6.Size = New System.Drawing.Size(83, 25)
         Me.MetroLabel6.TabIndex = 109
         Me.MetroLabel6.Text = "SEARCH:"
         '
@@ -473,10 +642,10 @@ Partial Class formMainAdmin
         '
         '
         Me.txtSearchEmployee.CustomButton.Image = Nothing
-        Me.txtSearchEmployee.CustomButton.Location = New System.Drawing.Point(287, 2)
-        Me.txtSearchEmployee.CustomButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSearchEmployee.CustomButton.Location = New System.Drawing.Point(385, 1)
+        Me.txtSearchEmployee.CustomButton.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.txtSearchEmployee.CustomButton.Name = ""
-        Me.txtSearchEmployee.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.txtSearchEmployee.CustomButton.Size = New System.Drawing.Size(37, 37)
         Me.txtSearchEmployee.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtSearchEmployee.CustomButton.TabIndex = 1
         Me.txtSearchEmployee.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -484,7 +653,8 @@ Partial Class formMainAdmin
         Me.txtSearchEmployee.CustomButton.Visible = False
         Me.txtSearchEmployee.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtSearchEmployee.Lines = New String() {"SEARCH"}
-        Me.txtSearchEmployee.Location = New System.Drawing.Point(306, 120)
+        Me.txtSearchEmployee.Location = New System.Drawing.Point(408, 148)
+        Me.txtSearchEmployee.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSearchEmployee.MaxLength = 32767
         Me.txtSearchEmployee.Multiline = True
         Me.txtSearchEmployee.Name = "txtSearchEmployee"
@@ -494,7 +664,7 @@ Partial Class formMainAdmin
         Me.txtSearchEmployee.SelectionLength = 0
         Me.txtSearchEmployee.SelectionStart = 0
         Me.txtSearchEmployee.ShortcutsEnabled = True
-        Me.txtSearchEmployee.Size = New System.Drawing.Size(317, 32)
+        Me.txtSearchEmployee.Size = New System.Drawing.Size(423, 39)
         Me.txtSearchEmployee.TabIndex = 108
         Me.txtSearchEmployee.Text = "SEARCH"
         Me.txtSearchEmployee.UseSelectable = True
@@ -507,18 +677,20 @@ Partial Class formMainAdmin
         Me.comboSearchEmployee.FormattingEnabled = True
         Me.comboSearchEmployee.ItemHeight = 29
         Me.comboSearchEmployee.Items.AddRange(New Object() {"ADDRESS", "CONTACT", "JOB", "NAME"})
-        Me.comboSearchEmployee.Location = New System.Drawing.Point(97, 120)
+        Me.comboSearchEmployee.Location = New System.Drawing.Point(129, 148)
+        Me.comboSearchEmployee.Margin = New System.Windows.Forms.Padding(4)
         Me.comboSearchEmployee.Name = "comboSearchEmployee"
-        Me.comboSearchEmployee.Size = New System.Drawing.Size(194, 35)
+        Me.comboSearchEmployee.Size = New System.Drawing.Size(257, 35)
         Me.comboSearchEmployee.TabIndex = 107
         Me.comboSearchEmployee.UseSelectable = True
         '
         'btnAddEmployee
         '
         Me.btnAddEmployee.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnAddEmployee.Location = New System.Drawing.Point(673, 35)
+        Me.btnAddEmployee.Location = New System.Drawing.Point(897, 43)
+        Me.btnAddEmployee.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddEmployee.Name = "btnAddEmployee"
-        Me.btnAddEmployee.Size = New System.Drawing.Size(147, 69)
+        Me.btnAddEmployee.Size = New System.Drawing.Size(196, 85)
         Me.btnAddEmployee.TabIndex = 40
         Me.btnAddEmployee.Text = "ADD EMPLOYEE"
         Me.btnAddEmployee.UseSelectable = True
@@ -530,12 +702,13 @@ Partial Class formMainAdmin
         Me.listEmployee.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.listEmployee.FullRowSelect = True
         Me.listEmployee.GridLines = True
-        Me.listEmployee.Location = New System.Drawing.Point(13, 171)
+        Me.listEmployee.Location = New System.Drawing.Point(17, 210)
+        Me.listEmployee.Margin = New System.Windows.Forms.Padding(4)
         Me.listEmployee.MultiSelect = False
         Me.listEmployee.Name = "listEmployee"
         Me.listEmployee.OwnerDraw = True
         Me.listEmployee.ShowGroups = False
-        Me.listEmployee.Size = New System.Drawing.Size(764, 198)
+        Me.listEmployee.Size = New System.Drawing.Size(1017, 243)
         Me.listEmployee.TabIndex = 106
         Me.listEmployee.UseCompatibleStateImageBehavior = False
         Me.listEmployee.UseSelectable = True
@@ -569,20 +742,18 @@ Partial Class formMainAdmin
         Me.MetroLabel3.AutoSize = True
         Me.MetroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall
         Me.MetroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold
-        Me.MetroLabel3.Location = New System.Drawing.Point(14, 35)
-        Me.MetroLabel3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel3.Location = New System.Drawing.Point(19, 43)
         Me.MetroLabel3.Name = "MetroLabel3"
-        Me.MetroLabel3.Size = New System.Drawing.Size(103, 25)
+        Me.MetroLabel3.Size = New System.Drawing.Size(106, 25)
         Me.MetroLabel3.TabIndex = 105
         Me.MetroLabel3.Text = "Employees"
         '
         'MetroLabel1
         '
         Me.MetroLabel1.AutoSize = True
-        Me.MetroLabel1.Location = New System.Drawing.Point(14, 55)
-        Me.MetroLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel1.Location = New System.Drawing.Point(19, 68)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(609, 19)
+        Me.MetroLabel1.Size = New System.Drawing.Size(609, 20)
         Me.MetroLabel1.TabIndex = 104
         Me.MetroLabel1.Text = "_________________________________________________________________________________" &
     "___________________"
@@ -590,10 +761,9 @@ Partial Class formMainAdmin
         'MetroLabel5
         '
         Me.MetroLabel5.AutoSize = True
-        Me.MetroLabel5.Location = New System.Drawing.Point(14, 81)
-        Me.MetroLabel5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel5.Location = New System.Drawing.Point(19, 100)
         Me.MetroLabel5.Name = "MetroLabel5"
-        Me.MetroLabel5.Size = New System.Drawing.Size(441, 19)
+        Me.MetroLabel5.Size = New System.Drawing.Size(472, 20)
         Me.MetroLabel5.TabIndex = 103
         Me.MetroLabel5.Text = "List of registered employees have authorize and credentials on the system."
         '
@@ -609,23 +779,25 @@ Partial Class formMainAdmin
         Me.MetroTabPage4.Controls.Add(Me.MetroLabel10)
         Me.MetroTabPage4.HorizontalScrollbarBarColor = True
         Me.MetroTabPage4.HorizontalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage4.HorizontalScrollbarSize = 10
+        Me.MetroTabPage4.HorizontalScrollbarSize = 12
         Me.MetroTabPage4.Location = New System.Drawing.Point(4, 38)
+        Me.MetroTabPage4.Margin = New System.Windows.Forms.Padding(4)
         Me.MetroTabPage4.Name = "MetroTabPage4"
-        Me.MetroTabPage4.Size = New System.Drawing.Size(1028, 543)
+        Me.MetroTabPage4.Size = New System.Drawing.Size(1373, 678)
         Me.MetroTabPage4.TabIndex = 3
         Me.MetroTabPage4.Text = "Suppliers"
         Me.MetroTabPage4.VerticalScrollbarBarColor = True
         Me.MetroTabPage4.VerticalScrollbarHighlightOnWheel = False
-        Me.MetroTabPage4.VerticalScrollbarSize = 10
+        Me.MetroTabPage4.VerticalScrollbarSize = 13
         '
         'MetroLabel7
         '
         Me.MetroLabel7.AutoSize = True
         Me.MetroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall
-        Me.MetroLabel7.Location = New System.Drawing.Point(13, 124)
+        Me.MetroLabel7.Location = New System.Drawing.Point(17, 153)
+        Me.MetroLabel7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.MetroLabel7.Name = "MetroLabel7"
-        Me.MetroLabel7.Size = New System.Drawing.Size(78, 25)
+        Me.MetroLabel7.Size = New System.Drawing.Size(83, 25)
         Me.MetroLabel7.TabIndex = 117
         Me.MetroLabel7.Text = "SEARCH:"
         '
@@ -635,10 +807,10 @@ Partial Class formMainAdmin
         '
         '
         Me.txtSearchSupplier.CustomButton.Image = Nothing
-        Me.txtSearchSupplier.CustomButton.Location = New System.Drawing.Point(287, 2)
-        Me.txtSearchSupplier.CustomButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSearchSupplier.CustomButton.Location = New System.Drawing.Point(385, 1)
+        Me.txtSearchSupplier.CustomButton.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.txtSearchSupplier.CustomButton.Name = ""
-        Me.txtSearchSupplier.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.txtSearchSupplier.CustomButton.Size = New System.Drawing.Size(37, 37)
         Me.txtSearchSupplier.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtSearchSupplier.CustomButton.TabIndex = 1
         Me.txtSearchSupplier.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
@@ -646,7 +818,8 @@ Partial Class formMainAdmin
         Me.txtSearchSupplier.CustomButton.Visible = False
         Me.txtSearchSupplier.FontSize = MetroFramework.MetroTextBoxSize.Tall
         Me.txtSearchSupplier.Lines = New String() {"SEARCH"}
-        Me.txtSearchSupplier.Location = New System.Drawing.Point(306, 120)
+        Me.txtSearchSupplier.Location = New System.Drawing.Point(408, 148)
+        Me.txtSearchSupplier.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSearchSupplier.MaxLength = 32767
         Me.txtSearchSupplier.Multiline = True
         Me.txtSearchSupplier.Name = "txtSearchSupplier"
@@ -656,7 +829,7 @@ Partial Class formMainAdmin
         Me.txtSearchSupplier.SelectionLength = 0
         Me.txtSearchSupplier.SelectionStart = 0
         Me.txtSearchSupplier.ShortcutsEnabled = True
-        Me.txtSearchSupplier.Size = New System.Drawing.Size(317, 32)
+        Me.txtSearchSupplier.Size = New System.Drawing.Size(423, 39)
         Me.txtSearchSupplier.TabIndex = 116
         Me.txtSearchSupplier.Text = "SEARCH"
         Me.txtSearchSupplier.UseSelectable = True
@@ -669,20 +842,22 @@ Partial Class formMainAdmin
         Me.comboSearchSupplier.FormattingEnabled = True
         Me.comboSearchSupplier.ItemHeight = 29
         Me.comboSearchSupplier.Items.AddRange(New Object() {"ADDRESS", "CONTACT", "JOB", "NAME"})
-        Me.comboSearchSupplier.Location = New System.Drawing.Point(97, 120)
+        Me.comboSearchSupplier.Location = New System.Drawing.Point(129, 148)
+        Me.comboSearchSupplier.Margin = New System.Windows.Forms.Padding(4)
         Me.comboSearchSupplier.Name = "comboSearchSupplier"
-        Me.comboSearchSupplier.Size = New System.Drawing.Size(194, 35)
+        Me.comboSearchSupplier.Size = New System.Drawing.Size(257, 35)
         Me.comboSearchSupplier.TabIndex = 115
         Me.comboSearchSupplier.UseSelectable = True
         '
         'btnAddSupplier
         '
         Me.btnAddSupplier.FontSize = MetroFramework.MetroButtonSize.Tall
-        Me.btnAddSupplier.Location = New System.Drawing.Point(673, 35)
+        Me.btnAddSupplier.Location = New System.Drawing.Point(897, 43)
+        Me.btnAddSupplier.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddSupplier.Name = "btnAddSupplier"
-        Me.btnAddSupplier.Size = New System.Drawing.Size(147, 69)
+        Me.btnAddSupplier.Size = New System.Drawing.Size(196, 85)
         Me.btnAddSupplier.TabIndex = 110
-        Me.btnAddSupplier.Text = "ADD EMPLOYEE"
+        Me.btnAddSupplier.Text = "ADD SUPPLIER"
         Me.btnAddSupplier.UseSelectable = True
         '
         'listSupplier
@@ -692,12 +867,13 @@ Partial Class formMainAdmin
         Me.listSupplier.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.listSupplier.FullRowSelect = True
         Me.listSupplier.GridLines = True
-        Me.listSupplier.Location = New System.Drawing.Point(13, 171)
+        Me.listSupplier.Location = New System.Drawing.Point(17, 210)
+        Me.listSupplier.Margin = New System.Windows.Forms.Padding(4)
         Me.listSupplier.MultiSelect = False
         Me.listSupplier.Name = "listSupplier"
         Me.listSupplier.OwnerDraw = True
         Me.listSupplier.ShowGroups = False
-        Me.listSupplier.Size = New System.Drawing.Size(944, 198)
+        Me.listSupplier.Size = New System.Drawing.Size(1257, 243)
         Me.listSupplier.TabIndex = 114
         Me.listSupplier.UseCompatibleStateImageBehavior = False
         Me.listSupplier.UseSelectable = True
@@ -731,20 +907,18 @@ Partial Class formMainAdmin
         Me.MetroLabel.AutoSize = True
         Me.MetroLabel.FontSize = MetroFramework.MetroLabelSize.Tall
         Me.MetroLabel.FontWeight = MetroFramework.MetroLabelWeight.Bold
-        Me.MetroLabel.Location = New System.Drawing.Point(14, 35)
-        Me.MetroLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel.Location = New System.Drawing.Point(19, 43)
         Me.MetroLabel.Name = "MetroLabel"
-        Me.MetroLabel.Size = New System.Drawing.Size(90, 25)
+        Me.MetroLabel.Size = New System.Drawing.Size(95, 25)
         Me.MetroLabel.TabIndex = 113
         Me.MetroLabel.Text = "Suppliers"
         '
         'MetroLabel9
         '
         Me.MetroLabel9.AutoSize = True
-        Me.MetroLabel9.Location = New System.Drawing.Point(14, 55)
-        Me.MetroLabel9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel9.Location = New System.Drawing.Point(19, 68)
         Me.MetroLabel9.Name = "MetroLabel9"
-        Me.MetroLabel9.Size = New System.Drawing.Size(609, 19)
+        Me.MetroLabel9.Size = New System.Drawing.Size(609, 20)
         Me.MetroLabel9.TabIndex = 112
         Me.MetroLabel9.Text = "_________________________________________________________________________________" &
     "___________________"
@@ -752,28 +926,34 @@ Partial Class formMainAdmin
         'MetroLabel10
         '
         Me.MetroLabel10.AutoSize = True
-        Me.MetroLabel10.Location = New System.Drawing.Point(14, 81)
-        Me.MetroLabel10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MetroLabel10.Location = New System.Drawing.Point(19, 100)
         Me.MetroLabel10.Name = "MetroLabel10"
-        Me.MetroLabel10.Size = New System.Drawing.Size(319, 19)
+        Me.MetroLabel10.Size = New System.Drawing.Size(339, 20)
         Me.MetroLabel10.TabIndex = 111
         Me.MetroLabel10.Text = "List of registered suppliers of products on the system."
         '
+        'TimerStats
+        '
+        Me.TimerStats.Interval = 30
+        '
         'formMainAdmin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1034, 634)
+        Me.ClientSize = New System.Drawing.Size(1379, 780)
         Me.Controls.Add(Me.MetroTabControl1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.labelTimeAdmin)
         Me.Controls.Add(Me.MetroLabel4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "formMainAdmin"
+        Me.Padding = New System.Windows.Forms.Padding(27, 74, 27, 25)
         Me.Text = "ECT Pharmacy - ADMIN"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.MetroTabControl1.ResumeLayout(False)
         Me.MetroTabPage1.ResumeLayout(False)
+        Me.MetroTabPage1.PerformLayout()
         Me.MetroTabPage2.ResumeLayout(False)
         Me.MetroTabPage2.PerformLayout()
         Me.MetroTabPage3.ResumeLayout(False)
@@ -787,10 +967,10 @@ Partial Class formMainAdmin
 
     Friend WithEvents labelTimeAdmin As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel4 As MetroFramework.Controls.MetroLabel
-    Friend WithEvents Timer2 As Timer
+    Friend WithEvents Timer As Timer
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents MetroButton4 As MetroFramework.Controls.MetroButton
-    Friend WithEvents MetroButton3 As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnViewReport As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton5 As MetroFramework.Controls.MetroButton
@@ -814,12 +994,6 @@ Partial Class formMainAdmin
     Friend WithEvents MetroTabPage3 As MetroFramework.Controls.MetroTabPage
     Friend WithEvents btnAddEmployee As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton6 As MetroFramework.Controls.MetroButton
-    Friend WithEvents MetroProgressBar5 As MetroFramework.Controls.MetroProgressBar
-    Friend WithEvents MetroProgressBar6 As MetroFramework.Controls.MetroProgressBar
-    Friend WithEvents MetroProgressBar3 As MetroFramework.Controls.MetroProgressBar
-    Friend WithEvents MetroProgressBar4 As MetroFramework.Controls.MetroProgressBar
-    Friend WithEvents MetroProgressBar2 As MetroFramework.Controls.MetroProgressBar
-    Friend WithEvents StatDaily As MetroFramework.Controls.MetroProgressBar
     Friend WithEvents listEmployee As MetroFramework.Controls.MetroListView
     Friend WithEvents ColumnHeader9 As ColumnHeader
     Friend WithEvents ColumnHeader10 As ColumnHeader
@@ -844,4 +1018,21 @@ Partial Class formMainAdmin
     Friend WithEvents MetroLabel As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel9 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel10 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel8 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel11 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel12 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents TimerStats As Timer
+    Friend WithEvents lblYearly As MetroFramework.Controls.MetroLabel
+    Friend WithEvents lblMonthly As MetroFramework.Controls.MetroLabel
+    Friend WithEvents lblWeekly As MetroFramework.Controls.MetroLabel
+    Friend WithEvents lblDaily As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroUserControl1 As MetroFramework.Controls.MetroUserControl
+    Friend WithEvents MetroLabel13 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents comboSelectedReport As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents comboSearchYear As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents comboSearchMonth As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents comboSearchDay As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents MetroLabel14 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel15 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel16 As MetroFramework.Controls.MetroLabel
 End Class

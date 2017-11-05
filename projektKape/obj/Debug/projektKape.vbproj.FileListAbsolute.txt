@@ -120,35 +120,6 @@ C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projek
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.xml
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.pdb
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape-master\projektKape\obj\Debug\projektKape.formInventoryDetails.resources
-E:\Documents\Github\projektKape\projektKape\bin\Debug\projektKape.exe.config
-E:\Documents\Github\projektKape\projektKape\obj\Debug\Interop.ADODB.dll
-E:\Documents\Github\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
-E:\Documents\Github\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.exe
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.xml
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.pdb
-E:\Documents\Github\projektKape\projektKape\bin\Debug\projektKape.exe
-E:\Documents\Github\projektKape\projektKape\bin\Debug\projektKape.pdb
-E:\Documents\Github\projektKape\projektKape\bin\Debug\projektKape.xml
-E:\Documents\Github\projektKape\projektKape\bin\Debug\MaterialDesignColors.dll
-E:\Documents\Github\projektKape\projektKape\bin\Debug\MaterialDesignThemes.Wpf.dll
-E:\Documents\Github\projektKape\projektKape\bin\Debug\MetroFramework.Design.dll
-E:\Documents\Github\projektKape\projektKape\bin\Debug\MetroFramework.dll
-E:\Documents\Github\projektKape\projektKape\bin\Debug\MetroFramework.Fonts.dll
-E:\Documents\Github\projektKape\projektKape\bin\Debug\MaterialDesignThemes.Wpf.pdb
-E:\Documents\Github\projektKape\projektKape\bin\Debug\MaterialDesignThemes.Wpf.xml
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.vbprojResolveAssemblyReference.cache
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formEmployee.resources
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formLogin.resources
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formAdminAddItem.resources
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formInventoryDetails.resources
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formMainAdmin.resources
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formMainPos.resources
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formPwdDc.resources
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
-E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\projektKape.exe.config
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\projektKape.exe
 C:\Users\Hilsoft\Documents\Visual Studio 2015\Projects\projektKape\projektKape\bin\Debug\projektKape.pdb
@@ -192,3 +163,124 @@ D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\projektKape.vbproj.
 D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\projektKape.exe
 D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\projektKape.xml
 D:\Documents\GitHub\projektKape-master\projektKape\obj\Debug\projektKape.pdb
+D:\Documents\GitHub\projektKape\projektKape\bin\Debug\projektKape.exe.config
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\Interop.ADODB.dll
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
+D:\Documents\GitHub\projektKape\projektKape\bin\Debug\projektKape.exe
+D:\Documents\GitHub\projektKape\projektKape\bin\Debug\projektKape.pdb
+D:\Documents\GitHub\projektKape\projektKape\bin\Debug\projektKape.xml
+D:\Documents\GitHub\projektKape\projektKape\bin\Debug\MetroFramework.Design.dll
+D:\Documents\GitHub\projektKape\projektKape\bin\Debug\MetroFramework.dll
+D:\Documents\GitHub\projektKape\projektKape\bin\Debug\MetroFramework.Fonts.dll
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.vbprojResolveAssemblyReference.cache
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formEmployee.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formLogin.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formAddEmployee.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formAddProduct.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formAddSupplier.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formInventoryDetails.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formMainAdmin.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formCashTender.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formChange.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formMainPos.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formPwdDc.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.exe
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.xml
+D:\Documents\GitHub\projektKape\projektKape\obj\Debug\projektKape.pdb
+E:\Documents\Github\projektKape\projektKape\bin\Debug\projektKape.exe.config
+E:\Documents\Github\projektKape\projektKape\obj\Debug\Interop.ADODB.dll
+E:\Documents\Github\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
+E:\Documents\Github\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
+E:\Documents\Github\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\bin\Debug\projektKape.exe.config
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\bin\Debug\projektKape.exe
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\bin\Debug\projektKape.pdb
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\bin\Debug\projektKape.xml
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\bin\Debug\MetroFramework.Design.dll
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\bin\Debug\MetroFramework.dll
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\Interop.ADODB.dll
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formEmployee.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formLogin.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formAddEmployee.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formAddProduct.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formAddSupplier.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formInventoryDetails.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formMainAdmin.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formCashTender.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formChange.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formMainPos.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formPwdDc.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.exe
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.xml
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.pdb
+C:\Users\DM4\Documents\Backup\Github\projektKape\projektKape\obj\Debug\projektKape.vbprojResolveAssemblyReference.cache
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\bin\Debug\projektKape.exe.config
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\bin\Debug\projektKape.exe
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\bin\Debug\projektKape.pdb
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\bin\Debug\projektKape.xml
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\bin\Debug\MetroFramework.Design.dll
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\bin\Debug\MetroFramework.dll
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.vbprojResolveAssemblyReference.cache
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\Interop.ADODB.dll
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formEmployee.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formLogin.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formAddEmployee.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formAddProduct.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formAddSupplier.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formInventoryDetails.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formMainAdmin.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formCashTender.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formChange.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formMainPos.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formPwdDc.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.exe
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.xml
+C:\Users\brvno\Desktop\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.pdb
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\bin\Debug\projektKape.exe.config
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\bin\Debug\projektKape.exe
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\bin\Debug\projektKape.pdb
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\bin\Debug\projektKape.xml
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\bin\Debug\MetroFramework.Design.dll
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\bin\Debug\MetroFramework.dll
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\Interop.ADODB.dll
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\Interop.ADOR.dll
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\Interop.AZROLESLib.dll
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.vbproj.ResolveComReference.cache
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formEmployee.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formLogin.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formAddEmployee.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formAddProduct.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formAddSupplier.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formInventoryDetails.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formMainAdmin.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formCashTender.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formChange.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formMainPos.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formPwdDc.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.formSeniorDc.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.Resources.resources
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.vbproj.GenerateResource.Cache
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.exe
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.xml
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.pdb
+C:\Users\ASUS PC\Documents\Backup\Github\ECT PHARMACY\projektKape\projektKape\obj\Debug\projektKape.vbprojResolveAssemblyReference.cache
